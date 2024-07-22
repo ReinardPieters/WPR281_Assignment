@@ -46,6 +46,21 @@
     height: 100px;
     text-align: center;
    }
+   .main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "top";
+    grid-template-rows: 100px;
+    grid-template-columns: 150px;
+   }
+   .maintop{
+    grid-area: top;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   }
+
    footer{
     grid-area: footer;
     text-align: center;
