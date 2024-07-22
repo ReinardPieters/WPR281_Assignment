@@ -14,3 +14,18 @@
     font-weight: 600;
     font-size: 20px;
  }
+ @media (max-width: 688px){
+   .container {
+   grid-template-rows: 50px 50px 50px 1fr
+   50px 50px 50px;
+   grid-template-columns: 1fr;
+   gird-template-areas:
+   "header"
+   "banner"
+   "left-aside"
+   "main"
+   "right-aside"
+   "low-content"
+   "footer";
+   }
+   }
