@@ -1,4 +1,3 @@
-const search = document.getElementById("searchbutton")
-search.addEventListener("click",function() {
-    alert("A button have has been pressed")
-});
+function Clicked(){
+    alert("A button has been pressed")
+}
