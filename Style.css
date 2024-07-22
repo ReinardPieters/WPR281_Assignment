@@ -60,6 +60,11 @@
     align-items: center;
     flex-direction: row-reverse;
    }
+
+   #searchbox{
+    margin-left: 5px;
+    margin-right: 5px;
+   }
    .low-content{
     grid-area: low-content;
    }
