@@ -1,3 +1,16 @@
-h1{
-    text-align: center;
-}
+ .container{
+    display: grid;
+    grid-template-rows: 80px auto 1fr 50px;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 100vh;
+    grid-template-areas: none
+    "header header header"
+    "left-side banner right_side"
+    "left-side main right_side"
+    "left-side low_content right_side"
+    "footer footer footer";
+    grid-gap: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+ }
