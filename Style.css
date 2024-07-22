@@ -14,26 +14,6 @@
     font-weight: 600;
     font-size: 20px;
  }
- .header{
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-areas: "img head placeholder";
-}
- .logo{
-  grid-area: img;
-  height:  100px;
- }
- .companyname{
-  grid-area: head;
-  height: 100px;
-  text-align: center;
- }
- footer{
-  grid-area: footer;
-  text-align: center;
- }
-
  @media (max-width: 688px){
    .container {
    grid-template-rows: 50px 50px 50px 1fr
@@ -48,4 +28,25 @@
    "low-content"
    "footer";
    }
+   }
+
+   /*Index style*/
+   .header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "img head placeholder";
+  }
+   .logo{
+    grid-area: img;
+    height:  100px;
+   }
+   .companyname{
+    grid-area: head;
+    height: 100px;
+    text-align: center;
+   }
+   footer{
+    grid-area: footer;
+    text-align: center;
    }
