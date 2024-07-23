@@ -189,4 +189,7 @@
     list-style-type: none;
     color: white;
    }
-   
+   li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+   }
