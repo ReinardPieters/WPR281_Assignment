@@ -147,7 +147,7 @@
     font-size: 3rem;
     transition: .3s ease;
     background-color: grey;
-    background: linear-gradient(to right, #5c6bc0,#512da8);
+    background: linear-gradient(to left, #eee,#512da8);
     border-bottom: 1px black;
     border-left: 1px black;
     border-top: 1px block;
@@ -207,7 +207,7 @@
    }
    li{
     list-style-type: none;
-    color: white;
+    color: black;
     opacity: 100%;
     font-size: 20px;
     margin: 10px 0;
