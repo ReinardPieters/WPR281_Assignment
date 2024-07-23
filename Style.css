@@ -14,7 +14,7 @@
     font-weight: 600;
     font-size: 20px;
  }
- @media (max-width: 688px){
+ @media (max-width: 1250px){
    .container {
    grid-template-rows: 50px 50px 50px 1fr
    50px 50px 50px;
@@ -51,6 +51,11 @@
     height: fit-content;
    }
    }
+   *{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+   }
    /*Index style*/
    .header{
     grid-area: header;
@@ -61,12 +66,15 @@
   }
    .logo{
     grid-area: img;
-    height:  60px;
+    height:  70px;
+    width: 80px;
    }
    .companyname{
     grid-area: head;
     height: 100px;
     text-align: center;
+    top: 50vh;
+    font-size: 35px;
    }
    .main{
     grid-area: main;
@@ -100,12 +108,15 @@
     flex-direction: row;
     border: 1px solid black;
     border-radius: 10px;
-    height: 200px;
+    height: fit-content;
     margin: 5px;
+   }
+   #courses *{
+    margin: 15px 0;
    }
    #courses{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-left: 15px;
@@ -115,7 +126,7 @@
    #coursefoto{
     height: 100px;
     width: 100px;
-    margin-top: 5vh;
+    margin:auto;
    }
    footer{
     grid-area: footer;
@@ -125,9 +136,9 @@
    .off-screen-menu{
     height: fit-content;
     width: 50%;
-    max-width: 450px;
+    max-width: 250px;
     position: fixed;
-    right: -450px;
+    right: -250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,7 +147,7 @@
     font-size: 3rem;
     transition: .3s ease;
     background-color: grey;
-    opacity: 80%;
+    background: linear-gradient(to right, #5c6bc0,#512da8);
     border-bottom: 1px black;
     border-left: 1px black;
     border-top: 1px block;
@@ -163,14 +174,14 @@
    .ham-menu span{
     height: 5px;
     width: 100%;
-    background-color: #6F86FF;
+    background-color: #512da8;
     border-radius: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: .3s ease;
-    border: 1px solid black;
+    border: 1px solid transparent;
    }
    .ham-menu span:nth-child(1){
     top: 25%;
@@ -189,11 +200,41 @@
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
    }
+   ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   }
    li{
     list-style-type: none;
     color: white;
+    opacity: 100%;
+    font-size: 20px;
+    margin: 10px 0;
+    margin-right: 80px;
    }
    li:hover{
     text-decoration: underline;
     cursor: pointer;
+   }
+   #searchbutton{
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+   }
+   #searchbox{
+    background-color: #eee;
+    border:none;
+    margin: 8px 5px;
+    padding: 10px 10px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
    }
