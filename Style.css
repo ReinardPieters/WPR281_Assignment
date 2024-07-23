@@ -7,7 +7,7 @@
     "header header header"
     "left-side banner right-side"
     "left-side main right-side"
-    "left-side low-content right-side"
+    "low-content low-content low-content"/*was left and right*/
     "footer footer footer";
     grid-gap: 10px;
     padding: 10px;
@@ -28,18 +28,37 @@
    "low-content"
    "footer";
    }
+   #coursedisc{
+    font-size: 12px;
    }
-
+   #coursename{
+    font-size: 12px;
+   }
+   #coursefoto{
+    height: 100px;
+    width: 100px;
+    margin-top: 10vh;
+   }
+   footer{
+    font-size: 12px;
+    margin-top: 20px;
+   }
+   .low-content{
+    font-size: 12px;
+    height: fit-content;
+   }
+   }
    /*Index style*/
    .header{
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: "img head x";
+    border-bottom: 1px solid black;
   }
    .logo{
     grid-area: img;
-    height:  100px;
+    height:  60px;
    }
    .companyname{
     grid-area: head;
@@ -48,27 +67,53 @@
    }
    .main{
     grid-area: main;
-    display: grid;
-    grid-template-areas: 
-    "top top top";
-    grid-template-rows: 100px;
-    grid-template-columns: 150px;
+    display: felx;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
    }
    .maintop{
     grid-area: top;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    margin: 5px;
    }
-
    #searchbox{
     margin-left: 5px;
     margin-right: 5px;
    }
    .low-content{
     grid-area: low-content;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+   }
+   .nationalcer,.bit{
+    grid-area: course;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 200px;
+    margin: 5px;
+   }
+   #courses{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+   }
+   #coursefoto{
+    height: 100px;
+    width: 100px;
+    margin-top: 5vh;
    }
    footer{
     grid-area: footer;
     text-align: center;
+    
    }
