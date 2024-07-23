@@ -1,6 +1,7 @@
-const hamMenu = document.getElementById('.ham-menu');
-const offScreenMenu = document.getElementById('.off-screen-menu')
+const hamMenu = document.getElementById("ham-menu");
+const offScreenMenu = document.getElementById("off-screen-menu")
 
-function hamclick(){
-    alert();
-}
+hamMenu.addEventListener("click", function(){
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+})

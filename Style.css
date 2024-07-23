@@ -7,7 +7,7 @@
     "header header header"
     "left-side banner right-side"
     "left-side main right-side"
-    "low-content low-content low-content"/*was left and right*/
+    "left-side low-content right-side"
     "footer footer footer";
     grid-gap: 10px;
     padding: 10px;
@@ -91,6 +91,7 @@
     grid-area: low-content;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    height: fit-content;
    }
    .nationalcer,.bit{
     grid-area: course;
@@ -119,9 +120,11 @@
    footer{
     grid-area: footer;
     text-align: center;
+    margin-top: 20px;
    }
    .off-screen-menu{
-    height: 100vh;
+    top: 15vh;
+    height: fit-content;
     width: 50%;
     max-width: 450px;
     position: fixed;
@@ -133,6 +136,8 @@
     align-items: center;
     font-size: 3rem;
     transition: .3s ease;
+    background-color: grey;
+    opacity: 80%;
    }
    .off-screen-menu.active{
     right: 0;
@@ -179,5 +184,9 @@
    .ham-menu.active span:nth-child(3){
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+   }
+   li{
+    list-style-type: none;
+    color: white;
    }
    
