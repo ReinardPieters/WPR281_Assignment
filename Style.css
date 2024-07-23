@@ -16,8 +16,8 @@
  }
  @media (max-width: 1250px){
    .containermain {
-   grid-template-rows: 50px 50px 1fr
-   50px 50px 50px;
+   grid-template-rows: 50px 100px 1fr
+   580px 50px 50px;
    grid-template-columns: 1fr;
    grid-template-areas:
    "header"
@@ -397,6 +397,7 @@
 
 /*CALENDAR CSS*/
   .calendar {
+   margin: 10px Auto  ;
    grid-area: right-side;
    height: 35rem;
    width: max-content;
@@ -405,8 +406,8 @@
    overflow: hidden;
    padding: 35px 50px 0px 50px;
    padding: 0;
-   margin: 0;
    box-sizing: border-box;
+   border: 1px solid black;
  }
  
 
