@@ -134,14 +134,14 @@
     margin-top: 20px;
    }
    .off-screen-menu{
-    height: fit-content;
+    height: 100px;
     width: 50%;
     max-width: 250px;
     position: fixed;
     right: -250px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
     font-size: 3rem;
