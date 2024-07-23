@@ -200,23 +200,6 @@
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
    }
-   ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-   }
-   li{
-    list-style-type: none;
-    color: black;
-    opacity: 100%;
-    font-size: 20px;
-    margin: 10px 0;
-    margin-right: 80px;
-   }
-   li:hover{
-    text-decoration: underline;
-    cursor: pointer;
-   }
    #searchbutton{
     background-color: #512da8;
     color: #fff;
@@ -237,4 +220,7 @@
     border-radius: 8px;
     width: 100%;
     outline: none;
+   }
+   .material-symbols-outlined:hover{
+    cursor: pointer;
    }
