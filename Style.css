@@ -692,21 +692,23 @@
   margin: auto;
   text-align: left;
   text-transform: uppercase;
-  /*background-color: rgba(255, 0, 0, 0.4);*/
+  background-color: rgba(255, 0, 0, 0.4);
   width: 80%;
   text-decoration: none;
-  text-wrap: nowrap;
+  line-height: 1fr;
 }
 .sidePanel-Button{
   display: flex;
   text-decoration: none;
   color: black;
   border-radius: 5px;
-  height: fit-content + 5px;
+  height: fit-content;
   width: fit-content;
+  padding: 5px;
 }
 .sidePanel-Button:hover{
-  background-color: rgba(98, 0, 195, 0.4);
+  background-color: #512da8;
+    color: #fff;
   
 }
 
