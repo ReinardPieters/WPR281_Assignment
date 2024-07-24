@@ -79,7 +79,7 @@
       height: 35px;
 
     }
-    
+
     .sidePanel-Header:hover{
       cursor: pointer;
     }
@@ -98,6 +98,9 @@
     font-style: normal;
    }
    /*Index style*/
+   #searchbutton:hover{
+    cursor: pointer;
+  }
    .header{
     grid-area: header;
     display: grid;
