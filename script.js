@@ -14,7 +14,7 @@ fetch('courses.txt').then(response => response.text()).then(data => {
     // Process each block
     blocks.forEach(block => {
       const lines = block.trim().split('\n');
-
+      let coursesUnfil = '';
       // Ensure that there are enough lines in the block
       if (lines.length >= 7) {
         // Create a course object
@@ -28,7 +28,6 @@ fetch('courses.txt').then(response => response.text()).then(data => {
           saqaid: lines[6].trim(),
           location: lines[7].trim()
         };
-
         // Add the course object to the array
         courses.push(course);
       } else {
@@ -93,7 +92,7 @@ fetch('courses.txt').then(response => response.text()).then(data => {
     const searchButton = document.querySelector('#searchbutton');
     searchButton.addEventListener('click', () => {
      let filter = document.querySelector('#searchbox').value.trim();
-     renderCourses(filter);
+     renderCourses(filter)
     });
   })
   .catch(error => console.error('Error fetching data:', error));
