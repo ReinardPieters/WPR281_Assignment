@@ -315,9 +315,9 @@ const generateCalendar = (month, year) => {
          function hideDivOnScroll() {
              const myDiv = document.getElementById('off-screen-menu');
              if (window.scrollY > hideDistance) {
-                 myDiv.classList.add('hidden');
+                 myDiv.classList.add('hiddenPurple');
              } else {
-                 myDiv.classList.remove('hidden');
+                 myDiv.classList.remove('hiddenPurple');
              }
          }
          window.addEventListener('scroll', hideDivOnScroll);

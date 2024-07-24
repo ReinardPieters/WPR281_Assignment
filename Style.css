@@ -998,4 +998,9 @@ table, th, tr, td{
     box-sizing: inherit;
   }
 
-
+  /*  HIDE PURPLE BLOCK NAVBAR */
+  .hiddenPurple {
+    opacity: 0;
+    pointer-events: none; 
+}
+  /*  HIDE PURPLE BLOCK NAVBAR */
