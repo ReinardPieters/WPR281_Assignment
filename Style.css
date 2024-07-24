@@ -101,6 +101,8 @@
     height: fit-content;
    }
    .nationalcer,.bit{
+    color: #0A0921;
+    text-decoration: none;
     grid-area: course;
     display: flex;
     justify-content: center;
@@ -109,6 +111,9 @@
     border-radius: 10px;
     height: fit-content;
     margin: 5px;
+   }
+   .nationalcer:hover,.bit:hover{
+    cursor: pointer;
    }
    #courses *{
     margin: 15px 0;
