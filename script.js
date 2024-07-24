@@ -3,6 +3,74 @@ const offScreenMenu = document.getElementById("off-screen-menu");
 const dropHeader = document.getElementById("dropHeader");
 const dropDown = document.getElementById("dropDown");
 
+// Fetch data from courses.txt
+fetch('courses.txt')
+  .then(response => response.text())
+  .then(data => {
+    // Split the data into lines
+    const blocks = data.trim().split(';');
+    //initializes an empty string
+    let coursesHTML = '';
+    //processes block
+    blocks.forEach(block =>{
+      const lines = block.trim().split('\n');
+      if (lines.length >= 7) {
+        // Extract individual data
+        const href = lines[0].trim();
+        const coursename = lines[1].trim();
+        const coursedesc = lines[2].trim();
+        const duration = lines[3].trim();
+        const level = lines[4].trim();
+        const credits = lines[5].trim();
+        const saqaid = lines[6].trim();
+        const location = lines[7].trim();
+
+        // Generate HTML for the current course
+        const courseHTML = `
+          <a class="nationalcer" href="${href}">
+            <div id="courses">
+              <h1 id="coursename">${coursename}</h1>
+              <div id="coursedisc">${coursedesc}</div>
+            </div>
+            <div class="ncifinfo">
+              <div class="duration">
+                <span class="material-symbols-outlined">calendar_clock</span>
+                <p>Duration: ${duration}</p>
+              </div>
+              <div class="level">
+                <span class="material-symbols-outlined">brightness_alert</span>
+                <p>NQF: ${level}</p>
+              </div>
+              <div class="credits">
+                <span class="material-symbols-outlined">article</span>
+                <p>Credits: ${credits}</p>
+              </div>
+              <div class="saqaid">
+                <span class="material-symbols-outlined">assured_workload</span>
+                <p>SAQA ID: ${saqaid}</p>
+              </div>
+              <div class="location">
+                <span class="material-symbols-outlined">map</span>
+                <p>Location: ${location}</p>
+              </div>
+            </div>
+          </a>
+        `;
+
+        // Append the generated HTML to the coursesHTML string
+        coursesHTML += courseHTML;
+      } else {
+        console.warn('Skipping incomplete course block:', block);
+      }
+    });
+    // Insert generated HTML into the container
+    const mainCourse = document.querySelector('.main')
+    mainCourse.innerHTML = coursesHTML;
+  })
+  .catch(error => console.error('Error fetching data:', error));
+
+
+
 hamMenu.addEventListener("click", () =>{
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
@@ -13,6 +81,7 @@ hamMenu.addEventListener("click", () =>{
 dropHeader.addEventListener("click", () => {
   dropDown.classList.toggle("active");
 });
+
 
 
 

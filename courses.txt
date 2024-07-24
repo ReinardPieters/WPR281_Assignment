@@ -1,0 +1,16 @@
+coursedetails.html
+National Certificate: Information Technology
+On completion of this qualification, you will possess a specialised set of skills that will allow you to work in areas of systems development with confidence. You will gain a solid grasp of computer industry concepts and learn to expertly design, develop, test, and document software solutions needed in today’s business environment. You will also gain the necessary undergraduate foundation to further your studies in the IT field, should you wish.
+1 academic year
+level 5
+131
+48872
+Pretoria Campus;
+#
+Bachelor of Computing
+You will gain sound theoretical knowledge grounded in real-world applications. Furthermore, the practical assignments and projects you will complete are congruent with daily practices in the working world, providing you with business-specific and soft skills. These skills include communication skills, customer satisfaction training, the ability to work as part of a team, and the ability to teach others.
+4 academic years
+level 8
+506
+62689
+Pretoria Campus and kempton;
