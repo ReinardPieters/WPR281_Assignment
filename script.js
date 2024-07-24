@@ -3,41 +3,140 @@ const offScreenMenu = document.getElementById("off-screen-menu");
 const dropHeader = document.getElementById("dropHeader");
 const dropDown = document.getElementById("dropDown");
 
+
 hamMenu.addEventListener("click", () =>{
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
     return;
 });
-/*<a class="nationalcer" href="${course.coursesite}">
-          <div id="courses">
-            <h1 id="coursename">${course.coursename}</h1>
-            <div id="coursedisc">${course.coursedesc}</div>
-          </div>
-          <div class="ncifinfo">
-            <div class="duration">
-              <span class="material-symbols-outlined">calendar_clock</span>
-              <p>Duration: ${course.duration}</p>
-            </div>
-            <div class="level">
-              <span class="material-symbols-outlined">brightness_alert</span>
-              <p>NQF: ${course.level}</p>
-            </div>
-            <div class="credits">
-              <span class="material-symbols-outlined">article</span>
-              <p>Credits: ${course.credits}</p>
-            </div>
-            <div class="saqaid">
-              <span class="material-symbols-outlined">assured_workload</span>
-              <p>SAQA ID: ${course.saqaid}</p>
-            </div>
-            <div class="location">
-              <span class="material-symbols-outlined">map</span>
-              <p>Location: ${course.location}</p>
-            </div>
-          </div>
-        </a>
-      `*\
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  // Fetch the content of the text file (assuming it's stored locally as 'courses.txt')
+  fetch('courses.txt')
+      .then(response => response.text())
+      .then(data => {
+          // Split the data by line breaks
+          const lines = data.split('\n');
+          // Array to hold parsed courses
+          const courses = [];
+
+          // Temporary object to hold course information
+          let course = {};
+          let currentField = 'id';
+
+          // Debugging statement to see the lines array
+          console.log('Lines:', lines);
+
+          // Loop through each line and parse the data
+          lines.forEach(line => {
+              if (line.trim() === '') return; // Skip empty lines
+
+              if (line.includes(';')) {
+                  // Save the last field (location) and push the completed course object to the array
+                  course.location = line.replace(';', '').trim();
+                  courses.push(course);
+                  // Reset the course object for the next course
+                  course = {};
+                  currentField = 'id'; // Reset the field tracker
+              } else {
+                  switch (currentField) {
+                      case 'id':
+                          course.id = line.trim();
+                          currentField = 'coursename';
+                          break;
+                      case 'coursename':
+                          course.coursename = line.trim();
+                          currentField = 'coursedesc';
+                          break;
+                      case 'coursedesc':
+                          course.coursedesc = line.trim();
+                          currentField = 'duration';
+                          break;
+                      case 'duration':
+                          course.duration = line.trim();
+                          currentField = 'level';
+                          break;
+                      case 'level':
+                          course.level = line.trim();
+                          currentField = 'credits';
+                          break;
+                      case 'credits':
+                          course.credits = line.trim();
+                          currentField = 'saqaid';
+                          break;
+                      case 'saqaid':
+                          course.saqaid = line.trim();
+                          break;
+                  }
+              }
+          });
+
+          // Debugging statement to see the courses array
+          console.log('Courses:', courses);
+
+          // Generate HTML content
+          const mainContainer = document.querySelector('.main');
+          mainContainer.innerHTML = courses.map(course => `
+              <a class="${course.id}" href="#">
+                  <div id="courses">
+                      <h1 id="coursename">${course.coursename}</h1>
+                      <div id="coursedisc">${course.coursedesc}</div>
+                  </div>
+                  <div class="ncifinfo">
+                      <div class="duration">
+                          <span class="material-symbols-outlined">calendar_clock</span>
+                          <p>Duration: ${course.duration}</p>
+                      </div>
+                      <div class="level">
+                          <span class="material-symbols-outlined">brightness_alert</span>
+                          <p>NQF: ${course.level}</p>
+                      </div>
+                      <div class="credits">
+                          <span class="material-symbols-outlined">article</span>
+                          <p>Credits: ${course.credits}</p>
+                      </div>
+                      <div class="saqaid">
+                          <span class="material-symbols-outlined">assured_workload</span>
+                          <p>SAQA ID: ${course.saqaid}</p>
+                      </div>
+                      <div class="location">
+                          <span class="material-symbols-outlined">map</span>
+                          <p>Location: ${course.location}</p>
+                      </div>
+                  </div>
+              </a>
+          `).join('');
+
+          // Add click event listeners to all <a> elements
+          const links = mainContainer.querySelectorAll('a');
+          links.forEach(link => {
+              link.addEventListener('click', (event) => {
+                  event.preventDefault();
+                  if (link.classList.contains('nif')) {
+                      document.querySelector('.offscreencourse').classList.toggle('active');
+                      document.querySelector('.mainoffscreen').classList.toggle('active');
+                  } else if (link.classList.contains('bcomp')) {
+                    document.querySelector('.offscreencourse').classList.toggle('active');
+                    document.querySelector('.mainoffscreen').classList.toggle('active');
+                  }else if (link.classList.contains('bit')) {
+                    document.querySelector('.offscreencourse').classList.toggle('active');
+                    document.querySelector('.mainoffscreen').classList.toggle('active');
+                  }else if (link.classList.contains('dit')) {
+                    document.querySelector('.offscreencourse').classList.toggle('active');
+                    document.querySelector('.mainoffscreen').classList.toggle('active');
+                  }else{
+                    alert("404")
+                  }
+              });
+          });
+      })
+      .catch(error => console.error('Error fetching the course data:', error));
+});
+document.querySelector(".test2").addEventListener("click",()=>{
+  document.querySelector('.offscreencourse').classList.toggle('active');
+  document.querySelector('.mainoffscreen').classList.toggle('active');  
+});
 /*Drop down for side panel */
 dropHeader.addEventListener("click", () => {
   dropDown.classList.toggle("active");
