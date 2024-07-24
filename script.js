@@ -405,3 +405,17 @@ const generateCalendar = (month, year) => {
     todayShowTime.textContent = formateTimer;
   }, 1000);
   //CALENDAR JAVASCRIPT
+
+  //HIDE PURUPLE BLOCK NAVBAR
+   window.addEventListener('scroll', hideDivOnScroll);
+         const hideDistance = 50;
+         function hideDivOnScroll() {
+             const myDiv = document.getElementById('off-screen-menu');
+             if (window.scrollY > hideDistance) {
+                 myDiv.classList.add('hidden');
+             } else {
+                 myDiv.classList.remove('hidden');
+             }
+         }
+         window.addEventListener('scroll', hideDivOnScroll);
+  //HIDE PURPLE BLOCK NAVBAR
