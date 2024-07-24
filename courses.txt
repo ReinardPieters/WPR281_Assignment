@@ -13,4 +13,20 @@ You will gain sound theoretical knowledge grounded in real-world applications. F
 level 8
 506
 62689
-Pretoria Campus and kempton;
+Pretoria and Kempton Campus;
+#
+Bachelor of Information Technology
+This IT degree focuses on information systems modules and will provide you with foundational knowledge in software engineering and business intelligence. You will cover an extensive range of topics, from mobile and wireless networks to artificial intelligence and intelligent systems.
+3 academic years
+level 7
+360
+94121
+Pretoria and Kempton Campus;
+#
+Diploma in Information Technology
+Our Diploma in Information Technology consists of a generic foundation phase and a specialisation phase. The foundation phase gives insight into the field of information technology, while the specialisation phase is career oriented.This academic programme will transform you into a well-rounded professional through a strong focus on knowledge, execution, and professional and practical skills. You will also have the incredible opportunity to complete 6 months of in-service training at an external company or in a simulated work environment.
+3 academic years
+level 6
+360
+120097
+Pretoria and Kempton Campus;
