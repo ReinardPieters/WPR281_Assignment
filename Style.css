@@ -1,3 +1,8 @@
+ body{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
  .containermain{
     display: grid;
     grid-template-rows: 80px min-content min-content 50px;
@@ -182,7 +187,13 @@
     text-align: center;
     margin-top: 20px;
    }
+   .coursemodules{
+    height: fit-content;
+    width: 70%;
+
+   }
    .off-screen-menu{
+    top: 12px;
     height: 100px;
     width: 50%;
     max-width: 200px;
@@ -489,6 +500,39 @@
   height: 40px;
   padding: 10px 0;
 }  
+.offscreencourse{
+  top: -100%;
+  margin-inline: auto;
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 2px 2px;
+  height: fit-content;
+  border-radius: 25px ;
+  background-color: #fff;
+  z-index: 1;
+}
+.offscreencourse.active{
+  top:10px;
+}
+.coursemodules, .info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+table, th, tr, td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 /*CALENDAR CSS*/
   .calendar {
    margin: 10px Auto  ;
@@ -856,16 +900,6 @@
   margin: 20px 10px;
 }
 
-table, th, td{
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th,td{
-  width: 300px;
-  height: 60px;
-  text-align: center;
-}
-
   @supports (-webkit-appearance: none) or (-moz-appearance: none) {
     .checkbox-wrapper-13 input[type=checkbox] {
       --active: #275EFE;
@@ -964,9 +998,4 @@ th,td{
     box-sizing: inherit;
   }
 
-  /*  HIDE PURPLE BLOCK NAVBAR */
-  .hidden {
-    opacity: 0;
-    pointer-events: none; /* Optional: Prevents interactions when hidden */
-}
-  /*  HIDE PURPLE BLOCK NAVBAR */
+

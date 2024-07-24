@@ -3,101 +3,6 @@ const offScreenMenu = document.getElementById("off-screen-menu");
 const dropHeader = document.getElementById("dropHeader");
 const dropDown = document.getElementById("dropDown");
 
-// Fetch data from courses.txt
-fetch('courses.txt').then(response => response.text()).then(data => {
-    // Split the data into course blocks
-    const blocks = data.trim().split(';');
-
-    // Initialize an array to store course objects
-    let courses = [];
-
-    // Process each block
-    blocks.forEach(block => {
-      const lines = block.trim().split('\n');
-      let coursesUnfil = '';
-      // Ensure that there are enough lines in the block
-      if (lines.length >= 7) {
-        // Create a course object
-        const course = {
-          coursesite:lines[0].trim(),
-          coursename: lines[1].trim(),
-          coursedesc: lines[2].trim(),
-          duration: lines[3].trim(),
-          level: lines[4].trim(),
-          credits: lines[5].trim(),
-          saqaid: lines[6].trim(),
-          location: lines[7].trim()
-        };
-        // Add the course object to the array
-        courses.push(course);
-      } else {
-        console.warn('Skipping incomplete course block:', block);
-      }
-    });
-
-    // Function to render courses based on a filter
-    const renderCourses = (filter = '') => {
-      // Initialize an empty string for the HTML
-     
-      let coursesHTML = ` 
-              <div class="maintop">
-                <button id="searchbutton">Search</button>
-                <input type="text" id="searchbox" placeholder="Search for a course :)">
-              </div>`;
-      courses.filter(courses => courses.coursename.toLowerCase().includes(filter.toLowerCase())).forEach(courses => {
-          // Generate HTML for the current course
-          const courseHTML = `
-            <a class="nationalcer" href="${courses.coursesite}">
-              <div id="courses">
-                <h1 id="coursename">${courses.coursename}</h1>
-                <div id="coursedisc">${courses.coursedesc}</div>
-              </div>
-              <div class="ncifinfo">
-                <div class="duration">
-                  <span class="material-symbols-outlined">calendar_clock</span>
-                  <p>Duration: ${courses.duration}</p>
-                </div>
-                <div class="level">
-                  <span class="material-symbols-outlined">brightness_alert</span>
-                  <p>NQF: ${courses.level}</p>
-                </div>
-                <div class="credits">
-                  <span class="material-symbols-outlined">article</span>
-                  <p>Credits: ${courses.credits}</p>
-                </div>
-                <div class="saqaid">
-                  <span class="material-symbols-outlined">assured_workload</span>
-                  <p>SAQA ID: ${courses.saqaid}</p>
-                </div>
-                <div class="location">
-                  <span class="material-symbols-outlined">map</span>
-                  <p>Location: ${courses.location}</p>
-                </div>
-              </div>
-            </a>
-          `;
-
-          // Append the generated HTML to the coursesHTML string
-          coursesHTML += courseHTML;
-        });
-
-      // Insert generated HTML into the container
-      const mainCourse = document.querySelector('.main');
-      mainCourse.innerHTML = coursesHTML;
-    };
-
-    // Render all courses initially
-    
-    renderCourses();
-    const searchButton = document.querySelector('#searchbutton');
-    searchButton.addEventListener('click', () => {
-     let filter = document.querySelector('#searchbox').value.trim();
-     renderCourses(filter)
-    });
-  })
-  .catch(error => console.error('Error fetching data:', error));
-
-
 hamMenu.addEventListener("click", () =>{
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
@@ -109,9 +14,6 @@ dropHeader.addEventListener("click", () => {
   dropDown.classList.toggle("active");
   document.querySelector(".sidePanel").classList.toggle("active")
 });
-
-
-
 
 //CALENDAR JAVASCRIPT
 const isLeapYear = (year) => {
@@ -405,6 +307,7 @@ const generateCalendar = (month, year) => {
     todayShowTime.textContent = formateTimer;
   }, 1000);
   //CALENDAR JAVASCRIPT
+
 
   //HIDE PURUPLE BLOCK NAVBAR
    window.addEventListener('scroll', hideDivOnScroll);
