@@ -80,6 +80,7 @@ hamMenu.addEventListener("click", () =>{
 /*Drop down for side panel */
 dropHeader.addEventListener("click", () => {
   dropDown.classList.toggle("active");
+  document.querySelector(".sidePanel").classList.toggle("active")
 });
 
 
