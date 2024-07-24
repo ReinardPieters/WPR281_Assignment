@@ -965,8 +965,8 @@ th,td{
   }
 
   /*  HIDE PURPLE BLOCK NAVBAR */
-  .hidden {
+  .hiddenPurple {
     opacity: 0;
-    pointer-events: none; /* Optional: Prevents interactions when hidden */
+    pointer-events: none; 
 }
   /*  HIDE PURPLE BLOCK NAVBAR */
