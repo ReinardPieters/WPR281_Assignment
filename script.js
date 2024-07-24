@@ -45,44 +45,6 @@ fetch('courses.txt').then(response => response.text()).then(data => {
                 <button id="searchbutton">Search</button>
                 <input type="text" id="searchbox" placeholder="Search for a course :)">
               </div>`;
-      let coursesUnfilter = coursesHTML
-      // Filter and process each course
-      courses.filter(courses => courses.coursename.toLowerCase().includes(filter.toLowerCase())).forEach(courses => {
-        // Generate HTML for the current course
-        const courseUnfilter = `
-          <a class="nationalcer" href="${courses.coursesite}">
-            <div id="courses">
-              <h1 id="coursename">${courses.coursename}</h1>
-              <div id="coursedisc">${courses.coursedesc}</div>
-            </div>
-            <div class="ncifinfo">
-              <div class="duration">
-                <span class="material-symbols-outlined">calendar_clock</span>
-                <p>Duration: ${courses.duration}</p>
-              </div>
-              <div class="level">
-                <span class="material-symbols-outlined">brightness_alert</span>
-                <p>NQF: ${courses.level}</p>
-              </div>
-              <div class="credits">
-                <span class="material-symbols-outlined">article</span>
-                <p>Credits: ${courses.credits}</p>
-              </div>
-              <div class="saqaid">
-                <span class="material-symbols-outlined">assured_workload</span>
-                <p>SAQA ID: ${courses.saqaid}</p>
-              </div>
-              <div class="location">
-                <span class="material-symbols-outlined">map</span>
-                <p>Location: ${courses.location}</p>
-              </div>
-            </div>
-          </a>
-        `;
-
-        // Append the generated HTML to the coursesHTML string
-        coursesUnfilter += courseUnfilter;
-      });
       courses.filter(courses => courses.coursename.toLowerCase().includes(filter.toLowerCase())).forEach(courses => {
           // Generate HTML for the current course
           const courseHTML = `
