@@ -477,6 +477,14 @@
    display: flex;
    align-items: center;
  }
+
+ #pre-year{
+  height: fit-content;
+ }
+
+ #next-year{
+  height: fit-content;
+ }
  
  .year-change {
    height: 30px;
