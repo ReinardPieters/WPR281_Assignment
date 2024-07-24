@@ -1,11 +1,17 @@
 const hamMenu = document.getElementById("ham-menu");
 const offScreenMenu = document.getElementById("off-screen-menu");
-
+const dropHeader = document.getElementById("dropHeader");
+const dropDown = document.getElementById("dropDown");
 
 hamMenu.addEventListener("click", () =>{
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
     return;
+});
+
+/*Drop down for side panel */
+dropHeader.addEventListener("click", () => {
+  dropDown.classList.toggle("active");
 });
 
 
