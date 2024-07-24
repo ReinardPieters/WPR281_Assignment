@@ -49,6 +49,38 @@
     font-size: 12px;
     height: fit-content;
    }
+
+   .sidePanel{
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-radius: 10px;
+  }
+  .sidePanel-Header{
+    width: fit-content;
+    text-wrap: nowrap;
+    padding: 10px;
+    
+  }
+  /*Side Panel For smaller resolution*/
+    .sidePanel-Text{
+      display:none;
+      position: relative;
+      background-color: #f1f1f1;
+      scale: 0.7;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .sidePanel-Header:hover{
+      cursor: pointer;
+    }
+
+    #dropDown.active{
+      display: block;
+    }
    }
    *{
     font-size: 16px;
@@ -646,6 +678,43 @@
  
  .date-formate.showtime {
    animation: showtime 1s forwards;
+ }
+
+ /* Side Panel Area*/
+.sidePanel{
+  grid-area: left-side;
+  /*background-color: rgba(0, 0, 255, 0.415);*/
+  height: fit-content;
+  border-radius: 10px;
+ }
+
+ .sidePanel-Text{
+  margin: auto;
+  text-align: left;
+  text-transform: uppercase;
+  /*background-color: rgba(255, 0, 0, 0.4);*/
+  width: 80%;
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+.sidePanel-Button{
+  display: flex;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  height: fit-content + 5px;
+  width: fit-content;
+}
+.sidePanel-Button:hover{
+  background-color: rgba(98, 0, 195, 0.4);
+  
+}
+
+.sidePanel-Header{
+  /*background-color: rgba(0, 255, 255, 0.4);*/
+  margin: 5%;
+  font-weight: 300;
+  text-transform: uppercase;
  }
  
  @keyframes to-top {
