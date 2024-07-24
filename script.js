@@ -8,6 +8,35 @@ hamMenu.addEventListener("click", () =>{
     offScreenMenu.classList.toggle('active');
     return;
 });
+/*<a class="nationalcer" href="${course.coursesite}">
+          <div id="courses">
+            <h1 id="coursename">${course.coursename}</h1>
+            <div id="coursedisc">${course.coursedesc}</div>
+          </div>
+          <div class="ncifinfo">
+            <div class="duration">
+              <span class="material-symbols-outlined">calendar_clock</span>
+              <p>Duration: ${course.duration}</p>
+            </div>
+            <div class="level">
+              <span class="material-symbols-outlined">brightness_alert</span>
+              <p>NQF: ${course.level}</p>
+            </div>
+            <div class="credits">
+              <span class="material-symbols-outlined">article</span>
+              <p>Credits: ${course.credits}</p>
+            </div>
+            <div class="saqaid">
+              <span class="material-symbols-outlined">assured_workload</span>
+              <p>SAQA ID: ${course.saqaid}</p>
+            </div>
+            <div class="location">
+              <span class="material-symbols-outlined">map</span>
+              <p>Location: ${course.location}</p>
+            </div>
+          </div>
+        </a>
+      `*\
 
 /*Drop down for side panel */
 dropHeader.addEventListener("click", () => {
