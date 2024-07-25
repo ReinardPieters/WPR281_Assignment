@@ -503,14 +503,43 @@
   height: 40px;
   padding: 10px 0;
 }  
+.test2{
+  background-color: #512da8;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  left: 1vh;
+}
+.head h1{
+text-align: center;
+width: 100%;
+}
+.head{
+  grid-area: heading;
+  height: 40px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: right;
+  border-bottom: 1px solid black;
+}
+.body{
+  grid-area: disc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
 .offscreencourse{
   top: -200%;
   margin-inline: auto;
-  display: flex;
   position: fixed;
-  justify-content: space-around;
-  flex-direction: row;
-  align-items: center;
+  grid-template-areas:
+  "heading"
+  "disc";
+  grid-template-rows: fit-content fit-content;
   width: 70%;
   height: 90vh;
   padding: 20px;
