@@ -63,7 +63,22 @@
     grid-area: img;
 }
 
-.navButtons{
-    height: 45%;
-    width: 50%;
+.navButtons, #applyBackbtn{
+    height: 45px;
+    width: 100px;
+    border-radius: 7px;
+    background-color: #512da8;
+    color: white;
+    border-color: rgb(218, 218, 218);
+    border-style: none;
+}
+
+#applyImage{
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+.navButtons:hover, #applyBackbtn :hover{
+    background-color: rgb(153, 255, 0);
+    color: black;
 }
