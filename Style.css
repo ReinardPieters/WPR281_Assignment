@@ -1052,3 +1052,76 @@ table, th, tr, td{
     pointer-events: none; 
 }
   /*  HIDE PURPLE BLOCK NAVBAR */
+
+  /*===========================================
+  The css for the application form */
+  /* *{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+   } */
+.applyh1{ /*Title of the page*/
+  text-align: center;
+  font-size: 40px;
+}
+
+.applyMainsection{ /* name of the main div storing all the other divs witht the input boxes and so on*/
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.applyLabel{ /*All the labels*/
+  font-weight: 500;
+  
+}
+
+.applyBody{ /*The body of the application page*/
+  background-color: #edf4ff;
+}
+
+.applyInput, .applySelect { /*The Input boxes and the select (drop down menu)*/
+  margin-top: 10px;
+  background-color: rgb(247, 250, 255);
+  border-radius: 7px;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 8px;
+}
+
+.applyInfoHeading{ /*The headings of the different information headings (e.g. Student Details, Contact Details, Additional Details)*/
+  color: #b9bcc0;
+  font-size: larger;
+}
+
+.applyMainsection{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content;
+  grid-template-areas: 
+  "StdDts Adds img"
+  "CntDts Adds img";
+}
+
+#StudentDetails{
+  grid-area: StdDts;
+}
+
+#ContactDetails{
+  grid-area: CntDts;
+}
+
+#AdditionalDetails{
+  grid-area: Adds;
+}
+
+#imageboi{
+  grid-area: img;
+}
+
+.navButtons{
+  height: 45%;
+  width: 50%;
+}
+  /*==========================================*/

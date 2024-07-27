@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Page</title>
+    <link rel="stylesheet" href="apply.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="applyBody">
+    <h1 class="applyh1">Application form</h1>
+
+
+    <div>
+        <form class="applyMainsection"> 
+            <div id="StudentDetails" class="container">
+                <p class="applyInfoHeading">Student Details</p>
+                <div>
+                    <label class="applyLabel" for="fName">Name</label>
+                    <br>
+                    <input class="applyInput" type="text" id="fName" name="fName" placeholder="John" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label class="applyLabel" for="sName">Surname</label>
+                    <br>
+                    <input class="applyInput" type="text" id="sName" name="sName" placeholder="Doe" required>
+                </div>
+            </div>
+            <br>
+
+            <div id="ContactDetails" class="container"> 
+                <p class="applyInfoHeading">Contact Details</p>
+                <div>
+                    <label class="applyLabel" for="emal">Email</label>
+                    <br>
+                    <input class="applyInput" type="email" id="email" name="email" placeholder="johndoe21@gmail.com" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label class="applyLabel" for="PhoneNo">Phone Number</label>
+                    <br>
+                    <input class="applyInput" type="tel" id="PhoneNO" name="PhoneNO" placeholder="0722443567" required>
+                </div>
+            </div>
+
+            <br>
+
+            <div id="AdditionalDetails" class="container">
+                <p class="applyInfoHeading">Additional Details</p>
+                <div>
+                    <label class="applyLabel" for="Bdate">Birth Date</label>
+                    <br>
+                    <input class="applyInput" type="date" id="Bdate" name="Bdate" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label class="applyLabel" for="Course">Choose a Course</label>
+                    <br>
+                    <select class="applySelect" name="Course" id="Course" required>
+                        <option value="BCom">Bachelor of Computing</option>
+                        <option value="BIT">Bachelor of Information Technology</option>
+                        <option value="DIT">Diploma of Information Technology</option>
+                        <option value="NCIT">National Certificate: Information  Technology</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="imageboi" class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptates. Reprehenderit sit aspernatur, dicta at, veniam corporis, possimus in eos dolor exercitationem consectetur libero ipsa similique neque. Dolore, nostrum id!
+            </div>
+
+            <button class="navButtons">back</button>
+            <input type="submit" class="navButtons">
+
+        </form>
+    </div>  
+
+</body>
+</html>
