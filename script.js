@@ -114,8 +114,8 @@ document.addEventListener('DOMContentLoaded', () => {
               link.addEventListener('click', (event) => {
                   event.preventDefault();
                   if (link.classList.contains('nif')) {
-                      document.querySelector('.offscreencourse').classList.toggle('active');
-                      document.querySelector('.mainoffscreen').classList.toggle('active');
+                    document.querySelector('.offscreencourse').classList.toggle('active');
+                    document.querySelector('.mainoffscreen').classList.toggle('active');
                   } else if (link.classList.contains('bcomp')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                   }else{
-                    alert("404")
+                    alert("404: file not found")
                   }
               });
           });
