@@ -22,7 +22,7 @@
  @media (max-width: 1250px){
    .containermain {
    grid-template-rows: min-content 100px min-content
-   580px 50px 50px;
+   min-content 50px 50px;
    grid-template-columns: 1fr;
    grid-template-areas:
    "header"
@@ -1053,75 +1053,109 @@ table, th, tr, td{
 }
   /*  HIDE PURPLE BLOCK NAVBAR */
 
-  /*===========================================
+
+/*EVENTS CSS*/
+.Announcements{
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  align-items: center;
+  text-align: center;
+  width: 28vw;
+  height: 50vh;
+  margin-top: 80vh;
+  display: grid;
+  grid-template-columns: 28vw;
+  grid-template-rows:  repeat(4, 12vh);
+  border: white solid 3px;
+  grid-area: right-side;
+  
+}
+
+.DateBlock{
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  height: 10vh;
+  width: 5w;
+  align-items: center;
+  text-align: left;
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+
+
+}
+/*EVENTS CSS*/
+/*===========================================
   The css for the application form */
   /* *{
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
    } */
-.applyh1{ /*Title of the page*/
-  text-align: center;
-  font-size: 40px;
-}
-
-.applyMainsection{ /* name of the main div storing all the other divs witht the input boxes and so on*/
-  padding: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: white;
-  border-radius: 25px;
-}
-
-.applyLabel{ /*All the labels*/
-  font-weight: 500;
+   .applyh1{ /*Title of the page*/
+    text-align: center;
+    font-size: 40px;
+  }
   
-}
-
-.applyBody{ /*The body of the application page*/
-  background-color: #edf4ff;
-}
-
-.applyInput, .applySelect { /*The Input boxes and the select (drop down menu)*/
-  margin-top: 10px;
-  background-color: rgb(247, 250, 255);
-  border-radius: 7px;
-  border: 1px solid rgb(211, 211, 211);
-  padding: 8px;
-}
-
-.applyInfoHeading{ /*The headings of the different information headings (e.g. Student Details, Contact Details, Additional Details)*/
-  color: #b9bcc0;
-  font-size: larger;
-}
-
-.applyMainsection{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: min-content min-content;
-  grid-template-areas: 
-  "StdDts Adds img"
-  "CntDts Adds img";
-}
-
-#StudentDetails{
-  grid-area: StdDts;
-}
-
-#ContactDetails{
-  grid-area: CntDts;
-}
-
-#AdditionalDetails{
-  grid-area: Adds;
-}
-
-#imageboi{
-  grid-area: img;
-}
-
-.navButtons{
-  height: 45%;
-  width: 50%;
-}
-  /*==========================================*/
+  .applyMainsection{ /* name of the main div storing all the other divs witht the input boxes and so on*/
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    border-radius: 25px;
+  }
+  
+  .applyLabel{ /*All the labels*/
+    font-weight: 500;
+    
+  }
+  
+  .applyBody{ /*The body of the application page*/
+    background-color: #edf4ff;
+  }
+  
+  .applyInput, .applySelect { /*The Input boxes and the select (drop down menu)*/
+    margin-top: 10px;
+    background-color: rgb(247, 250, 255);
+    border-radius: 7px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 8px;
+  }
+  
+  .applyInfoHeading{ /*The headings of the different information headings (e.g. Student Details, Contact Details, Additional Details)*/
+    color: #b9bcc0;
+    font-size: larger;
+  }
+  
+  .applyMainsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas: 
+    "StdDts Adds img"
+    "CntDts Adds img";
+  }
+  
+  #StudentDetails{
+    grid-area: StdDts;
+  }
+  
+  #ContactDetails{
+    grid-area: CntDts;
+  }
+  
+  #AdditionalDetails{
+    grid-area: Adds;
+  }
+  
+  #imageboi{
+    grid-area: img;
+  }
+  
+  .navButtons{
+    height: 45%;
+    width: 50%;
+  }
+    /*==========================================*/

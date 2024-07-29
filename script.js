@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div>
               </a>
           `).join('');
+          const coursedetails = document.querySelector(".offscreencourse")
 
           // Add click event listeners to all <a> elements
           const links = mainContainer.querySelectorAll('a');
@@ -114,11 +115,88 @@ document.addEventListener('DOMContentLoaded', () => {
               link.addEventListener('click', (event) => {
                   event.preventDefault();
                   if (link.classList.contains('nif')) {
-                      document.querySelector('.offscreencourse').classList.toggle('active');
-                      document.querySelector('.mainoffscreen').classList.toggle('active');
+                    document.querySelector('.offscreencourse').classList.toggle('active');
+                    document.querySelector('.mainoffscreen').classList.toggle('active');
+                    coursedetails.innerHTML = `
+                        <div class="head">
+                          <h1>couese name</h1>
+                          <button class="test2">Go back to main</button>
+                        </div>
+                        <div class="body">
+                          <div class="info">
+                            <h1>Heading here</h1>
+                            <p>Discription here</p>
+                           </div>
+                          <div class="coursemodules">
+                          <h1>tables</h1>
+                          <table>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Code</th>
+                            <th>NQF</th>
+                            <th>Credits</th>
+                            <th>Prerequisites</th>
+                            <th>Completion</th>
+                          </tr>
+                          <tr>
+                            <td>Marhematics 151</td>
+                            <td>MAT151</td>
+                            <td>5</td>
+                            <td>12</td>
+                            <td>None</td>
+                            <td>
+                            <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                            </div>
+                          </td>
+                          </tr>
+                          </table>
+                          </div>
+                        </div>
+                        `;
                   } else if (link.classList.contains('bcomp')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
+                    coursedetails.innerHTML = `
+                    <div class="head">
+                      <h1>couese name</h1>
+                      <button class="test2">Go back to main</button>
+                    </div>
+                    <div class="body">
+                      <div class="info">
+                        <h1>Heading here</h1>
+                        <p>Discription here</p>
+                       </div>
+                      <div class="coursemodules">
+                      <h1>tables</h1>
+                      <table>
+                      <tr>
+                        <th>Subject</th>
+                        <th>Code</th>
+                        <th>NQF</th>
+                        <th>Credits</th>
+                        <th>Prerequisites</th>
+                        <th>Completion</th>
+                      </tr>
+                      <tr>
+                        <td>Marhematics 151</td>
+                        <td>MAT151</td>
+                        <td>5</td>
+                        <td>12</td>
+                        <td>None</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      </tr>
+                      </table>
+                      </div>
+                    </div>
+                    `;
+                    
                   }else if (link.classList.contains('bit')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
@@ -126,17 +204,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                   }else{
-                    alert("404")
+                    alert("404: file not found")
                   }
+                  document.querySelector(".test2").addEventListener("click",()=>{
+                    document.querySelector('.offscreencourse').classList.toggle('active');
+                    document.querySelector('.mainoffscreen').classList.toggle('active');  
+                  });
               });
           });
       })
       .catch(error => console.error('Error fetching the course data:', error));
 });
-document.querySelector(".test2").addEventListener("click",()=>{
-  document.querySelector('.offscreencourse').classList.toggle('active');
-  document.querySelector('.mainoffscreen').classList.toggle('active');  
-});
+
 /*Drop down for side panel */
 dropHeader.addEventListener("click", () => {
   dropDown.classList.toggle("active");
@@ -450,3 +529,245 @@ const generateCalendar = (month, year) => {
          }
          window.addEventListener('scroll', hideDivOnScroll);
   //HIDE PURPLE BLOCK NAVBAR
+
+  //EVENTS JS
+
+document.addEventListener("DOMContentLoaded", function(){
+  
+  // Array of preset dates and assigned meaning 
+  const presetDatesMeaning = [
+    //Jan
+    {Date: "2024-01-09",
+    Meaning: "Re-Examinations"},
+    {Date: "2024-01-10",
+    Meaning: "Re-Examinations"},
+    {Date: "2024-01-11",
+    Meaning: "Re-Examinations"},  
+    {Date: "2024-01-12",
+    Meaning: "Re-Examinations"},
+    {Date:  "2024-01-13",
+    Meaning: "Re-Examinations"},
+    {Date:   "2024-01-14",
+    Meaning: "Re-Examinations"},
+    {Date: "2024-01-15",
+    Meaning: "Re-Examinations"},
+    {Date: "2024-01-16",
+    Meaning: "Re-Examinations"},
+    {Date: "2024-01-17",
+    Meaning: "Re-Examinations"},
+    {Date: "2024-01-18",
+    Meaning: "Re-Examinations"},
+    {Date: "2024-01-19",
+    Meaning: "Re-Examinations"},                      
+    //Jan
+    
+    //February
+    {Date: "2024-02-05",
+    Meaning: "Classes start for 1st Year Students"},
+    {Date: "2024-02-12",
+    Meaning: "Classes start for 2nd and 3rd Year Students"},
+    {Date: "2024-02-15",
+    Meaning: "Academic Opening Pretoria"},
+    //February
+    
+    //March
+    {Date: "2024-03-18",
+    Meaning: "Exam Schedule Released"},
+    {Date: "2024-03-21",
+    Meaning: "Human Rights Day"},
+    {Date: "2024-03-22",
+    Meaning: "Campus Closed"},  
+    {Date: "2024-03-29",
+    Meaning: "Good Friday"},
+    //March
+    
+    //April
+    {Date: "2024-04-01",
+    Meaning: "Family Day"},
+    {Date: "2024-04-02",
+    Meaning: "Last Day to Apply for Sick Test"},
+    {Date: "2024-04-05",
+    Meaning: "Sick Test"},  
+    {Date: "2024-04-08",
+    Meaning: "Sick Test Results Released & Study Leave"},
+    {Date:  "2024-04-09",
+    Meaning: "Study Leave"},
+    {Date:   "2024-04-10",
+    Meaning: "Study Leave"},
+    {Date: "2024-04-11",
+    Meaning: "Study Leave"},
+    {Date: "2024-04-12",
+    Meaning: "Study Leave"},
+    {Date: "2024-04-15",
+    Meaning: "Examinations"},
+    {Date: "2024-04-16",
+    Meaning: "Examinations"},
+    {Date: "2024-04-17",
+    Meaning: "Examinations"},    
+    {Date: "2024-04-18",
+    Meaning: "Examinations"},    
+    {Date: "2024-04-19",
+    Meaning: "Examinations"},    
+    {Date: "2024-04-27",
+    Meaning: "Freedom Day"},    
+    //April
+    
+    //May
+    {Date:   "2024-05-01",
+    Meaning: "Worker's day"},
+    {Date: "2024-05-03",
+    Meaning: "Exam Results Released"},
+    {Date: "2024-05-10",
+    Meaning: "Graduation"},
+    {Date: "2024-05-17",
+    Meaning: "Career Day & Last Day to Apply for Exam Review"},
+    {Date: "2024-05-21",
+    Meaning: "Exam Review Schedule Released"},
+    {Date: "2024-05-24",
+    Meaning: "Exam Review"},    
+    {Date: "2024-05-27",
+    Meaning: "Examination Schedule Released"},       
+    {Date: "2024-05-31",
+    Meaning: "Exam Review"},   
+    //May
+    
+    //June
+    {Date: "2024-06-10", 
+    Meaning: "Last Day to Apply for Sick Test" },
+    {Date: "2024-06-14", 
+    Meaning: "Sick Tests" },
+    {Date: "2024-06-16", 
+    Meaning: "National Youth Day" },
+    {Date: "2024-06-17", 
+    Meaning: "Campus is closed" },
+    {Date: "2024-06-18",
+    Meaning: "Sick Test Results Released & Study Leave" },
+    {Date: "2024-06-19", 
+    Meaning: "Study Leave" },
+    {Date: "2024-06-20", 
+    Meaning: "Study Leave" },
+    {Date: "2024-06-21", 
+    Meaning: "Study Leave" },
+    {Date: "2024-06-24", 
+    Meaning: "Examinations" },
+    {Date: "2024-06-25", 
+    Meaning: "Examinations" },
+    {Date: "2024-06-26", 
+    Meaning: "Examinations" },
+    {Date: "2024-06-27", 
+    Meaning: "Examinations" },
+    {Date: "2024-06-28", 
+    Meaning: "Examinations" },
+    //June
+    
+    //July
+    {Date: "2024-07-19",
+    Meaning: "Exam Results Released"},  
+    //July
+    
+    //August
+    {Date: "2024-08-02", 
+    Meaning: "Career Day & Last Day to Apply for Exam Review" },
+    {Date: "2024-08-06", 
+    Meaning: "Exam Review Schedule Released" },
+    {Date: "2024-08-09", 
+    Meaning: "National Women's Day" },
+    {Date: "2024-08-12", 
+    Meaning: "Exam Schedule Released" },
+    {Date: "2024-08-16", 
+    Meaning: "Exam Review" },
+    {Date: "2024-08-23", 
+    Meaning: "Exam Review" },
+    {Date: "2024-08-26", 
+    Meaning: "Last Day to Apply for Sick Test" },
+    {Date: "2024-08-30", 
+    Meaning: "Sick Tests" },
+    //August
+    
+    //September
+    {Date: "2024-09-02", 
+    Meaning: "Sick Test Results Released & Study Leave" },
+    {Date: "2024-09-03", 
+    Meaning: "Last Day to Apply for Special Permission & Study Leave" },
+    {Date: "2024-09-04", 
+    Meaning: "Study Leave" },
+    {Date: "2024-09-05", 
+    Meaning: "Study Leave" },
+    {Date: "2024-09-06", 
+    Meaning: "Study Leave" },
+    {Date: "2024-09-09", 
+    Meaning: "Examinations" },
+    {Date: "2024-09-10", 
+    Meaning: "Examinations" },
+    {Date: "2024-09-11", 
+    Meaning: "Examinations" },
+    {Date: "2024-09-12", 
+    Meaning: "Examinations" },
+    {Date: "2024-09-13", 
+    Meaning: "Examinations" },
+    //September
+    
+    //October
+    {Date: "2024-10-04", 
+    Meaning: "Exam Results Released" },
+    {Date: "2024-10-18", 
+    Meaning: "Career Day & Last Day to Apply for Exam Review" },
+    {Date: "2024-10-22", 
+    Meaning: "Exam Review Schedule Released" },
+    {Date: "2024-10-25", 
+    Meaning: "Exam Review" },
+    {Date: "2024-10-28", 
+    Meaning: "Exam Schedule Released" },
+    {Date: "2024-10-31", 
+    Meaning: "Last Day to Apply for a Bursary" },
+    //October
+    
+    //November
+    {Date: "2024-11-01", 
+    Meaning: "Exam Review" },
+    {Date: "2024-11-11", 
+    Meaning: "Last Day to Apply for Sick Test" },
+    {Date: "2024-11-15", 
+    Meaning: "Sick Test" },
+    {Date: "2024-11-18", 
+    Meaning: "Sick Test Results Released & Study Leave" },
+    {Date: "2024-11-19", 
+    Meaning: "Last Day to Apply for Special Permission & Study Leave" },
+    {Date: "2024-11-20", 
+    Meaning: "Study Leave" },
+    {Date: "2024-11-21", 
+    Meaning: "Study Leave" },
+    {Date: "2024-11-25", 
+    Meaning: "Examinations" },
+    {Date: "2024-11-26", 
+    Meaning: "Examinations" },
+    {Date: "2024-11-27", 
+    Meaning: "Examinations" },
+    {Date: "2024-11-28", 
+    Meaning: "Examinations" },
+    {Date: "2024-11-29", 
+    Meaning: "Examinations" },
+    //November
+    
+    //December
+    {Date: "2024-12-12",
+    Meaning: "Exam Results Released"},  
+    {Date: "2024-12-25",
+    Meaning: "Christmas Day"}
+    //December
+  ];
+
+// Parse the dates and sort them
+const currentDate = new Date();
+const futureDates = presetDatesMeaning
+  .map(event => ({ ...event, Date: new Date(event.Date) }))
+  .filter(event => event.Date >= currentDate)
+  .sort((a, b) => a.Date - b.Date)
+  .slice(0, 3);
+
+// Display the nearest future dates
+document.getElementById('date1').textContent = `${futureDates[0].Date.getDate()} ${futureDates[0].Meaning}`;
+document.getElementById('date2').textContent = `${futureDates[1].Date.getDate()} ${futureDates[1].Meaning}`;
+document.getElementById('date3').textContent = `${futureDates[2].Date.getDate()} ${futureDates[2].Meaning}`;
+});
+//EVENTS JS
