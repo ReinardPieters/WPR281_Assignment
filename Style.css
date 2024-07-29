@@ -12,7 +12,7 @@
     height: 100vh;
     grid-template-areas:
     "header header header"
-    "left-side main right-side"
+    "left-side main rightx-side"
     "left-side main right-side"
     "left-side low-content right-side"
     "footer footer footer";
@@ -171,6 +171,7 @@
     border-radius: 10px;
     height: auto;
     margin: 5px;
+    transition: ease-in 0.2s;
    }
    .nif.active,.bcomp.active,.dit.active,.bit.active{
       display: none;
@@ -178,7 +179,8 @@
    }
    .nif:hover,.bcomp:hover,.dit:hover,.bit:hover{
     cursor: pointer;
-    border:5px solid #512da8
+    border:5px solid #512da8;
+    width: 98%;
    }
    #courses *{
     margin: 15px 0;
@@ -597,7 +599,7 @@ table, th, tr, td{
 /*CALENDAR CSS*/
   .calendar {
    margin: 10px Auto  ;
-   grid-area: right-side;
+   grid-area: rightx-side;
    height: 35rem;
    width: max-content;
    background-color: white;
