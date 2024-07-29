@@ -1052,3 +1052,38 @@ table, th, tr, td{
     pointer-events: none; 
 }
   /*  HIDE PURPLE BLOCK NAVBAR */
+
+
+/*EVENTS CSS*/
+.Announcements{
+  margin: 0;
+  padding: 0;
+  background-color: red;
+  align-items: center;
+  text-align: center;
+  width: 28vw;
+  height: 50vh;
+  margin-top: 80vh;
+  display: grid;
+  grid-template-columns: 28vw;
+  grid-template-rows:  repeat(4, 12vh);
+  border: white solid 3px;
+  grid-area: right-side;
+  
+}
+
+.DateBlock{
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+  height: 10vh;
+  width: 5w;
+  align-items: center;
+  text-align: left;
+  font-size: 15px;
+  justify-content: center;
+  display: flex;
+
+
+}
+/*EVENTS CSS*/
