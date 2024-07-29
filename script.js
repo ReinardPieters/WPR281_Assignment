@@ -821,17 +821,22 @@ const futureDates = presetDatesMeaning
   .sort((a, b) => a.Date - b.Date)
   .slice(0, 3);
 
+// Function to get month name from month number
+function getMonthName(monthNumber) {
+  const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  return monthNames[monthNumber];
+}
 
-//Date1
-document.getElementById('date1day').textContent = `${futureDates[0].Date.getDate()}/${futureDates[0].Date.getMonth() + 1}`;
+// Date1
+document.getElementById('date1day').textContent = `${futureDates[0].Date.getDate()}/${getMonthName(futureDates[0].Date.getMonth())}`;
 document.getElementById('date1meaning').textContent = `${futureDates[0].Meaning}`;
 
-//Date2
-document.getElementById('date2day').textContent = `${futureDates[1].Date.getDate()}/${futureDates[1].Date.getMonth() + 1}`;
+// Date2
+document.getElementById('date2day').textContent = `${futureDates[1].Date.getDate()}/${getMonthName(futureDates[1].Date.getMonth())}`;
 document.getElementById('date2meaning').textContent = `${futureDates[1].Meaning}`;
 
-//Date3
-document.getElementById('date3day').textContent = `${futureDates[2].Date.getDate()}/${futureDates[2].Date.getMonth() + 1}`;
+// Date3
+document.getElementById('date3day').textContent = `${futureDates[2].Date.getDate()}/${getMonthName(futureDates[2].Date.getMonth())}`;
 document.getElementById('date3meaning').textContent = `${futureDates[2].Meaning}`;
 
 
