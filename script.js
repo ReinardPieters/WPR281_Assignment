@@ -828,15 +828,15 @@ function getMonthName(monthNumber) {
 }
 
 // Date1
-document.getElementById('date1day').textContent = `${futureDates[0].Date.getDate()}/${getMonthName(futureDates[0].Date.getMonth())}`;
+document.getElementById('date1day').textContent = `${futureDates[0].Date.getDate()} ${getMonthName(futureDates[0].Date.getMonth())}`;
 document.getElementById('date1meaning').textContent = `${futureDates[0].Meaning}`;
 
 // Date2
-document.getElementById('date2day').textContent = `${futureDates[1].Date.getDate()}/${getMonthName(futureDates[1].Date.getMonth())}`;
+document.getElementById('date2day').textContent = `${futureDates[1].Date.getDate()} ${getMonthName(futureDates[1].Date.getMonth())}`;
 document.getElementById('date2meaning').textContent = `${futureDates[1].Meaning}`;
 
 // Date3
-document.getElementById('date3day').textContent = `${futureDates[2].Date.getDate()}/${getMonthName(futureDates[2].Date.getMonth())}`;
+document.getElementById('date3day').textContent = `${futureDates[2].Date.getDate()} ${getMonthName(futureDates[2].Date.getMonth())}`;
 document.getElementById('date3meaning').textContent = `${futureDates[2].Meaning}`;
 
 
