@@ -22,7 +22,7 @@
  @media (max-width: 1250px){
    .containermain {
    grid-template-rows: min-content 100px min-content
-   580px 50px 50px;
+   min-content 50px 50px;
    grid-template-columns: 1fr;
    grid-template-areas:
    "header"
