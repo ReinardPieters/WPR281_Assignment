@@ -119,16 +119,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
                         <div class="head">
-                          <h1>couese name</h1>
+                          <h1>National Certificate: Information Technology</h1>
                           <button class="test2">Go back to main</button>
                         </div>
                         <div class="body">
                           <div class="info">
-                            <h1>Heading here</h1>
-                            <p>Discription here</p>
+                            <p>Our certificate programmes offer an affordable option to quickly launch your IT career. They also serve as a stepping stone into one of our other programmes if you did not meet the necessary entry requirements.</p>
+                            <p>Accredited by MICT SETA and aligned on the NQF with the South African Qualifications Authority, these certificates are created in line with our mission to promote gainful employment by training young people to understand, use and apply IT in effective, efficient, and ethical ways.</p>
+                            <h1>Overview</h1>
+                            <p>On completion of this qualification, you will possess a specialised set of skills that will allow you to work in areas of systems development with confidence. You will gain a solid grasp of computer industry concepts and learn to expertly design, develop, test, and document software solutions needed in today’s business environment. You will also gain the necessary undergraduate foundation to further your studies in the IT field, should you wish.</p>
+                            <h1>FURTHER STUDY OPPORTUNITIES</h1>
+                            <p>Successful completion of this programme yields the exit level outcomes described below. Upon completion of the Higher Certificate: Information Technology (NQF level 5) in Systems Development, the student can apply for Recognition of Prior Learning from Belgium Campus iTversity in order to continue his/her studies at Belgium Campus in one of the other programmes offered by the institution. Diploma in Information Technology and Higher Certificate: IT (Database Development)</p>
                            </div>
                           <div class="coursemodules">
-                          <h1>tables</h1>
+                          <h1>Modules</h1>
                           <table>
                           <tr>
                             <th>Subject</th>
@@ -145,11 +149,63 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>12</td>
                             <td>None</td>
                             <td>
-                            <div class="checkbox-wrapper-13">
+                             <div class="checkbox-wrapper-13">
                               <input id="c1-13" type="checkbox">
                               <label for="c1-13"></label>
-                            </div>
-                          </td>
+                             </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Computer Architecture 151</td>
+                            <td>COA151</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Database Development 151</td>
+                            <td>DBD151</td>
+                            <td>5</td>
+                            <td>18</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>End User Computing 151</td>
+                            <td>EUC151</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                          </tr>
+                         <tr>
+                            <td>English Communication 151</td>
+                            <td>ENG151</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
                           </tr>
                           </table>
                           </div>
@@ -160,7 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
                     <div class="head">
-                      <h1>couese name</h1>
+                      <h1>Bachelor of Computing</h1>
                       <button class="test2">Go back to main</button>
                     </div>
                     <div class="body">
