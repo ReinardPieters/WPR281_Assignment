@@ -12,7 +12,7 @@
     height: 100vh;
     grid-template-areas:
     "header header header"
-    "left-side main rightx-side"
+    "left-side main right-side"
     "left-side main right-side"
     "left-side low-content right-side"
     "footer footer footer";
@@ -599,7 +599,6 @@ table, th, tr, td{
 /*CALENDAR CSS*/
   .calendar {
    margin: 10px Auto  ;
-   grid-area: rightx-side;
    height: 35rem;
    width: max-content;
    background-color: white;
@@ -1068,23 +1067,28 @@ table, th, tr, td{
 }
   /*  HIDE PURPLE BLOCK NAVBAR */
 
-
+.thecalendar{
+  grid-area: right-side;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: min-content;
+}
 /*EVENTS CSS*/
 .Announcements{
-  margin: 0;
+  margin: 1fr 0;
   padding: 0;
   /* background-color: red; */
   align-items: center;
   text-align: center;
   width: 28vw;
   height: 50vh;
-  margin-top: 80vh;
   display: grid;
   grid-template-columns: 28vw;
   grid-template-rows:  repeat(4, 12vh);
   border: white solid 3px;
-  grid-area: right-side;
-
+  width: 100%;
   border-radius: 20px;
   border: 1px solid black;
 }
