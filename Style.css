@@ -1086,7 +1086,17 @@ table, th, tr, td{
 
 
 }
+
+.daydateblock{
+  background-color: green;
+  margin-right: 2vw;
+}
+
+.daymeaningblock{
+  background-color: orange;
+}
 /*EVENTS CSS*/
+
 /*===========================================
   The css for the application form */
   /* *{
