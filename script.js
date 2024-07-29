@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
                   </div>
               </a>
           `).join('');
+          const coursedetails = document.querySelector(".offscreencourse")
 
           // Add click event listeners to all <a> elements
           const links = mainContainer.querySelectorAll('a');
@@ -116,9 +117,86 @@ document.addEventListener('DOMContentLoaded', () => {
                   if (link.classList.contains('nif')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
+                    coursedetails.innerHTML = `
+                        <div class="head">
+                          <h1>couese name</h1>
+                          <button class="test2">Go back to main</button>
+                        </div>
+                        <div class="body">
+                          <div class="info">
+                            <h1>Heading here</h1>
+                            <p>Discription here</p>
+                           </div>
+                          <div class="coursemodules">
+                          <h1>tables</h1>
+                          <table>
+                          <tr>
+                            <th>Subject</th>
+                            <th>Code</th>
+                            <th>NQF</th>
+                            <th>Credits</th>
+                            <th>Prerequisites</th>
+                            <th>Completion</th>
+                          </tr>
+                          <tr>
+                            <td>Marhematics 151</td>
+                            <td>MAT151</td>
+                            <td>5</td>
+                            <td>12</td>
+                            <td>None</td>
+                            <td>
+                            <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                            </div>
+                          </td>
+                          </tr>
+                          </table>
+                          </div>
+                        </div>
+                        `;
                   } else if (link.classList.contains('bcomp')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
+                    coursedetails.innerHTML = `
+                    <div class="head">
+                      <h1>couese name</h1>
+                      <button class="test2">Go back to main</button>
+                    </div>
+                    <div class="body">
+                      <div class="info">
+                        <h1>Heading here</h1>
+                        <p>Discription here</p>
+                       </div>
+                      <div class="coursemodules">
+                      <h1>tables</h1>
+                      <table>
+                      <tr>
+                        <th>Subject</th>
+                        <th>Code</th>
+                        <th>NQF</th>
+                        <th>Credits</th>
+                        <th>Prerequisites</th>
+                        <th>Completion</th>
+                      </tr>
+                      <tr>
+                        <td>Marhematics 151</td>
+                        <td>MAT151</td>
+                        <td>5</td>
+                        <td>12</td>
+                        <td>None</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      </tr>
+                      </table>
+                      </div>
+                    </div>
+                    `;
+                    
                   }else if (link.classList.contains('bit')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
@@ -128,15 +206,16 @@ document.addEventListener('DOMContentLoaded', () => {
                   }else{
                     alert("404: file not found")
                   }
+                  document.querySelector(".test2").addEventListener("click",()=>{
+                    document.querySelector('.offscreencourse').classList.toggle('active');
+                    document.querySelector('.mainoffscreen').classList.toggle('active');  
+                  });
               });
           });
       })
       .catch(error => console.error('Error fetching the course data:', error));
 });
-document.querySelector(".test2").addEventListener("click",()=>{
-  document.querySelector('.offscreencourse').classList.toggle('active');
-  document.querySelector('.mainoffscreen').classList.toggle('active');  
-});
+
 /*Drop down for side panel */
 dropHeader.addEventListener("click", () => {
   dropDown.classList.toggle("active");
