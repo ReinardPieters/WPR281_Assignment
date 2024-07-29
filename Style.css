@@ -1128,6 +1128,10 @@ table, th, tr, td{
 .daymeaningblock{
   /* background-color: orange; */
 }
+
+.material-symbols-outlined{
+  scale: 1.5;
+}
 /*END EVENTS CSS*/
 
 /*===========================================
