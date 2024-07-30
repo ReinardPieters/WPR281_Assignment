@@ -1127,18 +1127,57 @@ table, th, tr, td{
   background-color: #C5E2BD;
   border-radius: 10px;
   padding: 5px;
-  font-size: 20px;
+  font-size: 1.4em;
   width: 15%;
 }
 
 .daymeaningblock{
-  font-size: 20px;
+  font-size: 1.4em;
   width: 80%;
   /* background-color: orange; */
 }
 
 .material-symbols-outlined{
   scale: 1.5;
+}
+
+@media (max-width: 1250px){
+  .daydateblock{
+    font-size: 1em;
+    width: 20%;
+  }
+  
+  .daymeaningblock{
+    font-size: 1em;
+    background-color: orange;
+  }
+    
+  .Announcements h1{
+    background-color: #512da8;
+    color: #F6F8FF;
+    margin-top: 0;
+    align-content: center;
+    height: 9vh;
+    width: 30vw ;
+    
+  }
+
+  .Announcements{
+    margin: 1fr 0;
+    padding: 0;
+    /* background-color: red; */
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 28vw;
+    grid-template-rows:  repeat(4, 12vh);
+    border: white solid 3px;
+    border-radius: 20px;
+    border: 1px solid black;
+  }
+  
 }
 /*END EVENTS CSS*/
 
