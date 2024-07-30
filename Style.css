@@ -1102,6 +1102,7 @@ table, th, tr, td{
   background-color: #512da8;
   color: #F6F8FF;
   margin-top: 0;
+  align-content: center;
   height: 10vh;
   
 }
@@ -1110,6 +1111,7 @@ table, th, tr, td{
   margin: 0;
   padding: 0;
   /* background-color: blue; */
+  margin: 5%;
   height: 10vh;
   width: 5w;
   align-items: center;
@@ -1121,11 +1123,17 @@ table, th, tr, td{
 }
 
 .daydateblock{
-  /* background-color: green; */
   margin-right: 2vw;
+  background-color: #C5E2BD;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  width: 15%;
 }
 
 .daymeaningblock{
+  font-size: 20px;
+  width: 80%;
   /* background-color: orange; */
 }
 
