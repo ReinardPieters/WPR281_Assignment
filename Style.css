@@ -1214,7 +1214,6 @@
  /*  HIDE PURPLE BLOCK NAVBAR */
 
  .thecalendar {
-   margin: auto;
    grid-area: right-side;
    display: flex;
    justify-content: top;
@@ -1289,6 +1288,10 @@
  }
 
  @media (max-width: 1250px) {
+  .thecalendar{
+    margin: auto;
+  }
+
    .daydateblock {
      font-size: 1em;
      width: 20%;
