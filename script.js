@@ -532,6 +532,17 @@ const generateCalendar = (month, year) => {
     generateCalendar(currentMonth.value, currentYear.value);
   };
   
+  //MONTH SLIDER
+  document.querySelector('#pre-month').onclick = () => {
+    --currentMonth.value;
+    generateCalendar(currentMonth.value, currentYear.value);
+  };
+  document.querySelector('#next-month').onclick = () => {
+    ++currentMonth.value;
+    generateCalendar(currentMonth.value, currentYear.value);
+  };
+  //MONTH SLIDER
+
   let currentDate = new Date();
   let currentMonth = { value: currentDate.getMonth() };
   let currentYear = { value: currentDate.getFullYear() };

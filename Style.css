@@ -775,6 +775,25 @@
    cursor: pointer;
  }
 
+ #pre-month{
+  height: fit-content;
+ }
+
+ #next-month{
+  height: fit-content;
+ }
+
+ .month-change {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0px 10px;
+  cursor: pointer;
+  margin-top: 1vh;
+}
+
  .year-picker {
    display: flex;
    align-items: center;
