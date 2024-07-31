@@ -1311,7 +1311,6 @@
 
    .Announcements {
      /* background-color: red; */
-     width: 43vh;
      height: 50vh;
      grid-template-rows: repeat(4, 12vh);
    }
