@@ -1214,6 +1214,7 @@
  /*  HIDE PURPLE BLOCK NAVBAR */
 
  .thecalendar {
+   margin: auto;
    grid-area: right-side;
    display: flex;
    justify-content: top;
