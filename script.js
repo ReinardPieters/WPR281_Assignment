@@ -140,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <th>Credits</th>
                             <th>Prerequisites</th>
                             <th>Completion</th>
+                            <th>Study Guide</th>
                           </tr>
                           <tr>
                             <td>Marhematics 151</td>
@@ -153,6 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
+                            <td><a href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                           
                           </tr>
                           <tr>
                             <td>Computer Architecture 151</td>
