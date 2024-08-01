@@ -186,7 +186,9 @@
  .nif,
  .bcomp,
  .dit,
- .bit {
+ .bit,
+ .dds,
+ .nsd{
    color: #0A0921;
    text-decoration: none;
    grid-area: course;
@@ -203,7 +205,9 @@
  .nif.active,
  .bcomp.active,
  .dit.active,
- .bit.active {
+ .bit.active,
+ .dds.active,
+ .nsd.active{
    display: none;
 
  }
@@ -211,7 +215,9 @@
  .nif:hover,
  .bcomp:hover,
  .dit:hover,
- .bit:hover {
+ .bit:hover,
+ .dds:hover,
+ .nsd:hover {
    cursor: pointer;
    border: 4px solid #512da8;
  }

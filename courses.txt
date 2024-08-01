@@ -30,3 +30,19 @@ level 6
 360
 120097
 Pretoria and Kempton Campus;
+dds
+Diploma for Deaf Students
+Our Diploma in Information Technology is spread over 4 years for our Deaf students and allows them to specialise in the in-demand and growing field of software development.
+3 academic year
+level 6
+360
+120097
+Pretoria Campus;
+nsd
+National Certificate:System Development
+Our certificate programmes offer an affordable option to quickly launch your IT career. They also serve as a stepping stone into one of our other programmes if you did not meet the necessary entry requirements.
+1 academic year
+level 5
+131
+48872
+Pretoria and Kempton Campus;
