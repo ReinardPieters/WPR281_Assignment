@@ -2799,6 +2799,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <th>Completion</th>
                             <th>Study Guide</th>
                           </tr>
+                          <th colspan = 7>Core</th>
                           <tr>
                             <td>Marhematics 151</td>
                             <td>MAT151</td>
@@ -2886,20 +2887,6 @@ document.addEventListener('DOMContentLoaded', () => {
                              </div>
                             </td>
                             <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                          </tr>
-                          <tr>
-                            <td>English Communication 151</td>
-                            <td>ENG151</td>
-                            <td>5</td>
-                            <td>7</td>
-                            <td>None</td>
-                            <td>
-                             <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
-                              <label for="c1-13"></label>
-                             </div>
-                            </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td> 
                           </tr>
                            <tr>
                             <td>Innovation and Leadership 101</td>
@@ -3015,6 +3002,333 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           </table>
+
+                           
+                          <br>
+
+                          <h4>Third Academic Year</h4>
+                          <table>
+                          <th colspan = 7>Core</th>
+                          <tr>
+                            <td>Information Systems 251</td>
+                            <td>INF251</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>INF151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                             <th colspan = 7>Core</th>
+                          <tr>
+                            <td>Information Systems 251</td>
+                            <td>INF251</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>INF151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Innovation and Leadership 201</td>
+                            <td>INL201</td>
+                            <td>6</td>
+                            <td>5</td>
+                            <td>INL102</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Operating Systems 251</td>
+                            <td>OPS251</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>COA151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Project 251</td>
+                            <td>PRJ251</td>
+                            <td>6</td>
+                            <td>10</td>
+                            <td>PMM251</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Project Management 251</td>
+                            <td>PMM251</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Security 251</td>
+                            <td>SEC251</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <th colspan= 7>Fundamentals: Infrastructure Stream</th>
+                          <tr>
+                            <td>Database Administration 251</td>
+                            <td>DBA251</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>DBD151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Network Development 251</td>
+                            <td>NWD251</td>
+                            <td>6</td>
+                            <td>18</td>
+                            <td>NWD151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Network Development 252</td>
+                            <td>NWD252</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>NWD151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Operating Systems 252</td>
+                            <td>OPS252</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Server Automation 251</td>
+                            <td>SVA251</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>NWD251</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Wireless Networking 251</td>
+                            <td>WLN251</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>NWD151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <th colspan=7>Fundamentals: Software Development Stream</th>
+                          <tr>
+                            <td>Database Development 251</td>
+                            <td>DBD251</td>
+                            <td>6</td>
+                            <td>11</td>
+                            <td>DBD151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Database Models 251</td>
+                            <td>DBM251</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>DBD151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Programming 251</td>
+                            <td>PRG251</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>PRG152</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Programming 252</td>
+                            <td>PRG252</td>
+                            <td>6</td>
+                            <td>12</td>
+                            <td>DBD251, PRG251</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Web Programming 251</td>
+                            <td>WPR251</td>
+                            <td>6</td>
+                            <td>10</td>
+                            <td>DBM251, PRG151, WPR151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Web Programming 252</td>
+                            <td>WPR252</td>
+                            <td>6</td>
+                            <td>11</td>
+                            <td>WPR251</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <th colspan = 7>Electives: (Choose one of)</th>
+                          <tr>
+                            <td>Enterprise Systems 251</td>
+                            <td>ERP251</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Internet of Things 251</td>
+                            <td>IOT251</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>WPR251, PRG151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          </table>
+
+                          <br>
+
+
+                          <h5>Fourth Academic Year</h5>
+                          <table>
+                          <tr>
+                            <td>Applied Information Technology 350</td>
+                            <td>AIT350</td>
+                            <td>6</td>
+                            <td>120</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          </table>
                           </div>
                         </div>
                         `;
@@ -3038,7 +3352,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <div class="coursemodules">
                           <h1>Modules</h1>
                           <br>
-                          <h2>First Year</h2>
+                          <h2>First And Second Academic Year</h2>
                           <table>
                           <tr>
                             <th>Subject</th>
@@ -3138,20 +3452,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             </td>
                             <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
-                          <tr>
-                            <td>English Communication 151</td>
-                            <td>ENG151</td>
-                            <td>5</td>
-                            <td>7</td>
-                            <td>None</td>
-                            <td>
-                             <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
-                              <label for="c1-13"></label>
-                             </div>
-                            </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td> 
-                          </tr>
                            <tr>
                             <td>Innovation and Leadership 101</td>
                             <td>INL101</td>
@@ -3266,6 +3566,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           </table>
+                         
                           </div>
                         </div>
                         `;
