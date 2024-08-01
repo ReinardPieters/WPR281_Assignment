@@ -3,7 +3,6 @@ const offScreenMenu = document.getElementById("off-screen-menu");
 const dropHeader = document.getElementById("dropHeader");
 const dropDown = document.getElementById("dropDown");
 
-
 hamMenu.addEventListener("click", () =>{
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
