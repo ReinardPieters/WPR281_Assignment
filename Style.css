@@ -967,10 +967,19 @@
  /* Side Panel Area*/
  .sidePanel {
    grid-area: left-side;
-   /*background-color: rgba(0, 0, 255, 0.415);*/
-   height: fit-content;
-   border-radius: 10px;
- }
+   /* background-color: cyan; */
+   height: auto;
+   border-right: solid black 1px;
+  }
+
+ .sidePanel-Header {
+  /* background-color: brown; */
+  margin: 5%;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  border-bottom: solid black 1px;
+}
 
  .sidePanel-Text {
    margin: auto;
@@ -984,12 +993,19 @@
  .sidePanel-Button {
    display: flex;
    text-decoration: none;
+   text-transform: uppercase;
    color: black;
    border-radius: 5px;
    height: fit-content;
-   width: fit-content;
+   margin: 5%;
+   margin-top: 20%;
+   margin-bottom: 20%;
    padding: 5px;
    transition: 0.2s;
+  /* background-color: #C5E2BD; */
+  font-size: 25px;
+  font-weight: 300;
+
  }
 
  .sidePanel-Button:hover {
@@ -999,12 +1015,36 @@
 
  }
 
- .sidePanel-Header {
-   /*background-color: rgba(0, 255, 255, 0.4);*/
-   margin: 5%;
-   font-weight: 300;
-   text-transform: uppercase;
- }
+
+ /* End Side Panel */
+
+  /* Drop Down in sidepanel*/
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin: -2em 8em;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+  #AboutUs:hover{
+    cursor: pointer;
+  }
+
+  /* End Drop Down */
 
  @keyframes to-top {
    0% {
@@ -1404,34 +1444,3 @@
 
  /*==========================================*/
 
- /* Drop Down */
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-  }
-
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin: -2em 8em;
-  }
-
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
-  #AboutUs:hover{
-    cursor: pointer;
-  }
-
-  /* End Drop Down */
