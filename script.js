@@ -218,6 +218,147 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                            
                           </tr>
+                           <tr>
+                            <td>Information Systems 151</td>
+                            <td>INF151</td>
+                            <td>5</td>
+                            <td>12</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>English Communication 151</td>
+                            <td>ENG151</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td> 
+                          </tr>
+                           <tr>
+                            <td>Innovation and Leadership 101</td>
+                            <td>INL101</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Innovation and Leadership 102</td>
+                            <td>INL102</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Network Development 151</td>
+                            <td>NWD151</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Programming 151</td>
+                            <td>PRG151</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Programming 152</td>
+                            <td>PRG152</td>
+                            <td>5</td>
+                            <td>13</td>
+                            <td>PRG151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Web Programming 151</td>
+                            <td>WPR151</td>
+                            <td>5</td>
+                            <td>13</td>
+                            <td>PRG151</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <th colspan = 7> Electives (Choose one of)</th>
+                          <tr>
+                            <td>Business Management 151</td>
+                            <td>BUM151</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
+                          <tr>
+                            <td>Entrepreneurship 151</td>
+                            <td>ENT151</td>
+                            <td>5</td>
+                            <td>7</td>
+                            <td>None</td>
+                            <td>
+                             <div class="checkbox-wrapper-13">
+                              <input id="c1-13" type="checkbox">
+                              <label for="c1-13"></label>
+                             </div>
+                            </td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                          </tr>
                           </table>
                           </div>
                         </div>
