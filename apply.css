@@ -31,6 +31,7 @@
     border-radius: 7px;
     border: 1px solid rgb(211, 211, 211);
     padding: 8px;
+    width: 270px;
 }
 
 .applyInfoHeading{ /*The headings of the different information headings (e.g. Student Details, Contact Details, Additional Details)*/
@@ -44,7 +45,7 @@
     grid-template-rows: min-content min-content;
     grid-template-areas: 
     "StdDts Adds img"
-    "CntDts Adds img";
+    "CntDts RptDts img";
 }
 
 #StudentDetails{
@@ -59,11 +60,15 @@
     grid-area: Adds;
 }
 
+#ReportDetails{
+    grid-area: RptDts;
+}
+
 #imageboi{
     grid-area: img;
 }
 
-.navButtons, #applyBackbtn{
+.navButtons{ /*This is the styling for the buttons on the page */
     height: 45px;
     width: 100px;
     border-radius: 7px;
@@ -78,7 +83,29 @@
     border-radius: 7px;
 }
 
-.navButtons:hover, #applyBackbtn :hover{
+.navButtons:hover{ /*This is for the hover effect when it changes to green */
     background-color: rgb(153, 255, 0);
     color: black;
+}
+
+#Drop-File{
+    border-radius: 10px;
+    border-style: dashed;
+    margin: 10px;
+    text-align: center;
+    border-color: #b9bcc0;
+    margin-left: 0;
+    padding: 4%;
+    background-color: #f8f8f8;
+    width: 300px;
+    height: 220px;
+}
+
+#applyCloudImg{
+    height: 125px;
+}
+
+#applySpan{
+    font-size: 12px;
+    color: #b9bcc0;
 }

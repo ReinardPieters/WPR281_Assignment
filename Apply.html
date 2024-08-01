@@ -6,6 +6,7 @@
     <title>Application Page</title>
     <link rel="stylesheet" href="apply.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="apply.js"></script>
 </head>
 <body class="applyBody">
     <h1 class="applyh1">Application form</h1>
@@ -72,14 +73,33 @@
                 </div>
             </div>
 
+            <div id="ReportDetails" class="container">
+                <p class="applyInfoHeading">Report Card</p>
+                <div>
+                    <label class="applyLabel" for="Report">Report Card</label>
+                    <br>
+                    <label for="Report" id="applyDropArea"> 
+                        <input class="applyInput"  type="file" accept=".pdf, image/*" id="Report" name="Report" required hidden> <!-- .image/* means it accepts any image format-->
+                        <div id="Drop-File">
+                            <img id="applyCloudImg" src="Images/CloudUpload.png" alt="Upload file">
+                            <p id="applyImgP">Drag and drop or click here<br>to upload file</p>
+                            <span id="applySpan">Upload pdf or image files</span>
+                        </div>
+                    </label>
+                </div>
+
+            </div>
+
             <div id="imageboi" class="container">
                 <img id="applyImage" src="Images/Person1.jpeg" alt="Student staring at the digital world">
             </div>
 
-            <a id="applyBackbtn" style="text-decoration: none" href="index.html" ><button class="navButtons"> back</button></a>
+            <br>
+            <button id="applyBackbtn" class="navButtons" onclick="gotoHome()">back</button>
             <input type="submit" class="navButtons">
 
         </form>
+        <button onclick="uploadedFile()">Click me</button>
     </div>  
 
 </body>
