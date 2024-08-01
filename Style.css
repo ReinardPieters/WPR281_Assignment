@@ -10,7 +10,7 @@
    display: grid;
    grid-template-rows: 80px min-content min-content 50px;
    grid-template-columns: 1fr 4fr 1fr;
-   height: 100vh;
+   height: auto;
    grid-template-areas:
      "header header header"
      "left-side main right-side"
@@ -966,10 +966,12 @@
 
  /* Side Panel Area*/
  .sidePanel {
-   grid-area: left-side;
+   position: sticky;
+   /* grid-area: left-side; */
    /* background-color: cyan; */
-   height: auto;
-   border-right: solid black 1px;
+   margin: auto;
+   width: 14vw;
+   top: 1vh;
   }
 
  .sidePanel-Header {
