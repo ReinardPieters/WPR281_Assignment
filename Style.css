@@ -1447,3 +1447,16 @@
 
  /*==========================================*/
 
+/*STUDY GUIDE DOWNLOAD BUTTON*/
+.buttondownload{
+  text-decoration: none;
+}
+.buttondownload:hover{
+  text-decoration: none;
+  border: 3px solid #512da8;
+  transition: 0.05s;
+  
+}
+
+
+ /*STUDY GUIDE DOWNLOAD BUTTON*/

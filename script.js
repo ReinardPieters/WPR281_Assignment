@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                            
                           </tr>
                           <tr>
