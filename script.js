@@ -1027,8 +1027,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       </tr>
                       <th colspan = 7>Core</th>
                       <tr>
-                        <td>Academic Writing 181</td>
-                        <td>ACW181</td>
+                        <td>Academic Writing 171</td>
+                        <td>ACW171</td>
                         <td>5</td>
                         <td>4</td>
                         <td>None</td>
@@ -1041,10 +1041,10 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Computer Architecture 181</td>
-                        <td>COA181</td>
+                        <td>Computer Architecture 171</td>
+                        <td>COA171</td>
                         <td>5</td>
-                        <td>4</td>
+                        <td>7</td>
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
@@ -1055,7 +1055,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Database Development 181</td>
+                        <td>Database Development 171</td>
                         <td>DBD181</td>
                         <td>5</td>
                         <td>12</td>
@@ -1069,8 +1069,22 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Information Systems 181</td>
-                        <td>INF181</td>
+                        <td>English Communication 171</td>
+                        <td>ENG171</td>
+                        <td>5</td>
+                        <td>7</td>
+                        <td>None</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>Information Systems 171</td>
+                        <td>INF171</td>
                         <td>5</td>
                         <td>12</td>
                         <td>None</td>
@@ -1111,8 +1125,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Linear Programming 181</td>
-                        <td>LPR181</td>
+                        <td>Mathematics 171</td>
+                        <td>MAT171</td>
                         <td>5</td>
                         <td>11</td>
                         <td>None</td>
@@ -1125,22 +1139,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Mathematics 181</td>
-                        <td>MAT181</td>
-                        <td>5</td>
-                        <td>11</td>
-                        <td>None</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <tr>
-                        <td>Networking Development 181</td>
-                        <td>NWD181</td>
+                        <td>Networking Development 171</td>
+                        <td>NWD171</td>
                         <td>5</td>
                         <td>8</td>
                         <td>None</td>
@@ -1153,8 +1153,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Programming 181</td>
-                        <td>PRG181</td>
+                        <td>Programming 171</td>
+                        <td>PRG171</td>
                         <td>5</td>
                         <td>16</td>
                         <td>None</td>
@@ -1167,11 +1167,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Programming 182</td>
-                        <td>PRG182</td>
+                        <td>Programming 172</td>
+                        <td>PRG172</td>
                         <td>5</td>
                         <td>9</td>
-                        <td>PRG181</td>
+                        <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1181,8 +1181,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Statistics 181</td>
-                        <td>STA181</td>
+                        <td>Statistics 171</td>
+                        <td>STA171</td>
                         <td>5</td>
                         <td>4</td>
                         <td>None</td>
@@ -1195,10 +1195,10 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Web Programming 181</td>
-                        <td>WPR181</td>
+                        <td>Web Programming 171</td>
+                        <td>WPR171</td>
                         <td>5</td>
-                        <td>12</td>
+                        <td>13</td>
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
@@ -1210,8 +1210,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       </tr>
                       <th colspan = 7>Electives (Choose one of)</th>
                       <tr>
-                        <td>Business Management 181</td>
-                        <td>BUM181</td>
+                        <td>Business Management 171</td>
+                        <td>BUM171</td>
                         <td>5</td>
                         <td>7</td>
                         <td>None</td>
@@ -1224,8 +1224,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Entrepreneurship 181</td>
-                        <td>ENT181</td>
+                        <td>Entrepreneurship 171</td>
+                        <td>ENT171</td>
                         <td>5</td>
                         <td>7</td>
                         <td>None</td>
@@ -1254,11 +1254,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       </tr>
                       <th colspan = 7>Core</th>
                       <tr>
-                        <td>Database Development 281</td>
-                        <td>DBD281</td>
+                        <td>Cloud-Native Application Architecture 271</td>
+                        <td>CNA271</td>
                         <td>6</td>
-                        <td>15</td>
-                        <td>DBD181</td>
+                        <td>11</td>
+                        <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1268,11 +1268,53 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Information Systems 281</td>
-                        <td>INF281</td>
+                        <td>Database Development 271</td>
+                        <td>DBD271</td>
+                        <td>6</td>
+                        <td>15</td>
+                        <td>DBD171</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>Enterprise Systems 271</td>
+                        <td>ERP271</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>None</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>Ethics 271</td>
+                        <td>ETH271</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td>None</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>Information Systems 271</td>
+                        <td>INF271</td>
                         <td>6</td>
                         <td>12</td>
-                        <td>INF181</td>
+                        <td>INF171</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1286,7 +1328,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>INL201</td>
                         <td>6</td>
                         <td>5</td>
-                        <td>INL102</td>
+                        <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1300,7 +1342,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>INL202</td>
                         <td>6</td>
                         <td>5</td>
-                        <td>INL102</td>
+                        <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1310,11 +1352,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Linear Programming 281</td>
-                        <td>LPR281</td>
+                        <td>Linear Programming 171</td>
+                        <td>LPR171</td>
                         <td>6</td>
                         <td>11</td>
-                        <td>LPR181, MAT181</td>
+                        <td>MAT171</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1324,25 +1366,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Mathematics 281</td>
-                        <td>MAT281</td>
-                        <td>6</td>
-                        <td>11</td>
-                        <td>MAT181</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <tr>
-                        <td>Programming 281</td>
-                        <td>PRG281</td>
+                        <td>Programming 271</td>
+                        <td>PRG271</td>
                         <td>6</td>
                         <td>13</td>
-                        <td>PRG182</td>
+                        <td>PRG172</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1352,11 +1380,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Programming 282</td>
+                        <td>Programming 272</td>
                         <td>PRG282</td>
                         <td>6</td>
                         <td>8</td>
-                        <td>DBD281, PRG281</td>
+                        <td>DBD271, PRG271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1366,8 +1394,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Project Management 281</td>
-                        <td>PMM281</td>
+                        <td>Project Management 271</td>
+                        <td>PMM271</td>
                         <td>6</td>
                         <td>7</td>
                         <td>None</td>
@@ -1380,11 +1408,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Statistics 281</td>
-                        <td>STA281</td>
+                        <td>Statistics 271</td>
+                        <td>STA271</td>
                         <td>6</td>
                         <td>4</td>
-                        <td>STA181</td>
+                        <td>STA171</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1394,11 +1422,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Web Programming 281</td>
-                        <td>WPR281</td>
+                        <td>Web Programming 271</td>
+                        <td>WPR271</td>
                         <td>6</td>
-                        <td>12</td>
-                        <td>PRG181, WPR181</td>
+                        <td>10</td>
+                        <td>PRG171, WPR171</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1407,45 +1435,13 @@ document.addEventListener('DOMContentLoaded', () => {
                       </td>
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
-                      <th colspan = 7>Fundamentals: Software Engineering Stream</th>
-                      <tr>
-                        <td>Software Analysis & Design 281</td>
-                        <td>SAD281</td>
-                        <td>7</td>
-                        <td>9</td>
-                        <td>PMM281</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      
-                      <th colspan = 7>Fundamentals: Data Science Stream</th>
-                      <tr>
-                        <td>Data Warehousing 281</td>
-                        <td>DWH281</td>
-                        <td>7</td>
-                        <td>9</td>
-                        <td>DBD281</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-
                       <th colspan = 7>Electives (Choose one of)</th>
                       <tr>
-                        <td>Internet Of Things 281</td>
-                        <td>IOT281</td>
+                        <td>Internet Of Things 271</td>
+                        <td>IOT271</td>
                         <td>6</td>
                         <td>8</td>
-                        <td>PRG181, WPR281</td>
+                        <td>PRG171, WPR271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1455,11 +1451,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Software Engineering 281</td>
-                        <td>SWT281</td>
+                        <td>Software Testing 271</td>
+                        <td>SWT271</td>
                         <td>6</td>
                         <td>8</td>
-                        <td>PRG282</td>
+                        <td>PRG272</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1485,11 +1481,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       </tr>
                       <th colspan = 7>Core</th>
                       <tr>
-                        <td>Research Methods 381</td>
-                        <td>RSH381</td>
+                        <td>Business Intelligence 371</td>
+                        <td>BIN371</td>
                         <td>7</td>
-                        <td>7</td>
-                        <td>STA281</td>
+                        <td>10</td>
+                        <td>SQL</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1499,11 +1495,12 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Database Development 381</td>
-                        <td>DBD381</td>
+                      <tr>
+                        <td>Cloud-Native Application Programming 371</td>
+                        <td>CNA371</td>
                         <td>7</td>
-                        <td>7</td>
-                        <td>DBD281</td>
+                        <td>11</td>
+                        <td>CNA271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1513,8 +1510,37 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Innovation and Leadership 321</td>
-                        <td>INL321</td>
+                        <td>Data Analytics 371</td>
+                        <td>DAL371</td>
+                        <td>7</td>
+                        <td>14</td>
+                        <td>STA271</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      </tr>
+                      <tr>
+                      <tr>
+                        <td>Database Development 371</td>
+                        <td>DBD371</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>DBD271</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>Innovation and Leadership 371</td>
+                        <td>INL371</td>
                         <td>7</td>
                         <td>5</td>
                         <td>INL201, INL202</td>
@@ -1527,11 +1553,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Linear Programming 381</td>
-                        <td>LPR381</td>
+                        <td>Programming 371</td>
+                        <td>PRG371</td>
                         <td>7</td>
-                        <td>11</td>
-                        <td>LPR281, MAT281</td>
+                        <td>9</td>
+                        <td>PRG272</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1541,25 +1567,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Machine Learning 381</td>
-                        <td>MLG381</td>
+                        <td>Project 371</td>
+                        <td>PRJ371</td>
                         <td>7</td>
-                        <td>7</td>
-                        <td>STA281</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <tr>
-                        <td>Project 381</td>
-                        <td>PRJ381</td>
-                        <td>8</td>
                         <td>17</td>
-                        <td>PMM281</td>
+                        <td>PMM271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1569,11 +1581,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Project Management 381</td>
-                        <td>PMM381</td>
+                        <td>Project Management 371</td>
+                        <td>PMM371</td>
                         <td>7</td>
                         <td>7</td>
-                        <td>PRG182</td>
+                        <td>PMM271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1584,11 +1596,39 @@ document.addEventListener('DOMContentLoaded', () => {
                       </tr>
                       <th colspan = 7>Fundamentals: Software Engineering Stream</th>
                       <tr>
-                        <td>Programming 381</td>
-                        <td>PRG381</td>
+                        <td>Software Analysis & Design 371</td>
+                        <td>SAD371</td>
+                        <td>7</td>
+                        <td>14</td>
+                        <td>None</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>Software Engineering 371</td>
+                        <td>SEN371</td>
+                        <td>7</td>
+                        <td>16</td>
+                        <td>PMM371, PRG272, SAD371</td>
+                        <td>
+                        <div class="checkbox-wrapper-13">
+                          <input id="c1-13" type="checkbox">
+                          <label for="c1-13"></label>
+                        </div>
+                      </td>
+                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      </tr>
+                      <tr>
+                        <td>Web Programming 371</td>
+                        <td>WPR371</td>
                         <td>7</td>
                         <td>9</td>
-                        <td>PRG282</td>
+                        <td>PRG272, WPR271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
@@ -1598,81 +1638,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Software Engineering 381</td>
-                        <td>SEN381</td>
-                        <td>8</td>
-                        <td>30</td>
-                        <td>PMM381, PRG282, SAD281</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <tr>
-                        <td>Web Programming 381</td>
-                        <td>WPR381</td>
-                        <td>7</td>
-                        <td>9</td>
-                        <td>PRG282, WPR281</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <th colspan = 7>Fundamentals: Data Science Stream</th>
-                      <tr>
-                        <td>Data Science 381</td>
-                        <td>BIN381</td>
-                        <td>8</td>
-                        <td>30</td>
-                        <td>DWH281, MLG381</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <tr>
-                        <td>Database Administration 381</td>
-                        <td>DBA381</td>
-                        <td>7</td>
-                        <td>9</td>
-                        <td>DBD281</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <tr>
-                        <td>Statistics 381</td>
-                        <td>STA381</td>
-                        <td>7</td>
-                        <td>9</td>
-                        <td>STA281</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-
-                      <th colspan = 7>Electives (Choose one of)</th>
-                      <tr>
-                        <td>Innovation Management 381</td>
-                        <td>INM381</td>
+                        <td>Innovation Management 371</td>
+                        <td>INM371</td>
                         <td>7</td>
                         <td>11</td>
                         <td>None</td>
@@ -1685,82 +1652,11 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
-                        <td>Machine Learning 382</td>
-                        <td>MLG382</td>
+                        <td>User Experience Design 371</td>
+                        <td>UAX371</td>
                         <td>7</td>
                         <td>11</td>
-                        <td>MLG381, PRG282</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <tr>
-                        <td>User Experience Design 381</td>
-                        <td>UAX381</td>
-                        <td>7</td>
-                        <td>11</td>
-                        <td>PRG282, WPR281</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      </table>
-
-                       <br>
-
-                      <h3>Fourth Experiential Learning Year</h3>
-                      <table>
-                      <tr>
-                        <th>Subject</th>
-                        <th>Code</th>
-                        <th>NQF</th>
-                        <th>Credits</th>
-                        <th>Prerequisites</th>
-                        <th>Completion</th>
-                        <th>Study Guide</th>
-                      </tr>
-                      <tr>
-                        <td>Applied Information Technology 481</td>
-                        <td>AIT481</td>
-                        <td>7</td>
-                        <td>60</td>
-                        <td>None</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <tr>
-                        <td>Applied Information Technology 482</td>
-                        <td>AIT482</td>
-                        <td>8</td>
-                        <td>60</td>
-                        <td>None</td>
-                        <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
-                          <label for="c1-13"></label>
-                        </div>
-                      </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                      </tr>
-                      <tr>
-                        <td>Dissertation 481</td>
-                        <td>DST481</td>
-                        <td>8</td>
-                        <td>30</td>
-                        <td>None</td>
+                        <td>PRG272, WPR271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
                           <input id="c1-13" type="checkbox">
