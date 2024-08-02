@@ -2812,7 +2812,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Computer Architecture 151</td>
@@ -2826,7 +2826,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Computer-Architecture-151-COA151.pdf" download class="btn btn--download">Download</a></td>
                            
                           </tr>
                           <tr>
@@ -2841,7 +2841,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Database-Development-151-DBD151.pdf" download class="btn btn--download">Download</a></td>
                            
                           </tr>
                           <tr>
@@ -2856,7 +2856,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/End-User-Computing-151-EUC151.pdf" download class="btn btn--download">Download</a></td>
                            
                           </tr>
                          <tr>
@@ -2871,7 +2871,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/English-Communication-151-ENG151.pdf" download class="btn btn--download">Download</a></td>
                            
                           </tr>
                            <tr>
@@ -2886,7 +2886,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Information-Systems-151-INF151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                            <tr>
                             <td>Innovation and Leadership 101</td>
@@ -2900,7 +2900,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Innovation-and-Leadership-101-INL101.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Innovation and Leadership 102</td>
@@ -2914,7 +2914,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Innovation-and-Leadership-102-INL102.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Network Development 151</td>
@@ -2928,7 +2928,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Network-Development-151-NWD151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Programming 151</td>
@@ -2942,7 +2942,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Programming-151-PRG151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Programming 152</td>
@@ -2956,7 +2956,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Programming-152-PRG152.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Web Programming 151</td>
@@ -2970,7 +2970,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Web-Programming-151-WPR151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <th colspan = 7> Electives (Choose one of)</th>
                           <tr>
@@ -2985,7 +2985,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Business-Management-151-BUM151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Entrepreneurship 151</td>
@@ -2999,7 +2999,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/1st and 2nd Year students/Entrepreneurship-151-ENT151.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           </table>
 
@@ -3021,22 +3021,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
-                          </tr>
-                             <th colspan = 7>Core</th>
-                          <tr>
-                            <td>Information Systems 251</td>
-                            <td>INF251</td>
-                            <td>6</td>
-                            <td>12</td>
-                            <td>INF151</td>
-                            <td>
-                             <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
-                              <label for="c1-13"></label>
-                             </div>
-                            </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Information-Systems-251-INF251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Innovation and Leadership 201</td>
@@ -3050,7 +3035,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Innovation-and-Leadership-201-INL201.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Operating Systems 251</td>
@@ -3064,7 +3049,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Operating-Systems-251-OPS251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Project 251</td>
@@ -3078,7 +3063,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Project-251-PRJ251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Project Management 251</td>
@@ -3092,7 +3077,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Project-Management-251-PMM251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Security 251</td>
@@ -3106,7 +3091,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Security-251-SEC251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <th colspan= 7>Fundamentals: Infrastructure Stream</th>
                           <tr>
@@ -3121,7 +3106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Database-Administration-251-DBA251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Network Development 251</td>
@@ -3135,7 +3120,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Network-Development-251-NWD251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Network Development 252</td>
@@ -3149,7 +3134,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Network-Development-252-NWD252.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Operating Systems 252</td>
@@ -3163,7 +3148,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Operating-Systems-252-OPS252.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Server Automation 251</td>
@@ -3177,7 +3162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Server-Automation-251-SVA251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Wireless Networking 251</td>
@@ -3191,7 +3176,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Wireless-Networking-251-WLN251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <th colspan=7>Fundamentals: Software Development Stream</th>
                           <tr>
@@ -3206,7 +3191,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Database-Development-251-DBD251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Database Models 251</td>
@@ -3220,7 +3205,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Database-Models-251-DBM251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Programming 251</td>
@@ -3234,7 +3219,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Programming-251-PRG251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Programming 252</td>
@@ -3248,7 +3233,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Programming-252-PRG252.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Web Programming 251</td>
@@ -3262,7 +3247,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Web-Programming-251-WPR251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Web Programming 252</td>
@@ -3276,7 +3261,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Web-Programming-252-WPR252.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <th colspan = 7>Electives: (Choose one of)</th>
                           <tr>
@@ -3291,7 +3276,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Enterprise-Systems-251-ERP251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           <tr>
                             <td>Internet of Things 251</td>
@@ -3305,7 +3290,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Third Academic Year/Internet-of-Things-251-IOT251.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           </table>
 
@@ -3314,6 +3299,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                           <h5>Fourth Academic Year</h5>
                           <table>
+                          <th colspan=7>Core</th>
                           <tr>
                             <td>Applied Information Technology 350</td>
                             <td>AIT350</td>
@@ -3326,7 +3312,7 @@ document.addEventListener('DOMContentLoaded', () => {
                               <label for="c1-13"></label>
                              </div>
                             </td>
-                            <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                            <td><a class="buttondownload" href="Study Guide/Diploma for Deaf Students/Fourth Year/Applied-Information-Technology-350-AIT350.pdf" download class="btn btn--download">Download</a></td>
                           </tr>
                           </table>
                           </div>
