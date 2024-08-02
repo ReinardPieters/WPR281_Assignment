@@ -123,12 +123,16 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="body">
                           <div class="info">
-                            <p>Our certificate programmes offer an affordable option to quickly launch your IT career. They also serve as a stepping stone into one of our other programmes if you did not meet the necessary entry requirements.</p>
-                            <p>Accredited by MICT SETA and aligned on the NQF with the South African Qualifications Authority, these certificates are created in line with our mission to promote gainful employment by training young people to understand, use and apply IT in effective, efficient, and ethical ways.</p>
+                            <p>This Higher Certificate in IT is created in line with Belgium Campus’s mission to train young people to understand, use and apply ICT effectively, efficiently and in ethical ways, leading to gainful employment.</p>
                             <h1>Overview</h1>
-                            <p>On completion of this qualification, you will possess a specialised set of skills that will allow you to work in areas of systems development with confidence. You will gain a solid grasp of computer industry concepts and learn to expertly design, develop, test, and document software solutions needed in today’s business environment. You will also gain the necessary undergraduate foundation to further your studies in the IT field, should you wish.</p>
+                            <p>The amount of data in the world is increasing at an exponential rate. The emergence of big data has completely transformed how companies do business and understand their customers, with companies using large volumes of data to identify trends and patterns and predict future consumer behaviour. With the above in mind, it is not surprising that the demand for skilled data experts with advanced database skills is ever-increasing. This qualification will give you these skills and allow you to enter the job market quickly. The knowledge and skills you gain will equip you to solve operational business problems in the data science space, allowing you to thrive in today’s business environment.</p>
                             <h1>FURTHER STUDY OPPORTUNITIES</h1>
-                            <p>Successful completion of this programme yields the exit level outcomes described below. Upon completion of the Higher Certificate: Information Technology (NQF level 5) in Systems Development, the student can apply for Recognition of Prior Learning from Belgium Campus iTversity in order to continue his/her studies at Belgium Campus in one of the other programmes offered by the institution. Diploma in Information Technology and Higher Certificate: IT (Database Development)</p>
+                            <p>Successful completion of this programme yields the exit level outcomes described below.  Upon completion of the Higher Certificate: Information Technology (NQF level 6) in Database Development, the student can apply for Recognition of Prior Learning from Belgium Campus iTversity in order to continue his/her studies at Belgium Campus in one of the other programmes offered by the institution.
+                            <ul></ul>
+                            <li>Diploma in Information Technology</li>
+                            <li>Bachelor of Information Technology</li>
+                            <li>Bachelor of Computing</li>
+                            </p>
                            </div>
                           <div class="coursemodules">
                           <h1>Modules</h1>
@@ -374,8 +378,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="body">
                       <div class="info">
-                        <h1>Heading here</h1>
-                        <p>Description Here</p>
+                      <p>Our Bachelor of Computing degree will teach you the essential computing skills of troubleshooting and formulating viable solutions. Additionally, you will learn to apply theories and integrate them in real-world environments, across multiple disciplines, by presenting best practices and solutions.</p>
+                        <h1>Overview</h1>
+                        <p>You will gain sound theoretical knowledge grounded in real-world applications. Furthermore, the practical assignments and projects you will complete are congruent with daily practices in the working world, providing you with business-specific and soft skills. These skills include communication skills, customer satisfaction training, the ability to work as part of a team, and the ability to teach others.  Moreover, in the fourth year of your Bachelor of Computing, you will have the remarkable opportunity to complete an internship at a national or international company. Additionally, you will conduct academic research and present your findings in a formal dissertation.</p>
                        </div>
                       <div class="coursemodules">
                       <h1>Modules</h1>
@@ -1150,8 +1155,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="body">
                       <div class="info">
-                        <h1>Heading here</h1>
-                        <p>Description Here</p>
+                      <p>A bachelor’s degree remains the entry standard in many professional careers. Its long-term benefits make it well worth the initial investment as it allows you professional entry into some of the top names in IT. It will also give you the knowledge and skills to create your own enterprise within the sector. Overall, an IT degree is a worthwhile investment in your future.</p>
+                        <h1>Overview</h1>
+                        <p>This IT degree focuses on information systems modules and will provide you with foundational knowledge in software engineering and business intelligence. You will cover an extensive range of topics, from mobile and wireless networks to artificial intelligence and intelligent systems.</p>
+                        <p>By placing a strong focus on knowledge, execution, and professional skills, this IT degree will transform you into a complete professional with a range of interesting opportunities to explore, including the development of mobile and web-based apps and even game development.</p>
                        </div>
                       <div class="coursemodules">
                       <h1>Modules</h1>
@@ -1822,8 +1829,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="body">
                       <div class="info">
-                        <h1>Heading here</h1>
-                        <p>Description Here</p>
+                      <p>This empowering diploma features on-trend specialisations aligned with real-world industry requirements. These specialisations will give you access to many exciting career opportunities and allow you to graduate in high demand.</p>
+                        <h1>Overview</h1>
+                        <p>Our Diploma in Information Technology consists of a generic foundation phase and a specialisation phase. The foundation phase gives insight into the field of information technology, while the specialisation phase is career oriented.  This academic programme will transform you into a well-rounded professional through a strong focus on knowledge, execution, and professional and practical skills. You will also have the incredible opportunity to complete 6 months of in-service training at an external company or in a simulated work environment.</p>
                        </div>
                       <div class="coursemodules">
                       <h1>Modules</h1>
@@ -2778,12 +2786,26 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                         <div class="body">
                           <div class="info">
-                            <p>Our certificate programmes offer an affordable option to quickly launch your IT career. They also serve as a stepping stone into one of our other programmes if you did not meet the necessary entry requirements.</p>
-                            <p>Accredited by MICT SETA and aligned on the NQF with the South African Qualifications Authority, these certificates are created in line with our mission to promote gainful employment by training young people to understand, use and apply IT in effective, efficient, and ethical ways.</p>
+                            <p>Our Diploma in Information Technology is spread over 4 years for our Deaf students and allows them to specialise in the in-demand and growing field of software development.</p>
                             <h1>Overview</h1>
-                            <p>On completion of this qualification, you will possess a specialised set of skills that will allow you to work in areas of systems development with confidence. You will gain a solid grasp of computer industry concepts and learn to expertly design, develop, test, and document software solutions needed in today’s business environment. You will also gain the necessary undergraduate foundation to further your studies in the IT field, should you wish.</p>
-                            <h1>FURTHER STUDY OPPORTUNITIES</h1>
-                            <p>Successful completion of this programme yields the exit level outcomes described below. Upon completion of the Higher Certificate: Information Technology (NQF level 5) in Systems Development, the student can apply for Recognition of Prior Learning from Belgium Campus iTversity in order to continue his/her studies at Belgium Campus in one of the other programmes offered by the institution. Diploma in Information Technology and Higher Certificate: IT (Database Development)</p>
+                            <p>We have made this course accessible to our Deaf students by:</p>
+                            <ul></ul>
+                            <li>Providing a customised curriculum for students who use South African Sign Language (SASL) as their preferred method of communication.</li>
+                            <li>Providing SASL interpreters throughout the course, including during the 6 months of workplace training.</li>
+                            <li> Adopting a half-moon seating arrangement which is optimal for students learning through sign language.</li>
+                            <p>This Diploma in Information Technology has the following specialisations:</p>
+                            <ul></ul>
+                            <li>Software Development</li>
+                            <p>Our Deaf and hard-of-hearing students have the invaluable experience of working with hearing peers throughout their studies. This experience, combined with the workplace training they complete, allows them to enter the working environment with confidence.</p>
+                            <h1>Additioal Information</h1>
+                            <ul></ul>
+                            <li>A National Senior Certificate endorsed for a Diploma.</li>
+                            <li>50% or more for the Belgium Campus Aptitude Test.</li>
+                            <li>An audiogram no older than 6 months.</li>
+                            <li>A South African ID.</li>
+                            <h1>Study Further</h1>
+                            <p>We firmly believe that every student deserves access to quality higher education. We are constantly searching for new ways to improve our educational offering for our Deaf community.</p>
+                            <p>Noticing how well our Deaf students performed with the Diploma in Information Technology, we have started accepting Deaf students to study for our Bachelor of Information Technology degree.</p>
                            </div>
                           <div class="coursemodules">
                           <h1>Modules</h1>
