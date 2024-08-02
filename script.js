@@ -1180,7 +1180,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Academic-Writing-171-ACW171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Computer Architecture 171</td>
@@ -1194,7 +1194,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Computer-Architecture-171-COA171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Database Development 171</td>
@@ -1208,7 +1208,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Database-Development-171-DBD171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>English Communication 171</td>
@@ -1222,7 +1222,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/English-Communication-171-ENG171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Information Systems 171</td>
@@ -1236,7 +1236,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Information-Systems-171-INF171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Innovation and Leadership 101</td>
@@ -1250,7 +1250,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Innovation-and-Leadership-101-INL101-1.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Innovation and Leadership 102</td>
@@ -1264,7 +1264,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Innovation-and-Leadership-102-INL102.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Mathematics 171</td>
@@ -1278,7 +1278,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Mathematics-171-MAT171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Networking Development 171</td>
@@ -1292,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Network-Development-171-NWD171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Programming 171</td>
@@ -1306,7 +1306,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Programming-171-PRG171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Programming 172</td>
@@ -1320,7 +1320,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Programming-172-PRG172.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Statistics 171</td>
@@ -1334,7 +1334,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Statistics-171-STA171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Web Programming 171</td>
@@ -1348,7 +1348,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Web-Programming-171-WPR171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <th colspan = 7>Electives (Choose one of)</th>
                       <tr>
@@ -1363,7 +1363,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/1st Year/Business-Management-171-BUM171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Entrepreneurship 171</td>
@@ -1377,7 +1377,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="index.html" download class="btn btn--download">Download</a></td>
                       </tr>
                       </table>
 
@@ -1407,7 +1407,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Cloud-Native-Application-Architecture-271-CNA271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Database Development 271</td>
@@ -1421,7 +1421,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Database-Development-271-DBD271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Enterprise Systems 271</td>
@@ -1435,7 +1435,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Enterprise-Systems-271-ERP271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Ethics 271</td>
@@ -1449,7 +1449,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Ethics-271-ETH271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Information Systems 271</td>
@@ -1463,7 +1463,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Information-Systems-271-INF271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Innovation and Leadership 201</td>
@@ -1477,7 +1477,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Innovation-and-Leadership-201-INL201.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Innovation and Leadership 202</td>
@@ -1491,7 +1491,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Innovation-and-Leadership-202-INL202.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Linear Programming 171</td>
@@ -1505,7 +1505,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Linear-Programming-171-LPR171.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Programming 271</td>
@@ -1519,11 +1519,11 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Programming-271-PRG271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Programming 272</td>
-                        <td>PRG282</td>
+                        <td>PRG272</td>
                         <td>6</td>
                         <td>8</td>
                         <td>DBD271, PRG271</td>
@@ -1533,7 +1533,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Programming-272-PRG272.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Project Management 271</td>
@@ -1547,7 +1547,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Project-Management-271-PMM271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Statistics 271</td>
@@ -1561,7 +1561,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Software-Testing-271-SWT271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Web Programming 271</td>
@@ -1575,7 +1575,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Web-Programming-271-WPR271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <th colspan = 7>Electives (Choose one of)</th>
                       <tr>
@@ -1590,7 +1590,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Internet-of-Things-271-IOT271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Software Testing 271</td>
@@ -1604,7 +1604,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/2nd Year/Software-Testing-271-SWT271.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       </table>
                       
@@ -1634,7 +1634,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Business-Intelligence-371-BIN371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                       <tr>
@@ -1649,7 +1649,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Cloud-Native-Application-Programming-371-CNA371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Data Analytics 371</td>
@@ -1663,7 +1663,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Data-Analytics-371-DAL371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                       <tr>
@@ -1678,7 +1678,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Database-Development-371-DBD371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Innovation and Leadership 371</td>
@@ -1692,7 +1692,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Innovation-and-Leadership-371-INL371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Programming 371</td>
@@ -1706,7 +1706,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Programming-371-PRG371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Project 371</td>
@@ -1720,7 +1720,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Project-371-PRJ371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Project Management 371</td>
@@ -1734,7 +1734,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Project-Management-371-PMM371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <th colspan = 7>Fundamentals: Software Engineering Stream</th>
                       <tr>
@@ -1749,7 +1749,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Software-Analysis-and-Design-371-SAD371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Software Engineering 371</td>
@@ -1763,7 +1763,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Software-Engineering-371-SEN371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Web Programming 371</td>
@@ -1777,7 +1777,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Web-Programming-371-WPR371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>Innovation Management 371</td>
@@ -1791,7 +1791,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/Innovation-Management-371-INM371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       <tr>
                         <td>User Experience Design 371</td>
@@ -1805,7 +1805,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           <label for="c1-13"></label>
                         </div>
                       </td>
-                      <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Mathematics-151-MAT151.pdf" download class="btn btn--download">Download</a></td>
+                      <td><a class="buttondownload" href="Study Guide/BIT/3rd Year/User-Experience-Design-371-UXD371.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                       </table>
                       </div>
