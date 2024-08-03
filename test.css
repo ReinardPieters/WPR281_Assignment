@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+.backimg{
+    background-image: url(Images/Node_background.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    /* background-color: blue; */
+    height: 71vh;
+    background-size: contain;
+    /* position: fixed; */
+    z-index: -100;
+}
+.main{
+    grid-template-areas: 
+    "navbar navbar"
+    "title calendar"
+    "main calendar"
+    "footer footer"
+    ;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+.navbar{
+    grid-column: navbar;
+    background-color: greenyellow;
+    height: auto 100vw;
+    position: sticky;
+    display: block;
+    top: 0;
+    z-index: 1;
+    margin-top: 5vw;
+}
+.navButton{
+    /* background-color: aqua; */
+    font-size: 2.5vh;
+    margin:  1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 1vh 1.5vw;
+    float: right;
+}
+
+.calendar{
+    grid-area: calendar;
+    background-color: cyan;
+}
+
+.content{
+    background-color: cadetblue;
+    height: 2000px;
+    grid-area: main;
+}
+
+.title img{
+    /* scale: 0.8; */
+    z-index: -100;
+    width: 100%;
+}
+.title{
+    background-color: cornflowerblue;
+    grid-area: title;
+}
