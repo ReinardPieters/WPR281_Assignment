@@ -3610,11 +3610,33 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     // Get the content from the #content element
                     const content = document.getElementById('content').innerHTML;
-                    
+                  
                     // Write the content and styles to the new window
                     printWindow.document.open();
                     printWindow.document.write('<html><head><title>Print</title>');
-                    printWindow.document.write('<link rel="stylesheet" type="text/css" href="print.css">');
+                    printWindow.document.write('<style>');
+                    printWindow.document.write(`
+                      /* Print-specific styles */
+                      @media print {
+                        body {
+                          font-size: 1rem;
+                          margin: 0;
+                          padding: 0;
+                        }
+                        table {
+                          width: 100%;
+                          border-collapse: collapse;
+                        }
+                        table, th, td {
+                          border: 1px solid black;
+                        }
+                        th, td {
+                          padding: 8px;
+                          text-align: left;
+                        }
+                      }
+                    `);
+                    printWindow.document.write('</style>');
                     printWindow.document.write('</head><body>');
                     printWindow.document.write(content);
                     printWindow.document.write('</body></html>');
@@ -3638,6 +3660,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       }
                     }, 10000); // Adjust the timeout if needed (10 seconds)
                   });
+                  
                   
               });
           });
