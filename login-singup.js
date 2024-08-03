@@ -18,11 +18,11 @@ document.querySelector('#signin').addEventListener("click", async () => {
         });
 
         console.log('Response status:', response.status);
-
         if (response.ok) {
             const data = await response.json();
             alert(data.message);
-        } else {
+            
+        } else{
             const errorText = await response.text();
             alert(`Error signing in: ${errorText}`);
         }
