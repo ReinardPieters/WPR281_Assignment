@@ -773,6 +773,7 @@
 
  .calendar-body {
    padding: 10px;
+
  }
 
  .calendar-week-days {
@@ -1270,6 +1271,7 @@
    border: white solid 3px;
    border-radius: 20px;
    border: 1px solid black;
+
  }
 
  .Announcements h1 {
@@ -1489,7 +1491,7 @@
     display: block;
     top: 0;
     z-index: 1;
-    margin-top: 5vw;
+    /* margin-top: 5vw; */
     align-items: center;
     display: grid;
     grid-template-columns: 8fr 1fr 1fr 1fr;
