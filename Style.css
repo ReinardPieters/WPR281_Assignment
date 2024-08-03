@@ -1043,7 +1043,9 @@
     z-index: 1;
     margin: 4em -4em;
   }
-  
+  .dropdown-text{
+    margin: 10px;
+  }
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -1522,10 +1524,10 @@
     padding: 1vh 1.5vw;
     float: right;
     transition: 0.2s;
+    border-radius: 10px;
 }
 .navButton_A:hover{
-  /* background-color: orange; */
-  border-bottom: solid 4px orange;
+  background-color: orange;
   transition: 0.2s;
   cursor: pointer;
 }
