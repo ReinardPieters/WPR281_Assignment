@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INF121</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c003" type="checkbox">
+                              <input id="c003" type="checkbox" onclick='checkBoxStrike("c003")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>PMM251</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c004" type="checkbox" onclick='checkBoxStrike("c004")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c005" type="checkbox" onclick='checkBoxStrike("c005")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c006" type="checkbox" onclick='checkBoxStrike("c006")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -268,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c007" type="checkbox" onclick='checkBoxStrike("c007")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>DBD251</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c008" type="checkbox" onclick='checkBoxStrike("c008")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>DBM251</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c009" type="checkbox" onclick='checkBoxStrike("c009")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -311,7 +311,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>PRG122</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c010" type="checkbox" onclick='checkBoxStrike("c010")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>DBD251, PRG251</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c011" type="checkbox" onclick='checkBoxStrike("c011")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>DBD251, PRG121, WPR121</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c012" type="checkbox" onclick='checkBoxStrike("c012")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>WPR251</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c013" type="checkbox" onclick='checkBoxStrike("c013")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c014" type="checkbox" onclick='checkBoxStrike("c014")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -382,7 +382,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>WPR251, PRG121</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c015" type="checkbox" onclick='checkBoxStrike("c015")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -433,7 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c016" type="checkbox" onclick='checkBoxStrike("c016")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -447,7 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c017" type="checkbox" onclick='checkBoxStrike("c017")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c018" type="checkbox" onclick='checkBoxStrike("c018")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -475,7 +475,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c019" type="checkbox" onclick='checkBoxStrike("c019")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c020" type="checkbox" onclick='checkBoxStrike("c020")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -503,7 +503,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c021" type="checkbox" onclick='checkBoxStrike("c021")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -517,7 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c022" type="checkbox" onclick='checkBoxStrike("c022")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c023" type="checkbox" onclick='checkBoxStrike("c023")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -545,7 +545,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c024" type="checkbox" onclick='checkBoxStrike("c024")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -559,7 +559,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c025" type="checkbox" onclick='checkBoxStrike("c025")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -573,7 +573,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG181</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c026" type="checkbox" onclick='checkBoxStrike("c026")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -587,7 +587,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c027" type="checkbox" onclick='checkBoxStrike("c027")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -601,7 +601,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c028" type="checkbox" onclick='checkBoxStrike("c028")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -616,7 +616,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c029" type="checkbox" onclick='checkBoxStrike("c029")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -630,7 +630,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c030" type="checkbox" onclick='checkBoxStrike("c030")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -660,7 +660,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD181</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c031" type="checkbox" onclick='checkBoxStrike("c031")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -674,7 +674,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>INF181</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c032" type="checkbox" onclick='checkBoxStrike("c032")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -688,7 +688,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>INL102</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c033" type="checkbox" onclick='checkBoxStrike("c033")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -702,7 +702,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>INL102</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c034" type="checkbox" onclick='checkBoxStrike("c034")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -716,7 +716,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>LPR181, MAT181</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c035" type="checkbox" onclick='checkBoxStrike("c035")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -730,7 +730,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>MAT181</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c036" type="checkbox" onclick='checkBoxStrike("c036")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -744,7 +744,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG182</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c037" type="checkbox" onclick='checkBoxStrike("c037")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -758,7 +758,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD281, PRG281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c038" type="checkbox" onclick='checkBoxStrike("c038")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -772,7 +772,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c039" type="checkbox" onclick='checkBoxStrike("c039")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -786,7 +786,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>STA181</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c040" type="checkbox" onclick='checkBoxStrike("c040")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -800,7 +800,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG181, WPR181</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c041" type="checkbox" onclick='checkBoxStrike("c041")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -815,7 +815,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PMM281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c042" type="checkbox" onclick='checkBoxStrike("c042")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -831,7 +831,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c043" type="checkbox" onclick='checkBoxStrike("c043")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -847,7 +847,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG181, WPR281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c044" type="checkbox" onclick='checkBoxStrike("c044")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -861,7 +861,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG282</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c045" type="checkbox" onclick='checkBoxStrike("c045")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -891,7 +891,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>STA281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c046" type="checkbox" onclick='checkBoxStrike("c046")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -905,7 +905,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c047" type="checkbox" onclick='checkBoxStrike("c047")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -919,7 +919,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>INL201, INL202</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c048" type="checkbox onclick='checkBoxStrike("c048")'">
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -933,7 +933,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>LPR281, MAT281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c049" type="checkbox" onclick='checkBoxStrike("c049")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -947,7 +947,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>STA281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c050" type="checkbox" onclick='checkBoxStrike("c050")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -961,7 +961,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PMM281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c051" type="checkbox" onclick='checkBoxStrike("c051")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -975,7 +975,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG182</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c052" type="checkbox" onclick='checkBoxStrike("c052")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -990,7 +990,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG282</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c053" type="checkbox" onclick='checkBoxStrike("c053")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1004,7 +1004,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PMM381, PRG282, SAD281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c054" type="checkbox" onclick='checkBoxStrike("c054")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1018,7 +1018,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG282, WPR281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c055" type="checkbox" onclick='checkBoxStrike("c055")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1033,7 +1033,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DWH281, MLG381</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c056" type="checkbox" onclick='checkBoxStrike("c056")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1047,7 +1047,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c057" type="checkbox" onclick='checkBoxStrike("c057")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1061,7 +1061,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>STA281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c058" type="checkbox" onclick='checkBoxStrike("c058")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1077,7 +1077,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c059" type="checkbox" onclick='checkBoxStrike("c059")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1091,7 +1091,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>MLG381, PRG282</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c060" type="checkbox" onclick='checkBoxStrike("c060")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1105,7 +1105,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG282, WPR281</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c061" type="checkbox" onclick='checkBoxStrike("c061")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1134,7 +1134,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c062" type="checkbox" onclick='checkBoxStrike("c062")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1148,7 +1148,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c063" type="checkbox" onclick='checkBoxStrike("c063")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1162,7 +1162,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c064" type="checkbox" onclick='checkBoxStrike("c064")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1213,7 +1213,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c065" type="checkbox" onclick='checkBoxStrike("c065")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1227,7 +1227,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c066" type="checkbox" onclick='checkBoxStrike("c066")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1241,7 +1241,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c067" type="checkbox" onclick='checkBoxStrike("c067")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1255,7 +1255,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c068" type="checkbox" onclick='checkBoxStrike("c068")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1269,7 +1269,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c067" type="checkbox" onclick='checkBoxStrike("c067")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1283,7 +1283,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c068" type="checkbox" onclick='checkBoxStrike("c068")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1297,7 +1297,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c069" type="checkbox" onclick='checkBoxStrike("c069")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1310,8 +1310,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>11</td>
                         <td>None</td>
                         <td>
-                        <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                        <div class="checkbox-wrapper-13"> 
+                          <input id="c070" type="checkbox" onclick='checkBoxStrike("c070")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1325,7 +1325,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c071" type="checkbox" onclick='checkBoxStrike("c071")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1339,7 +1339,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c071" type="checkbox" onclick='checkBoxStrike("c071")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1353,7 +1353,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c072" type="checkbox" onclick='checkBoxStrike("c072")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1367,7 +1367,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c073" type="checkbox" onclick='checkBoxStrike("c073")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1381,7 +1381,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c074" type="checkbox" onclick='checkBoxStrike("c074")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1396,7 +1396,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c075" type="checkbox" onclick='checkBoxStrike("c075")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1410,7 +1410,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c076" type="checkbox" onclick='checkBoxStrike("c076")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1440,7 +1440,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c077" type="checkbox" onclick='checkBoxStrike("c077")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1454,7 +1454,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD171</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c078" type="checkbox" onclick='checkBoxStrike("c078")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1468,7 +1468,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c079" type="checkbox" onclick='checkBoxStrike("c079")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1482,7 +1482,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c080" type="checkbox" onclick='checkBoxStrike("c080")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1496,7 +1496,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>INF171</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c081" type="checkbox" onclick='checkBoxStrike("c081")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1510,7 +1510,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c082" type="checkbox" onclick='checkBoxStrike("c082")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1524,7 +1524,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c083" type="checkbox" onclick='checkBoxStrike("c083")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1538,7 +1538,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>MAT171</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c083" type="checkbox" onclick='checkBoxStrike("c083")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1552,7 +1552,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG172</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c084" type="checkbox" onclick='checkBoxStrike("c084")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1566,7 +1566,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD271, PRG271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c085" type="checkbox" onclick='checkBoxStrike("c085")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1580,7 +1580,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c086" type="checkbox" onclick='checkBoxStrike("c086")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1594,7 +1594,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>STA171</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c087" type="checkbox" onclick='checkBoxStrike("c087")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1608,7 +1608,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG171, WPR171</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c088" type="checkbox" onclick='checkBoxStrike("c088")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1623,7 +1623,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG171, WPR271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c089" type="checkbox" onclick='checkBoxStrike("c089")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1637,7 +1637,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG272</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c090" type="checkbox" onclick='checkBoxStrike("c090")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1667,7 +1667,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>SQL</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c091" type="checkbox" onclick='checkBoxStrike("c091")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1682,7 +1682,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>CNA271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c092" type="checkbox" onclick='checkBoxStrike("c092")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1696,7 +1696,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>STA271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c093" type="checkbox" onclick='checkBoxStrike("c093")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1711,7 +1711,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c094" type="checkbox" onclick='checkBoxStrike("c094")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1725,7 +1725,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>INL201, INL202</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c095" type="checkbox" onclick='checkBoxStrike("c095")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1739,7 +1739,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG272</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c096" type="checkbox" onclick='checkBoxStrike("c096")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1753,7 +1753,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PMM271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c097" type="checkbox" onclick='checkBoxStrike("c097")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1767,7 +1767,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PMM271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c098" type="checkbox" onclick='checkBoxStrike("c098")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1782,7 +1782,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c099" type="checkbox" onclick='checkBoxStrike("c099")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1796,7 +1796,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PMM371, PRG272, SAD371</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c100" type="checkbox" onclick='checkBoxStrike("c100")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1810,7 +1810,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG272, WPR271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c101" type="checkbox" onclick='checkBoxStrike("c101")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1824,7 +1824,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c102" type="checkbox" onclick='checkBoxStrike("c102")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1838,7 +1838,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG272, WPR271</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c103" type="checkbox" onclick='checkBoxStrike("c103")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1889,7 +1889,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c104" type="checkbox" onclick='checkBoxStrike("c104")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1903,7 +1903,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c105" type="checkbox" onclick='checkBoxStrike("c105")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1917,7 +1917,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c106" type="checkbox" onclick='checkBoxStrike("c106")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1931,7 +1931,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c107" type="checkbox" onclick='checkBoxStrike("c107")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1945,7 +1945,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c108" type="checkbox" onclick='checkBoxStrike("c108")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1959,7 +1959,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c109" type="checkbox" onclick='checkBoxStrike("c109")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1973,7 +1973,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c110" type="checkbox" onclick='checkBoxStrike("c110")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -1987,7 +1987,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c111" type="checkbox" onclick='checkBoxStrike("c111")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2001,7 +2001,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c112" type="checkbox" onclick='checkBoxStrike("c112")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2015,7 +2015,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c113" type="checkbox" onclick='checkBoxStrike("c113")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2029,7 +2029,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c114" type="checkbox" onclick='checkBoxStrike("c114")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2043,7 +2043,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRP161, MAT161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c115" type="checkbox" onclick='checkBoxStrike("c115")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2057,7 +2057,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRS161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c116" type="checkbox" onclick='checkBoxStrike("c116")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2071,7 +2071,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>EUC161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c117" type="checkbox" onclick='checkBoxStrike("c117")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2085,7 +2085,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>EUC161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c118" type="checkbox" onclick='checkBoxStrike("c118")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2115,7 +2115,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBF161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c119" type="checkbox" onclick='checkBoxStrike("c119")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2129,7 +2129,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c120" type="checkbox" onclick='checkBoxStrike("c120")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2143,7 +2143,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>INL161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c121" type="checkbox" onclick='checkBoxStrike("c121")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2157,7 +2157,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c122" type="checkbox" onclick='checkBoxStrike("c122")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2171,7 +2171,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>EUC161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c123" type="checkbox" onclick='checkBoxStrike("c123")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2186,7 +2186,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>IOT261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c124" type="checkbox" onclick='checkBoxStrike("c124")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2200,7 +2200,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>IOT161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c125" type="checkbox" onclick='checkBoxStrike("c125")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2214,7 +2214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>SEC261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c126" type="checkbox" onclick='checkBoxStrike("c126")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2228,7 +2228,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>OPS261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c127" type="checkbox" onclick='checkBoxStrike("c127")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2242,7 +2242,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>OPS262</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c128" type="checkbox" onclick='checkBoxStrike("c128")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2256,7 +2256,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>NWD161, ILE261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c129" type="checkbox" onclick='checkBoxStrike("c129")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2271,7 +2271,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c130" type="checkbox" onclick='checkBoxStrike("c130")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2285,7 +2285,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG261, DBD261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c131" type="checkbox" onclick='checkBoxStrike("c131")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2299,7 +2299,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRP161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c132" type="checkbox" onclick='checkBoxStrike("c132")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2313,7 +2313,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c133" type="checkbox" onclick='checkBoxStrike("c133")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2327,7 +2327,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>SWT261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c134" type="checkbox" onclick='checkBoxStrike("c134")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2341,7 +2341,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c135" type="checkbox" onclick='checkBoxStrike("c135")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2355,7 +2355,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>WPR161, PRP161</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c136" type="checkbox" onclick='checkBoxStrike("c136")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2373,7 +2373,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c137" type="checkbox" onclick='checkBoxStrike("c137")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2389,7 +2389,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PET361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c138" type="checkbox" onclick='checkBoxStrike("c138")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2403,7 +2403,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>SEC261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c139" type="checkbox" onclick='checkBoxStrike("c139")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2419,7 +2419,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>NWD361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c140" type="checkbox" onclick='checkBoxStrike("c140")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2434,7 +2434,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>OPS361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c141" type="checkbox" onclick='checkBoxStrike("c141")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2449,7 +2449,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>OPS262</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c142" type="checkbox" onclick='checkBoxStrike("c142")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2464,7 +2464,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>OPS263</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c143" type="checkbox" onclick='checkBoxStrike("c143")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2479,7 +2479,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c144" type="checkbox" onclick='checkBoxStrike("c144")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2493,7 +2493,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c145" type="checkbox" onclick='checkBoxStrike("c145")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2507,7 +2507,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c146" type="checkbox" onclick='checkBoxStrike("c146")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2521,7 +2521,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c147" type="checkbox" onclick='checkBoxStrike("c147")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2535,7 +2535,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c148" type="checkbox" onclick='checkBoxStrike("c148")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2554,7 +2554,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>WPR261, WFS361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c149" type="checkbox" onclick='checkBoxStrike("c149")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2568,7 +2568,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>WPR261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c150" type="checkbox" onclick='checkBoxStrike("c150")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2582,7 +2582,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>WFS361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c151" type="checkbox" onclick='checkBoxStrike("c151")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2598,7 +2598,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG262</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c152" type="checkbox" onclick='checkBoxStrike("c152")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2612,7 +2612,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PRG262</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c153" type="checkbox" onclick='checkBoxStrike("c153")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2626,7 +2626,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>SWA261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c154" type="checkbox" onclick='checkBoxStrike("c154")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2640,7 +2640,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PMM261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c155" type="checkbox" onclick='checkBoxStrike("c155")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2656,7 +2656,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c156" type="checkbox" onclick='checkBoxStrike("c156")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2670,7 +2670,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c156" type="checkbox" onclick='checkBoxStrike("c156")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2684,7 +2684,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c157" type="checkbox" onclick='checkBoxStrike("c157")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2698,7 +2698,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c158" type="checkbox" onclick='checkBoxStrike("c158")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2712,7 +2712,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>DBD361</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c159" type="checkbox" onclick='checkBoxStrike("c159")'>
                           <label for="c1-13"></label>
                         </div>
                         </td>
@@ -2743,7 +2743,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>PMM261, INL261</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c160" type="checkbox" onclick='checkBoxStrike("c160")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2757,7 +2757,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>Not more than 18 credits outstanding of the total academic programme.</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c161" type="checkbox" onclick='checkBoxStrike("c161")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2771,7 +2771,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>Not more than 18 credits outstanding of the total academic programme.</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c162" type="checkbox" onclick='checkBoxStrike("c162")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2786,7 +2786,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c163" type="checkbox" onclick='checkBoxStrike("c163")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2801,7 +2801,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <td>None</td>
                         <td>
                         <div class="checkbox-wrapper-13">
-                          <input id="c1-13" type="checkbox">
+                          <input id="c164" type="checkbox" onclick='checkBoxStrike("c164")'>
                           <label for="c1-13"></label>
                         </div>
                       </td>
@@ -2866,7 +2866,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c165" type="checkbox" onclick='checkBoxStrike("c165")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -2880,7 +2880,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c166" type="checkbox" onclick='checkBoxStrike("c166")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -2895,7 +2895,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c167" type="checkbox" onclick='checkBoxStrike("c167")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -2910,7 +2910,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c168" type="checkbox" onclick='checkBoxStrike("c168")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -2925,7 +2925,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c169" type="checkbox" onclick='checkBoxStrike("c169")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -2940,7 +2940,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c170" type="checkbox" onclick='checkBoxStrike("c170")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -2954,7 +2954,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c171" type="checkbox" onclick='checkBoxStrike("c171")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -2968,7 +2968,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c172" type="checkbox" onclick='checkBoxStrike("c172")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -2982,7 +2982,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c173" type="checkbox" onclick='checkBoxStrike("c173")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -2996,7 +2996,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c174" type="checkbox" onclick='checkBoxStrike("c174")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3010,7 +3010,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>PRG151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c175" type="checkbox" onclick='checkBoxStrike("c175")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3024,7 +3024,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>PRG151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c176" type="checkbox" onclick='checkBoxStrike("c176")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3039,7 +3039,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c177" type="checkbox" onclick='checkBoxStrike("c177")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3053,7 +3053,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c178" type="checkbox" onclick='checkBoxStrike("c178")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3075,7 +3075,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INF151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c179" type="checkbox" onclick='checkBoxStrike("c179")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3089,7 +3089,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INL102</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c180" type="checkbox" onclick='checkBoxStrike("c180")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3103,7 +3103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>COA151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c181" type="checkbox" onclick='checkBoxStrike("c181")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3117,7 +3117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>PMM251</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c182" type="checkbox" onclick='checkBoxStrike("c182")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3131,7 +3131,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c183" type="checkbox" onclick='checkBoxStrike("c183")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3145,7 +3145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c184" type="checkbox" onclick='checkBoxStrike("c184")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3160,7 +3160,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>DBD151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c185" type="checkbox" onclick='checkBoxStrike("c185")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3174,7 +3174,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>NWD151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c186" type="checkbox" onclick='checkBoxStrike("c186")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3188,7 +3188,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>NWD151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c187" type="checkbox" onclick='checkBoxStrike("c187")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3202,7 +3202,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c188" type="checkbox" onclick='checkBoxStrike("c188")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3216,7 +3216,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>NWD251</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c189" type="checkbox" onclick='checkBoxStrike("c189")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3230,7 +3230,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>NWD151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c190" type="checkbox" onclick='checkBoxStrike("c190")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3245,7 +3245,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>DBD151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c191" type="checkbox" onclick='checkBoxStrike("c191")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3259,7 +3259,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>DBD151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c192" type="checkbox" onclick='checkBoxStrike("c192")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3273,7 +3273,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>PRG152</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c193" type="checkbox" onclick='checkBoxStrike("c193")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3287,7 +3287,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>DBD251, PRG251</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c194" type="checkbox" onclick='checkBoxStrike("c194")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3301,7 +3301,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>DBM251, PRG151, WPR151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c195" type="checkbox" onclick='checkBoxStrike("c195")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3315,7 +3315,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>WPR251</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c196" type="checkbox" onclick='checkBoxStrike("c196")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3330,7 +3330,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c197" type="checkbox" onclick='checkBoxStrike("c197")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3344,7 +3344,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>WPR251, PRG151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c198" type="checkbox" onclick='checkBoxStrike("c198")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3366,7 +3366,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c199" type="checkbox" onclick='checkBoxStrike("c199")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3419,7 +3419,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c200" type="checkbox" onclick='checkBoxStrike("c200")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3433,7 +3433,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c201" type="checkbox" onclick='checkBoxStrike("c201")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3448,7 +3448,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c202" type="checkbox" onclick='checkBoxStrike("c202")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3463,7 +3463,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c203" type="checkbox" onclick='checkBoxStrike("c203")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3478,7 +3478,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c204" type="checkbox" onclick='checkBoxStrike("c204")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3493,7 +3493,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c205" type="checkbox" onclick='checkBoxStrike("c205")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3507,7 +3507,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c206" type="checkbox" onclick='checkBoxStrike("c206")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3521,7 +3521,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c207" type="checkbox" onclick='checkBoxStrike("c207")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3535,7 +3535,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c208" type="checkbox" onclick='checkBoxStrike("c208")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3549,7 +3549,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c209" type="checkbox" onclick='checkBoxStrike("c209")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3563,7 +3563,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>PRG151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c210" type="checkbox" onclick='checkBoxStrike("c210")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3577,7 +3577,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>PRG151</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c211" type="checkbox" onclick='checkBoxStrike("c211")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3592,7 +3592,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c212" type="checkbox" onclick='checkBoxStrike("c212")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -3606,7 +3606,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>None</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c213" type="checkbox" onclick='checkBoxStrike("c213")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
