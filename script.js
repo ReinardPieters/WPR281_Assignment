@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INL102</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c002" type="checkbox">
+                              <input id="c002" type="checkbox" onclick='checkBoxStrike("c002")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
