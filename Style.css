@@ -672,6 +672,10 @@
    flex-direction: row;
    justify-content: right;
    border-bottom: 1px solid black;
+   position: sticky;
+   top: 5px;
+   background-color: white;
+   z-index: 10;
  }
 
  .body {
@@ -692,7 +696,7 @@
    grid-template-rows: fit-content fit-content;
    width: 70%;
    height: 90vh;
-   padding: 20px;
+   /* padding: 20px; */
    border: 1px solid black;
    box-shadow: 2px 2px;
    border-radius: 25px 0 0 25px;
