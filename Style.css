@@ -630,28 +630,45 @@
   margin-right: 5px;
 }
 
+/* print.css */
 @media print {
   body * {
     visibility: hidden;
   }
+
   #content, #content * {
     visibility: visible;
   }
+
   #content {
-    position: static; /* Change to static */
-    width: auto; /* Adjust width if necessary */
+    position: static;
+    width: auto;
     background-color: white;
-    margin: 0; /* Remove margin */
-    padding: 0; /* Remove padding */
+    margin: 0;
+    padding: 0;
   }
-  /* Hide any other elements that might interfere */
-  .scrollable-block {
-    display: none !important;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: auto;
   }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
   @page {
-    margin: 1in; /* Adjust margins */
+    margin: 1in;
   }
 }
+
 
 
 

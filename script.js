@@ -1155,8 +1155,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                     <div class="head">
                       <h1>Bachelor of Information Technology</h1>
+                        <button class="test3" id="print">Print Course</button>
                       <button class="test2">Go back to main</button>
                     </div>
                     <div class="body">
@@ -1823,14 +1825,17 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
+                    </section>
                     `;
 
                   }else if (link.classList.contains('dit')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                     <div class="head">
                       <h1>Diploma in Information Technology</h1>
+                      <button class="test3" id="print">Print Course</button>
                       <button class="test2">Go back to main</button>
                     </div>
                     <div class="body">
@@ -2781,13 +2786,16 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Diploma/3rd Year/Work-Simulation-Project-361-WSP361.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                     </div>
+                    </section>
                     `;
                   }else if (link.classList.contains('dds')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id = 'content'>
                         <div class="head">
                           <h1>Diploma for Deaf Students</h1>
+                          <button class="test3" id="print">Print Course</button>
                           <button class="test2">Go back to main</button>
                         </div>
                         <div class="body">
@@ -3345,13 +3353,16 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
+                        </section>
                         `;
                   }else if (link.classList.contains('nsd')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                         <div class="head">
                           <h1>National Certificate: System Development</h1>
+                          <button class="test3" id="print">Print Course</button>
                           <button class="test2">Go back to main</button>
                         </div>
                         <div class="body">
@@ -3583,6 +3594,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          
                           </div>
                         </div>
+                        </section>
                         `;
                   }
                   else{
@@ -3592,9 +3604,41 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');  
                   });
-                  document.querySelector("#print").addEventListener("click",() =>{
-                        window.print();
+                  document.querySelector("#print").addEventListener("click", () => {
+                    // Create a new window
+                    const printWindow = window.open('', '', 'height=600,width=800');
+                    
+                    // Get the content from the #content element
+                    const content = document.getElementById('content').innerHTML;
+                    
+                    // Write the content and styles to the new window
+                    printWindow.document.open();
+                    printWindow.document.write('<html><head><title>Print</title>');
+                    printWindow.document.write('<link rel="stylesheet" type="text/css" href="print.css">');
+                    printWindow.document.write('</head><body>');
+                    printWindow.document.write(content);
+                    printWindow.document.write('</body></html>');
+                    printWindow.document.close();
+                    
+                    // Ensure the content is loaded before printing
+                    printWindow.onload = function() {
+                      printWindow.focus();
+                      printWindow.print();
+                    };
+                  
+                    // Close the print window after printing is done
+                    printWindow.onafterprint = function() {
+                      printWindow.close();
+                    };
+                  
+                    // Fallback in case onafterprint does not work
+                    setTimeout(() => {
+                      if (!printWindow.closed) {
+                        printWindow.close();
+                      }
+                    }, 10000); // Adjust the timeout if needed (10 seconds)
                   });
+                  
               });
           });
       })
