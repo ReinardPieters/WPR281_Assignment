@@ -109,7 +109,24 @@ sql.connect(config).then(pool => {
 
     
     app.post('/checkCompletedCourse', async (req, res) => {
-        
+        try{
+            const response = await fetch("http://localhost:3000/userdata")
+            if (response.ok) {
+                const data = await response.json();
+                if(!data.username){
+                    return
+                }else{
+                    const completedModules = await pool.request()
+                    .input(`${data.username}`, sql.NVarChar, username)
+                    .query('SELECT * FROM Course WHERE Username = @Username OR Email = @Email');
+                }
+            } else {
+                const errorText = await response.text();
+                alert(errorText)
+            }
+          } catch(error){
+            console.error("Error", error);
+          }
     })
 
 
