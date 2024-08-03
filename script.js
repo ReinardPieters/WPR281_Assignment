@@ -117,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                         <div class="head">
                           <h1>Certificate: Information Technology (Database Development)</h1>
                           <button class="test3" id="print">Print Course</button>
@@ -368,13 +369,17 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
+                      </section>
                         `;
+                       
                   } else if (link.classList.contains('bcomp')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                     <div class="head">
                       <h1>Bachelor of Computing</h1>
+                      <button class="test3" id="print">Print Course</button>
                       <button class="test2">Go back to main</button>
                     </div>
                     <div class="body">
@@ -1144,7 +1149,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
-                    `;
+                    </section>`;
                     
                   }else if (link.classList.contains('bit')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');

@@ -630,6 +630,32 @@
   margin-right: 5px;
 }
 
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #content, #content * {
+    visibility: visible;
+  }
+  #content {
+    position: static; /* Change to static */
+    width: auto; /* Adjust width if necessary */
+    background-color: white;
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+  }
+  /* Hide any other elements that might interfere */
+  .scrollable-block {
+    display: none !important;
+  }
+  @page {
+    margin: 1in; /* Adjust margins */
+  }
+}
+
+
+
+
  .head h1 {
    text-align: center;
    width: 100%;
