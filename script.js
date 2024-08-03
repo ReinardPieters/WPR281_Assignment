@@ -119,8 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     coursedetails.innerHTML = `
                         <div class="head">
                           <h1>Certificate: Information Technology (Database Development)</h1>
-                          <button id="print">Print Course</button>
-                          
+                          <button class="test3" id="print">Print Course</button>
                           <button class="test2">Go back to main</button>
                         </div>
                         <div class="body">
