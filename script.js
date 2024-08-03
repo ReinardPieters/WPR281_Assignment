@@ -15,11 +15,8 @@ async function setUser(){
     const response = await fetch("http://localhost:3000/userdata")
     if (response.ok) {
         const data = await response.json();
-        console.log(data);
-        alert(`Logged in as: ${data.Username}`);
-        let Account = document.createElement("p")
-        Account.innerText = data.Username
-        document.querySelector(".ham").appendChild(Account)
+        Account.innerText = `Currently Singed in as: ${data.Username}`
+        document.querySelector(".navbar_A").appendChild(Account)
 
     } else {
         const errorText = await response.text();
