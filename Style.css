@@ -365,9 +365,9 @@
  }
 
  .material-symbols-outlined {
-   height: 20px;
+   height: auto;
    margin: 10px;
-   color: #ffffff;
+   color: #0A0921;
  }
 
  /*Login page*/
@@ -1048,9 +1048,6 @@
     display: block;
   }
 
-  .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-  }
   #AboutUs:hover{
     cursor: pointer;
   }
@@ -1510,8 +1507,8 @@
     z-index: 1;
     /* margin-top: 5vw; */
     align-items: center;
-    display: grid;
-    grid-template-columns: 8fr 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 8fr 1fr 1fr 1fr; */
 }
 .navButton_A{
     /* background-color: aqua; */
@@ -1527,8 +1524,10 @@
     transition: 0.2s;
 }
 .navButton_A:hover{
-  background-color: orange;
+  /* background-color: orange; */
+  border-bottom: solid 4px orange;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .calendar_A{
@@ -1566,6 +1565,10 @@
   font-size: 17px;
   z-index: 1000;
   width: 30vw;
-  place-self: center;
 }
+
+#LogOut{
+  float: left;
+}
+
  /* End */
