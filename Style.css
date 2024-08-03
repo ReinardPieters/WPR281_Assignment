@@ -1467,3 +1467,9 @@
 
 
  /*STUDY GUIDE DOWNLOAD BUTTON*/
+
+ /* Completion class for when a task is completed */
+ .completion {
+  color: red;
+  text-decoration: line-through;
+ }

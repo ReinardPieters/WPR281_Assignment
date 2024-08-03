@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INF122</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c001" type="checkbox" onclick='checkBoxStrike("c001")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INL102</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c002" type="checkbox">
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INF121</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c003" type="checkbox">
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -4179,3 +4179,30 @@ document.getElementById('date3meaning').textContent = `${futureDates[2].Meaning}
 });
 //EVENTS JS
 
+//Just the strike through function
+function checkBoxStrike(id) {
+  let mycheckbox = document.querySelector(`#${id}`);
+  let divElement = mycheckbox.parentElement;
+  let tdElement = divElement.parentElement;
+  tdElement.className = "inputTD"
+  let trElement = tdElement.parentElement;
+  let array = Array.from(trElement.children);
+  let filtered = new Array;
+  
+  for (let i =0;i<array.length;i++) {
+    if ((array[i].tagName=='TD') && !(array[i].className=='inputTD')) {
+      filtered.push(array[i]);
+    }
+  }
+
+    if (mycheckbox.checked){
+      filtered.forEach(obj => {
+       obj.className = "completion"
+      })
+    }
+    else {
+      filtered.forEach(obj => {
+        obj.className = ""
+       })
+    }
+}
