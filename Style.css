@@ -1508,7 +1508,7 @@
     /* margin-top: 5vw; */
     align-items: center;
     display: grid;
-    grid-template-columns:  8fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:  1fr 8fr 1fr 1fr 1fr;
 }
 .navButton_A{
     /* background-color: aqua; */
