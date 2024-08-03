@@ -428,7 +428,7 @@
  .ham h1,
  nav,
  img {
-   max-height: 80px;
+   /* max-height: 80px; */
  }
 
  .ham a {
@@ -1527,7 +1527,7 @@
 
 .title_A{
     grid-area: title;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
     place-content: center;
     text-align: center;
     /* width: 100%; */
@@ -1535,11 +1535,9 @@
   }
   
   .title_A img{
-    object-fit: cover;
-    width: 100%;
+    object-fit: contain;
     height: 100%;
-    /* height: 10000px; */
-    background-color: blue;
+    /* background-color: blue; */
   }
 
 .navbar_A input[type=text] {

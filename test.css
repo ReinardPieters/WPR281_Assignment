@@ -2,7 +2,7 @@ body{
     margin: 0;
 }
 .backimg{
-    background-image: url(Images/coding-background.jpg);
+    background-image: url(Images/Node_background.jpg);
     background-attachment: fixed;
     width: 100%;
     /* background-color: blue; */
@@ -55,7 +55,7 @@ body{
 }
 
 .title img{
-    scale: 0.8;
+    /* scale: 0.8; */
     z-index: -100;
     width: 100%;
 }
