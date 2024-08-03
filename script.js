@@ -117,8 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                         <div class="head">
                           <h1>Certificate: Information Technology (Database Development)</h1>
+                          <button class="test3" id="print">Print Course</button>
                           <button class="test2">Go back to main</button>
                         </div>
                         <div class="body">
@@ -156,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INF122</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c001" type="checkbox" onclick='checkBoxStrike("c001")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -170,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INL102</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c002" type="checkbox" onclick='checkBoxStrike("c002")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -185,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INF121</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c1-13" type="checkbox">
+                              <input id="c003" type="checkbox">
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -367,13 +369,17 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
+                      </section>
                         `;
+                       
                   } else if (link.classList.contains('bcomp')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                     <div class="head">
                       <h1>Bachelor of Computing</h1>
+                      <button class="test3" id="print">Print Course</button>
                       <button class="test2">Go back to main</button>
                     </div>
                     <div class="body">
@@ -1143,14 +1149,16 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
-                    `;
+                    </section>`;
                     
                   }else if (link.classList.contains('bit')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                     <div class="head">
                       <h1>Bachelor of Information Technology</h1>
+                        <button class="test3" id="print">Print Course</button>
                       <button class="test2">Go back to main</button>
                     </div>
                     <div class="body">
@@ -1817,14 +1825,17 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
+                    </section>
                     `;
 
                   }else if (link.classList.contains('dit')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                     <div class="head">
                       <h1>Diploma in Information Technology</h1>
+                      <button class="test3" id="print">Print Course</button>
                       <button class="test2">Go back to main</button>
                     </div>
                     <div class="body">
@@ -2775,13 +2786,16 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Diploma/3rd Year/Work-Simulation-Project-361-WSP361.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                     </div>
+                    </section>
                     `;
                   }else if (link.classList.contains('dds')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id = 'content'>
                         <div class="head">
                           <h1>Diploma for Deaf Students</h1>
+                          <button class="test3" id="print">Print Course</button>
                           <button class="test2">Go back to main</button>
                         </div>
                         <div class="body">
@@ -3339,13 +3353,16 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
+                        </section>
                         `;
                   }else if (link.classList.contains('nsd')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
                     coursedetails.innerHTML = `
+                    <section id='content'>
                         <div class="head">
                           <h1>National Certificate: System Development</h1>
+                          <button class="test3" id="print">Print Course</button>
                           <button class="test2">Go back to main</button>
                         </div>
                         <div class="body">
@@ -3577,6 +3594,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          
                           </div>
                         </div>
+                        </section>
                         `;
                   }
                   else{
@@ -3586,6 +3604,64 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');  
                   });
+                  document.querySelector("#print").addEventListener("click", () => {
+                    // Create a new window
+                    const printWindow = window.open('', '', 'height=600,width=800');
+                    
+                    // Get the content from the #content element
+                    const content = document.getElementById('content').innerHTML;
+                  
+                    // Write the content and styles to the new window
+                    printWindow.document.open();
+                    printWindow.document.write('<html><head><title>Print</title>');
+                    printWindow.document.write('<style>');
+                    printWindow.document.write(`
+                      /* Print-specific styles */
+                      @media print {
+                        body {
+                          font-size: 1rem;
+                          margin: 0;
+                          padding: 0;
+                        }
+                        table {
+                          width: 100%;
+                          border-collapse: collapse;
+                        }
+                        table, th, td {
+                          border: 1px solid black;
+                        }
+                        th, td {
+                          padding: 8px;
+                          text-align: left;
+                        }
+                      }
+                    `);
+                    printWindow.document.write('</style>');
+                    printWindow.document.write('</head><body>');
+                    printWindow.document.write(content);
+                    printWindow.document.write('</body></html>');
+                    printWindow.document.close();
+                    
+                    // Ensure the content is loaded before printing
+                    printWindow.onload = function() {
+                      printWindow.focus();
+                      printWindow.print();
+                    };
+                  
+                    // Close the print window after printing is done
+                    printWindow.onafterprint = function() {
+                      printWindow.close();
+                    };
+                  
+                    // Fallback in case onafterprint does not work
+                    setTimeout(() => {
+                      if (!printWindow.closed) {
+                        printWindow.close();
+                      }
+                    }, 10000); // Adjust the timeout if needed (10 seconds)
+                  });
+                  
+                  
               });
           });
       })
@@ -4173,3 +4249,31 @@ document.getElementById('date3meaning').textContent = `${futureDates[2].Meaning}
 
 });
 //EVENTS JS
+
+//Just the strike through function
+function checkBoxStrike(id) {
+  let mycheckbox = document.querySelector(`#${id}`);
+  let divElement = mycheckbox.parentElement;
+  let tdElement = divElement.parentElement;
+  tdElement.className = "inputTD"
+  let trElement = tdElement.parentElement;
+  let array = Array.from(trElement.children);
+  let filtered = new Array;
+  
+  for (let i =0;i<array.length;i++) {
+    if ((array[i].tagName=='TD') && !(array[i].className=='inputTD')) {
+      filtered.push(array[i]);
+    }
+  }
+
+    if (mycheckbox.checked){
+      filtered.forEach(obj => {
+       obj.className = "completion"
+      })
+    }
+    else {
+      filtered.forEach(obj => {
+        obj.className = ""
+       })
+    }
+}

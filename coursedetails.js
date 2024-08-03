@@ -11,3 +11,4 @@ hamMenu.addEventListener("click", () =>{
         back.disabled=true
     }
 });
+

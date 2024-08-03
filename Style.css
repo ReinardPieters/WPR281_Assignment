@@ -614,12 +614,64 @@
 
  .test2 {
    background-color: #512da8;
-   height: 40px;
+   height: 50px;
    width: 200px;
    text-align: center;
    color: #fff;
    left: 1vh;
  }
+ .test3 {
+  background-color: #512da8;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  left: 1vh;
+  margin-right: 5px;
+}
+
+/* print.css */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  #content, #content * {
+    visibility: visible;
+  }
+
+  #content {
+    position: static;
+    width: auto;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: auto;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+  tr {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 1in;
+  }
+}
+
+
+
+
 
  .head h1 {
    text-align: center;
@@ -1467,3 +1519,9 @@
 
 
  /*STUDY GUIDE DOWNLOAD BUTTON*/
+
+ /* Completion class for when a task is completed */
+ .completion {
+  color: red;
+  text-decoration: line-through;
+ }
