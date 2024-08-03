@@ -119,6 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     coursedetails.innerHTML = `
                         <div class="head">
                           <h1>Certificate: Information Technology (Database Development)</h1>
+                          <button id="print">Print Course</button>
+                          
                           <button class="test2">Go back to main</button>
                         </div>
                         <div class="body">
@@ -3586,6 +3588,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');  
                   });
+                  document.querySelector("#print").addEventListener("click",() =>{
+                        window.print();
+                  });
               });
           });
       })
@@ -4173,3 +4178,4 @@ document.getElementById('date3meaning').textContent = `${futureDates[2].Meaning}
 
 });
 //EVENTS JS
+
