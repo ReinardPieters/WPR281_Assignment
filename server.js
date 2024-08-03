@@ -108,6 +108,9 @@ sql.connect(config).then(pool => {
     });
 
     
+    app.post('/checkCompletedCourse', async (req, res) => {
+        
+    })
 
 
     // Start the server

@@ -3,13 +3,33 @@ const offScreenMenu = document.getElementById("off-screen-menu");
 const dropHeader = document.getElementById("dropHeader");
 const dropDown = document.getElementById("dropDown");
 
-hamMenu.addEventListener("click", () =>{
+hamMenu.addEventListener("click", async() =>{
     hamMenu.classList.toggle('active');
     offScreenMenu.classList.toggle('active');
+
     return;
 });
 
+async function setUser(){
+  try{
+    const response = await fetch("http://localhost:3000/userdata")
+    if (response.ok) {
+        const data = await response.json();
+        console.log(data);
+        alert(`Logged in as: ${data.Username}`);
+        let Account = document.createElement("p")
+        Account.innerText = data.Username
+        document.querySelector(".ham").appendChild(Account)
 
+    } else {
+        const errorText = await response.text();
+        alert(errorText)
+    }
+  } catch(error){
+    console.error("Error", error);
+  }
+}
+setUser()
 document.addEventListener('DOMContentLoaded', () => {
   // Fetch the content of the text file (assuming it's stored locally as 'courses.txt')
   fetch('courses.txt')

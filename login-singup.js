@@ -8,6 +8,7 @@ document.querySelector('#signin').addEventListener("click", async () => {
     }
 
     try {
+        console.log('Sending request to /login');
         const response = await fetch('http://localhost:3000/login', {
             method: 'POST',
             headers: {
@@ -26,8 +27,9 @@ document.querySelector('#signin').addEventListener("click", async () => {
             alert(`Error signing in: ${errorText}`);
         }
     } catch (error) {
-        console.error('Error:', error);
-        alert(`Error: ${error.message}`);
+        console.error('Fetch error:', error);
+        console.error(`Fetch error: ${error.message}\n\n${error.stack}`);
+        alert(`Fetch error: ${error.message}\n\n${error.stack}`)
     }
 });
 document.querySelector("#signUp").addEventListener("click", async () => {
@@ -56,8 +58,9 @@ document.querySelector("#signUp").addEventListener("click", async () => {
         }
     } catch (error) {
         console.error('Error:', error);
-        alert(error);
     }
+
+
 });
 
 
