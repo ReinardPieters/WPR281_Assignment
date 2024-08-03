@@ -1507,8 +1507,8 @@
     z-index: 1;
     /* margin-top: 5vw; */
     align-items: center;
-    /* display: grid;
-    grid-template-columns: 8fr 1fr 1fr 1fr; */
+    display: grid;
+    grid-template-columns:  8fr 1fr 1fr 1fr 1fr;
 }
 .navButton_A{
     /* background-color: aqua; */
