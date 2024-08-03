@@ -1,3 +1,35 @@
+document.querySelector('#signin').addEventListener("click", async () => {
+    let email = document.querySelector("#signinemail").value;
+    let password = document.querySelector("#signinpass").value;
+
+    if (!email || !password) {
+        alert('Please fill in all fields');
+        return;
+    }
+
+    try {
+        const response = await fetch('http://localhost:3000/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email, password })
+        });
+
+        console.log('Response status:', response.status);
+
+        if (response.ok) {
+            const data = await response.json();
+            alert(data.message);
+        } else {
+            const errorText = await response.text();
+            alert(`Error signing in: ${errorText}`);
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert(`Error: ${error.message}`);
+    }
+});
 document.querySelector("#signUp").addEventListener("click", async () => {
     let username = document.querySelector("#signUpName").value;
     let email = document.querySelector("#signUpEmail").value;
@@ -27,6 +59,7 @@ document.querySelector("#signUp").addEventListener("click", async () => {
         alert(error);
     }
 });
+
 
 const container = document.getElementById("container");
 const registerBtn = document.getElementById("register");
