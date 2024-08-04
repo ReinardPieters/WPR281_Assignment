@@ -3,7 +3,6 @@ const path = require('path');
 const sql = require('mssql');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
-const { send } = require('process');
 
 
 const app = express();
