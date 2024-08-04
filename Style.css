@@ -1041,9 +1041,11 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    margin: 4em -4em;
+    margin: 4em -6em;
   }
-  
+  .dropdown-text{
+    margin: 10px;
+  }
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -1522,10 +1524,10 @@
     padding: 1vh 1.5vw;
     float: right;
     transition: 0.2s;
+    border-radius: 10px;
 }
 .navButton_A:hover{
-  /* background-color: orange; */
-  border-bottom: solid 4px orange;
+  background-color: orange;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -1571,4 +1573,7 @@
   float: left;
 }
 
+#icon_events{
+  color: #F6F8FF;
+}
  /* End */
