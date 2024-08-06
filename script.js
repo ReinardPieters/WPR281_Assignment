@@ -22,7 +22,7 @@ document.querySelector("#LogOut").addEventListener('click',()=>{
     alert("You are not logged in");
   } else{
     localStorage.removeItem('username');
-    status.textContent = "Not Loged In"  
+    status.textContent = "Not logged In"  
     alert("Succesfully logged out")
   }
 })
@@ -385,7 +385,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
-                        <div>
+                        <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                         </div>
                       </section>
@@ -4392,3 +4392,4 @@ function searchMainDiv() {
   });
 }
 // Search Bar End
+
