@@ -4281,6 +4281,7 @@ function checkBoxStrike(id) {
   let trElement = tdElement.parentElement;
   let array = Array.from(trElement.children);
   let filtered = new Array;
+  let divDisplay = document.getElementById("checkboxCompleted")
   
   for (let i =0;i<array.length;i++) {
     if ((array[i].tagName=='TD') && !(array[i].className=='inputTD')) {
@@ -4289,14 +4290,35 @@ function checkBoxStrike(id) {
   }
 
     if (mycheckbox.checked){
+    
+
       filtered.forEach(obj => {
-       obj.className = "completion"
+       obj.className = "completion";
       })
+
+        // adding the stuff to the div element
+      let SubjectName = document.createElement('p');
+      SubjectName.textContent= filtered[0].textContent;
+      SubjectName.className = `${id}sub`;
+      let chkBox = document.createElement('input');
+      chkBox.type="checkbox";
+      chkBox.checked= true;
+      chkBox.className=`${id}chk`;
+      divDisplay.appendChild(SubjectName);
+      divDisplay.appendChild(chkBox);
+      console.log(SubjectName);
+      
     }
     else {
+      let SubjectName = document.querySelector(`#${id}sub`);
+      
       filtered.forEach(obj => {
         obj.className = ""
        })
+
+      divDisplay.removeChild(SubjectName);
+      let chkBox = document.querySelector(`#${id}chk`); 
+      divDisplay.removeChild(chkBox);
     }
 }
 
