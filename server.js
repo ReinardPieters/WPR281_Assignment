@@ -70,7 +70,7 @@ app.post('/login', async (req, res) => {
     const isPasswordValid = await bcrypt.compare(password, user.PasswordHash);
 
     if (isPasswordValid) {
-      res.status(200).json({ message: 'User signed in successfully', username: user.Username });
+      res.status(200).json({ message: 'User signed in successfully', username: user.Username, userID : user.UserID});
     } else {
       return res.status(400).json({ error: 'Invalid email or password' });
     }

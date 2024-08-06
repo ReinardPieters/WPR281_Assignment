@@ -4,6 +4,7 @@ const registerBtn = document.getElementById("register");
 const loginBtn = document.getElementById("login");
 const emailInput = document.getElementById("signinemail");
 const passwordInput = document.getElementById("signinpass");
+localStorage.removeItem('username')
 
 document.querySelector('#signin').addEventListener("click",() => {
     let email = document.querySelector("#signinemail").value;
@@ -23,6 +24,7 @@ document.querySelector('#signin').addEventListener("click",() => {
         alert(`Error: ${data.error}`);
       } else {
         localStorage.setItem('username', data.username);
+        localStorage.setItem('UserId',data.userID)
         // or sessionStorage.setItem('username', data.username);
         alert(`Welcome, ${data.username}!`);
         window.location.href = 'index.html';
@@ -70,4 +72,3 @@ registerBtn.addEventListener("click", () => {
 loginBtn.addEventListener("click", () => {
     container.classList.remove("active");
 });
-
