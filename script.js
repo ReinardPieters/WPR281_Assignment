@@ -10,28 +10,9 @@ hamMenu.addEventListener("click", async() =>{
     return;
 });
 
-async function setUser(){
-  try{
-    const response = await fetch("http://localhost:3000/userdata")
-    if (response.ok) {
-        const data = await response.json();
+alert(localStorage.getItem('username'))
 
-        let Account = document.createElement("p")
-        document.querySelector(".navbar_A").appendChild(Account)
-        if(!data.Username){
-          Account.innerText = `Please sign up or log in`
-        }else{
-          Account.innerText = `Currently Singed in as: ${data.Username}`
-        }
-    } else {
-        const errorText = await response.text();
-        alert(errorText)
-    }
-  } catch(error){
-    console.error("Error", error);
-  }
-}
-setUser()
+
 document.addEventListener('DOMContentLoaded', () => {
   // Fetch the content of the text file (assuming it's stored locally as 'courses.txt')
   fetch('courses.txt')
@@ -199,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
                              </div>
                             </td>
                             <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Innovation-and-Leadership-201-INL201.pdf" download class="btn btn--download">Download</a></td>
-                           
                           </tr>
                           <tr>
                             <td>Operating Systems 251</td>

@@ -1,37 +1,35 @@
-document.querySelector('#signin').addEventListener("click", async () => {
+
+const container = document.getElementById("container");
+const registerBtn = document.getElementById("register");
+const loginBtn = document.getElementById("login");
+const emailInput = document.getElementById("signinemail");
+const passwordInput = document.getElementById("signinpass");
+
+document.querySelector('#signin').addEventListener("click",() => {
     let email = document.querySelector("#signinemail").value;
     let password = document.querySelector("#signinpass").value;
-
     if (!email || !password) {
-        alert('Please fill in all fields');
-        return;
+      alert('Please fill in all fields');
+      return;
     }
+    fetch('http://localhost:3000/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email, password }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.error) {
+        alert(`Error: ${data.error}`);
+      } else {
+        localStorage.setItem('username', data.username);
+        // or sessionStorage.setItem('username', data.username);
+        alert(`Welcome, ${data.username}!`);
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
 
-    try {
-        console.log('Sending request to /login');
-        const response = await fetch('http://localhost:3000/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ email, password })
-        });
-
-        console.log('Response status:', response.status);
-        if (response.ok) {
-            const data = await response.json();
-            alert(data.message);
-            
-        } else{
-            const errorText = await response.text();
-            alert(`Error signing in: ${errorText}`);
-        }
-    } catch (error) {
-        console.error('Fetch error:', error);
-        console.error(`Fetch error: ${error.message}\n\n${error.stack}`);
-        alert(`Fetch error: ${error.message}\n\n${error.stack}`)
-    }
-});
 document.querySelector("#signUp").addEventListener("click", async () => {
     let username = document.querySelector("#signUpName").value;
     let email = document.querySelector("#signUpEmail").value;
@@ -59,18 +57,10 @@ document.querySelector("#signUp").addEventListener("click", async () => {
     } catch (error) {
         console.error('Error:', error);
     }
-
-
 });
 
 
-const container = document.getElementById("container");
-const registerBtn = document.getElementById("register");
-const loginBtn = document.getElementById("login");
 
-const signin = document.getElementById("signin");
-const emailInput = document.getElementById("signinemail");
-const passwordInput = document.getElementById("signinpass");
 
 registerBtn.addEventListener("click", () => {
     container.classList.add("active");
