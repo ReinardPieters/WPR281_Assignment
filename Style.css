@@ -1601,3 +1601,52 @@
     display: none;
   }
   /* For Searching */
+
+  /* Completed Modules */
+  .cmpltModules {
+    margin: 10px;
+    padding: 0;
+    /* background-color: red; */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    /* grid-template-columns: 28vw; */
+    border: white solid 3px;
+    border-radius: 20px;
+    border: 1px solid black;
+
+ 
+  }
+ 
+  .cmpltModules h1 {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #512da8;
+    color: #F6F8FF;
+    margin-top: 0;
+    align-content: center;
+    height: 10.1vh;
+    width: auto;
+  }
+
+  .chkSubject{
+    position: relative;
+    margin: 10px;
+    
+  }
+  .chkSubject::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    border-bottom: solid #ddd 1px;
+}
+
+  .chkBox{
+  }

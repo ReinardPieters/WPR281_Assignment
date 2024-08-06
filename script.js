@@ -4293,13 +4293,15 @@ function checkBoxStrike(id) {
         // adding the stuff to the div element
       let SubjectName = document.createElement('p');
       SubjectName.textContent= filtered[0].textContent;
-      SubjectName.className = `${id}sub`;
+      SubjectName.id = `${id}sub`;
+      SubjectName.className = "chkSubject"
       let chkBox = document.createElement('input');
       chkBox.type="checkbox";
       chkBox.checked= true;
-      chkBox.className=`${id}chk`;
+      chkBox.id=`${id}chk`;
+      chkBox.className=`chkBox`;
       divDisplay.appendChild(SubjectName);
-      divDisplay.appendChild(chkBox);
+      SubjectName.appendChild(chkBox);
       console.log(SubjectName);
       
     }
