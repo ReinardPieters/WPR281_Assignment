@@ -10,14 +10,21 @@ hamMenu.addEventListener("click", async() =>{
     return;
 });
 
+let status = document.createElement('p')
+document.querySelector(".logOutContainer").appendChild(status)
+if(localStorage.getItem('username') !== null){
+  status.textContent = "Welcome, " + localStorage.getItem('username') + "!"
+} else{
+  status.textContent = "Not Loged In"  
+}
 document.querySelector("#LogOut").addEventListener('click',()=>{
   if (localStorage.getItem('username')==null){
     alert("You are not logged in");
   } else{
     localStorage.removeItem('username');
+    status.textContent = "Not Loged In"  
     alert("Succesfully logged out")
   }
-  
 })
 
 document.addEventListener('DOMContentLoaded', () => {

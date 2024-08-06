@@ -25,6 +25,7 @@ document.querySelector('#signin').addEventListener("click",() => {
         localStorage.setItem('username', data.username);
         // or sessionStorage.setItem('username', data.username);
         alert(`Welcome, ${data.username}!`);
+        window.location.href = 'index.html';
       }
     })
     .catch(error => console.error('Error:', error));
