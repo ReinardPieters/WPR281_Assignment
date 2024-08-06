@@ -11,7 +11,14 @@ hamMenu.addEventListener("click", async() =>{
 });
 
 alert(localStorage.getItem('username'))
-
+document.querySelector("#LogOut").addEventListener('click',()=>{
+  if (localStorage.getItem('username')==null){
+    alert("You are not logged in");
+  } else{
+    localStorage.removeItem('username');
+  }
+  
+})
 
 document.addEventListener('DOMContentLoaded', () => {
   // Fetch the content of the text file (assuming it's stored locally as 'courses.txt')
