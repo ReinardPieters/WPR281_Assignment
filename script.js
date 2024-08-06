@@ -10,28 +10,23 @@ hamMenu.addEventListener("click", async() =>{
     return;
 });
 
-async function setUser(){
-  try{
-    const response = await fetch("http://localhost:3000/userdata")
-    if (response.ok) {
-        const data = await response.json();
-
-        let Account = document.createElement("p")
-        document.querySelector(".navbar_A").appendChild(Account)
-        if(!data.Username){
-          Account.innerText = `Please sign up or log in`
-        }else{
-          Account.innerText = `Currently Singed in as: ${data.Username}`
-        }
-    } else {
-        const errorText = await response.text();
-        alert(errorText)
-    }
-  } catch(error){
-    console.error("Error", error);
-  }
+let status = document.createElement('p')
+document.querySelector(".logOutContainer").appendChild(status)
+if(localStorage.getItem('username') !== null){
+  status.textContent = "Welcome, " + localStorage.getItem('username') + "!"
+} else{
+  status.textContent = "Not Loged In"  
 }
-setUser()
+document.querySelector("#LogOut").addEventListener('click',()=>{
+  if (localStorage.getItem('username')==null){
+    alert("You are not logged in");
+  } else{
+    localStorage.removeItem('username');
+    status.textContent = "Not Loged In"  
+    alert("Succesfully logged out")
+  }
+})
+
 document.addEventListener('DOMContentLoaded', () => {
   // Fetch the content of the text file (assuming it's stored locally as 'courses.txt')
   fetch('courses.txt')
@@ -199,7 +194,6 @@ document.addEventListener('DOMContentLoaded', () => {
                              </div>
                             </td>
                             <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Innovation-and-Leadership-201-INL201.pdf" download class="btn btn--download">Download</a></td>
-                           
                           </tr>
                           <tr>
                             <td>Operating Systems 251</td>
@@ -4281,6 +4275,7 @@ function checkBoxStrike(id) {
   let trElement = tdElement.parentElement;
   let array = Array.from(trElement.children);
   let filtered = new Array;
+  let divDisplay = document.getElementById("checkboxCompleted")
   
   for (let i =0;i<array.length;i++) {
     if ((array[i].tagName=='TD') && !(array[i].className=='inputTD')) {
@@ -4289,14 +4284,35 @@ function checkBoxStrike(id) {
   }
 
     if (mycheckbox.checked){
+    
+
       filtered.forEach(obj => {
-       obj.className = "completion"
+       obj.className = "completion";
       })
+
+        // adding the stuff to the div element
+      let SubjectName = document.createElement('p');
+      SubjectName.textContent= filtered[0].textContent;
+      SubjectName.className = `${id}sub`;
+      let chkBox = document.createElement('input');
+      chkBox.type="checkbox";
+      chkBox.checked= true;
+      chkBox.className=`${id}chk`;
+      divDisplay.appendChild(SubjectName);
+      divDisplay.appendChild(chkBox);
+      console.log(SubjectName);
+      
     }
     else {
+      let SubjectName = document.querySelector(`#${id}sub`);
+      
       filtered.forEach(obj => {
         obj.className = ""
        })
+
+      divDisplay.removeChild(SubjectName);
+      let chkBox = document.querySelector(`#${id}chk`); 
+      divDisplay.removeChild(chkBox);
     }
 }
 

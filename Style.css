@@ -1458,7 +1458,16 @@
  }
 
  /*==========================================*/
-
+ .logOutContainer{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 5px;
+}
+.logOutContainer p{
+  margin: 1px;
+}
 /*STUDY GUIDE DOWNLOAD BUTTON*/
 .buttondownload{
   text-decoration: none;
@@ -1575,6 +1584,7 @@
 
 #LogOut{
   float: left;
+  margin: 0;
 }
 
 #icon_events{
