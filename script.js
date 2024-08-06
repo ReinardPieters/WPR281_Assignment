@@ -385,6 +385,9 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
+                        <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
+                        </div>
                       </section>
                         `;
                        
@@ -1165,6 +1168,9 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
+                    <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
+                    </div>
                     </section>`;
                     
                   }else if (link.classList.contains('bit')) {
@@ -1840,6 +1846,9 @@ document.addEventListener('DOMContentLoaded', () => {
                       </tr>
                       </table>
                       </div>
+                    </div>
+                    <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                     </div>
                     </section>
                     `;
@@ -2802,6 +2811,9 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Diploma/3rd Year/Work-Simulation-Project-361-WSP361.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                     </div>
+                    <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
+                    </div>
                     </section>
                     `;
                   }else if (link.classList.contains('dds')) {
@@ -3369,6 +3381,9 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
+                        <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
+                        </div>
                         </section>
                         `;
                   }else if (link.classList.contains('nsd')) {
@@ -3609,6 +3624,9 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                          
                           </div>
+                        </div>
+                        <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                         </div>
                         </section>
                         `;
