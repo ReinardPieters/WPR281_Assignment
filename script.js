@@ -4395,3 +4395,198 @@ function searchMainDiv() {
 }
 // Search Bar End
 
+
+CreateButtons = () => {
+  const btnLec = document.createElement("button");
+  btnLec.id = "btnLec";
+  btnLec.textContent = "Lecture";
+  const btnVen = document.createElement("button");
+  btnVen.textContent = "Venues"
+  const output = document.getElementById('buttons');
+
+  output.appendChild(btnLec);
+  output.appendChild(btnVen);
+
+  // Add event listeners to the buttons
+  // Add event listeners to the buttons
+  btnLec.addEventListener("click", function() {
+    // Create a new div to darken the background
+    const backgroundOverlay = document.createElement("div");
+    backgroundOverlay.style.position = "fixed";
+    backgroundOverlay.style.top = "0";
+    backgroundOverlay.style.left = "0";
+    backgroundOverlay.style.width = "100%";
+    backgroundOverlay.style.height = "100%";
+    backgroundOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // Semi-transparent black background
+    backgroundOverlay.style.zIndex = "999"; // Make sure it's behind the overlay
+    document.body.appendChild(backgroundOverlay);
+  
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "10%";
+    overlay.style.left = "5%"; // Changed to 5% to make the div 90% wide
+    overlay.style.width = "90%"; // Changed to 90%
+    overlay.style.height = "80%";
+    overlay.style.backgroundColor = "white";
+    overlay.style.zIndex = "1000";
+    overlay.style.display = "flex";
+    overlay.style.flexWrap = "wrap";
+    overlay.style.justifyContent = "space-around";
+    overlay.style.overflowY = "auto"; // Add this line to make the div scrollable
+    document.body.appendChild(overlay);
+
+    const images = [
+      { src: "Images/Lecturers/AnilaMundackal.png", text: "Anila Mundackal" },
+      { src: "Images/Lecturers/AlfredMazorodze.png", text: "Alfred Mazorodze" },
+      { src: "Images/Lecturers/CatharinaBoshoff.png", text: "Catharina Boshoff" },
+      { src: "Images/Lecturers/Caviner Ruiters.png", text: "Caviner Ruiters" },
+      { src: "Images/Lecturers/CharmaineTavagwisa.png", text: "Charmaine Tavagwisa" },
+      { src: "Images/Lecturers/DesireSundire.png", text: "Desire Sundire" },
+      { src: "Images/Lecturers/DinoGiovannoni.png", text: "Dino Giovannoni" },
+      { src: "Images/Lecturers/EdwardVanNiekerk.png", text: "Edward Van Niekerk" },
+      { src: "Images/Lecturers/ElaineRynners.png", text: "Elaine Rynners" },
+      { src: "Images/Lecturers/EvangelistarsShayamano.png", text: "Evangelistars Shayamano" },
+      { src: "Images/Lecturers/FrancoisSmit.png", text: "Francois Smit" },
+      { src: "Images/Lecturers/FrancoisVenter.png", text: "Francois Venter" },
+      { src: "Images/Lecturers/GalaletsangModimola.png", text: "Galaletsang Modimola" },
+      { src: "Images/Lecturers/GiftMudare.png", text: "Gift Mudare" },
+      { src: "Images/Lecturers/HeinVanNiekerk.png", text: "Hein Van Niekerk" },
+      { src: "Images/Lecturers/KudzayiMatekaire.png", text: "Kudzayi Matekaire" },
+      { src: "Images/Lecturers/LungileSaula.png", text: "Lungile Saula" },
+      { src: "Images/Lecturers/MasimbaZengeni.png", text: "Masimba Zengeni" },
+      { src: "Images/Lecturers/MatildahChiruka.png", text: "Matildah Chiruka" },
+      { src: "Images/Lecturers/MichaelCombrinck.png", text: "Michael Combrinck" },
+      { src: "Images/Lecturers/NsukuNgoveni.png", text: "Nsuku Ngoveni" },
+      { src: "Images/Lecturers/PhilipvanHuyssteen.png", text: "Philip van Huyssteen" },
+      { src: "Images/Lecturers/RaymondHood.png", text: "Raymond Hood" },
+      { src: "Images/Lecturers/SannieZwane.png", text: "Sannie Zwane" },
+      { src: "Images/Lecturers/ShakengThamaga.png", text: "Shakeng Thamaga" },
+      { src: "Images/Lecturers/StanleyMakweche.png", text: "Stanley Makweche" },
+      { src: "Images/Lecturers/TendaiMkwaira.png", text: "Tendai Mkwaira" },
+      { src: "Images/Lecturers/TshegofatsoHutang.png", text: "Tshegofatso Hutang" },
+    ];
+
+    for (let i = 0; i < images.length; i++) {
+      const imgContainer = document.createElement("div");
+      imgContainer.style.width = "30%";
+      imgContainer.style.margin = "20px 20px 60px 20px"; // Increased the bottom margin to 40px
+      imgContainer.style.textAlign = "center";
+    
+      const img = document.createElement("img");
+      img.src = images[i].src;
+      img.style.width = "100%";
+      img.style.height = "100%";
+      img.style.objectFit = "cover";
+      imgContainer.appendChild(img);
+    
+      const paragraph = document.createElement("p");
+      paragraph.textContent = images[i].text;
+      paragraph.style.marginTop = "10px";
+      imgContainer.appendChild(paragraph);
+    
+      overlay.appendChild(imgContainer);
+    }
+
+    const backButton = document.createElement("button");
+    backButton.textContent = "Back";
+    backButton.style.position = "fixed";
+    backButton.style.bottom = "10%";
+    backButton.style.left = "10%";
+    backButton.style.zIndex = "1001";
+    document.body.appendChild(backButton);
+  
+    backButton.addEventListener("click", function() {
+      overlay.remove();
+      backgroundOverlay.remove();
+      backButton.remove(); // Remove the back button itself
+      document.body.style.background = ""; // Reset the background to its original state
+    });
+  });
+
+
+
+   
+
+  btnVen.addEventListener("click", function() {
+    // Create a new div to darken the background
+    const backgroundOverlay = document.createElement("div");
+    backgroundOverlay.style.position = "fixed";
+    backgroundOverlay.style.top = "0";
+    backgroundOverlay.style.left = "0";
+    backgroundOverlay.style.width = "100%";
+    backgroundOverlay.style.height = "100%";
+    backgroundOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // Semi-transparent black background
+    backgroundOverlay.style.zIndex = "999"; // Make sure it's behind the overlay
+    document.body.appendChild(backgroundOverlay);
+  
+    const overlay = document.createElement("div");
+    overlay.style.position = "fixed";
+    overlay.style.top = "10%";
+    overlay.style.left = "5%"; // Changed to 5% to make the div 90% wide
+    overlay.style.width = "90%"; // Changed to 90%
+    overlay.style.height = "80%";
+    overlay.style.backgroundColor = "white";
+    overlay.style.zIndex = "1000";
+    overlay.style.display = "flex";
+    overlay.style.flexWrap = "wrap";
+    overlay.style.justifyContent = "space-around";
+    overlay.style.overflowY = "auto"; // Add this line to make the div scrollable
+    document.body.appendChild(overlay);
+  
+    const list = document.createElement("ul");
+    list.style.listStyle = "none";
+    list.style.padding = "0";
+    list.style.margin = "0";
+    list.style.display = "grid";
+    list.style.gridTemplateColumns = "repeat(4, 1fr)";
+    list.style.gap = "10px";
+    overlay.appendChild(list);
+  
+    const classrooms = [
+      "Alpha",
+      "Beta",
+      "Gamma",
+      "Delta",
+      "Epsilon",
+      "Zeta",
+      "Eta",
+      "Theta",
+      "Iota",
+      "Kappa",
+      "Lambda",
+      "Omicron",
+      "Pi",
+      "Rho",
+      "Sigma",
+      "Tau",
+      "Ypsilon",
+      "Phi",
+      "Chi",
+      "Psi",
+      "Omega"
+    ];
+  
+    classrooms.forEach((classroom) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = classroom;
+      listItem.style.textAlign = "center";
+      list.appendChild(listItem);
+    });
+  
+    const backButton = document.createElement("button");
+    backButton.textContent = "Back";
+    backButton.style.position = "fixed";
+    backButton.style.bottom = "10%";
+    backButton.style.left = "10%";
+    backButton.style.zIndex = "1001";
+    document.body.appendChild(backButton);
+  
+    backButton.addEventListener("click", function() {
+      overlay.remove();
+      backgroundOverlay.remove();
+      backButton.remove(); // Remove the back button itself
+      document.body.style.background = ""; // Reset the background to its original state
+    });
+  })};
+
+    window.onload(CreateButtons())
