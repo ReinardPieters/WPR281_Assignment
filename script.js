@@ -15,14 +15,14 @@ document.querySelector(".logOutContainer").appendChild(status)
 if(localStorage.getItem('username') !== null){
   status.textContent = "Welcome, " + localStorage.getItem('username') + "!"
 } else{
-  status.textContent = "Not Loged In"  
+  status.textContent = "Not logged In"  
 }
 document.querySelector("#LogOut").addEventListener('click',()=>{
   if (localStorage.getItem('username')==null){
     alert("You are not logged in");
   } else{
     localStorage.removeItem('username');
-    status.textContent = "Not Loged In"  
+    status.textContent = "Not logged In"  
     alert("Succesfully logged out")
   }
 })
@@ -384,6 +384,9 @@ document.addEventListener('DOMContentLoaded', () => {
                           </tr>
                           </table>
                           </div>
+                        </div>
+                        <div id="video">
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                         </div>
                       </section>
                         `;
@@ -1165,6 +1168,9 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
+                    <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
+                    </div>
                     </section>`;
                     
                   }else if (link.classList.contains('bit')) {
@@ -1840,6 +1846,9 @@ document.addEventListener('DOMContentLoaded', () => {
                       </tr>
                       </table>
                       </div>
+                    </div>
+                    <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                     </div>
                     </section>
                     `;
@@ -2802,6 +2811,9 @@ document.addEventListener('DOMContentLoaded', () => {
                       <td><a class="buttondownload" href="Study Guide/Diploma/3rd Year/Work-Simulation-Project-361-WSP361.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
                     </div>
+                    <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
+                    </div>
                     </section>
                     `;
                   }else if (link.classList.contains('dds')) {
@@ -3369,6 +3381,9 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
+                        <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
+                        </div>
                         </section>
                         `;
                   }else if (link.classList.contains('nsd')) {
@@ -3609,6 +3624,9 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                          
                           </div>
+                        </div>
+                        <div>
+                        <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                         </div>
                         </section>
                         `;
@@ -4376,3 +4394,4 @@ function searchMainDiv() {
   });
 }
 // Search Bar End
+

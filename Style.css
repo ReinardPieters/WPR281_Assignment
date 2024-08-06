@@ -1602,6 +1602,13 @@
   }
   /* For Searching */
 
+.youtube{
+  align-items: center;
+  width: 680px;
+  height: 400px;
+  margin-left: 14%;
+}
+
   /* Completed Modules */
   .cmpltModules {
     margin: 10px;
