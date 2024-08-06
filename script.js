@@ -15,7 +15,7 @@ document.querySelector(".logOutContainer").appendChild(status)
 if(localStorage.getItem('username') !== null){
   status.textContent = "Welcome, " + localStorage.getItem('username') + "!"
 } else{
-  status.textContent = "Not Loged In"  
+  status.textContent = "Not logged In"  
 }
 document.querySelector("#LogOut").addEventListener('click',()=>{
   if (localStorage.getItem('username')==null){
