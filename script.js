@@ -4261,6 +4261,7 @@ function checkBoxStrike(id) {
   let trElement = tdElement.parentElement;
   let array = Array.from(trElement.children);
   let filtered = new Array;
+  let divDisplay = document.getElementById("checkboxCompleted")
   
   for (let i =0;i<array.length;i++) {
     if ((array[i].tagName=='TD') && !(array[i].className=='inputTD')) {
@@ -4269,13 +4270,90 @@ function checkBoxStrike(id) {
   }
 
     if (mycheckbox.checked){
+    
+
       filtered.forEach(obj => {
-       obj.className = "completion"
+       obj.className = "completion";
       })
+
+        // adding the stuff to the div element
+      let SubjectName = document.createElement('p');
+      SubjectName.textContent= filtered[0].textContent;
+      SubjectName.className = `${id}sub`;
+      let chkBox = document.createElement('input');
+      chkBox.type="checkbox";
+      chkBox.checked= true;
+      chkBox.className=`${id}chk`;
+      divDisplay.appendChild(SubjectName);
+      divDisplay.appendChild(chkBox);
+      console.log(SubjectName);
+      
     }
     else {
+      let SubjectName = document.querySelector(`#${id}sub`);
+      
       filtered.forEach(obj => {
         obj.className = ""
        })
+
+      divDisplay.removeChild(SubjectName);
+      let chkBox = document.querySelector(`#${id}chk`); 
+      divDisplay.removeChild(chkBox);
     }
+}
+
+
+// Get the search input element
+const searchInput = document.querySelector('input[type="text"]');
+
+// Get the main div where the text is generated
+const mainDiv = document.querySelector('.main');
+
+// Add an event listener to the search input element
+searchInput.addEventListener('input', searchMainDiv);
+
+// Function to search the main div
+function searchMainDiv() {
+  // Get the search query
+  const searchQuery = searchInput.value.toLowerCase().trim();
+
+  // Get all parent elements with one of the specified class names
+  const parentElements = mainDiv.querySelectorAll('.nif, .bcomp, .bit, .dit, .dds, .nsd');
+
+  // Loop through each parent element
+  parentElements.forEach((parentElement) => {
+    // Get all text elements in the parent element
+    const textElements = parentElement.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, td');
+
+    // Initialize a flag to track whether any matches were found
+    let matchFound = false;
+
+    // Split the search query into individual words
+    const searchWords = searchQuery.split(' ');
+
+    // Loop through each text element
+    textElements.forEach((element) => {
+      // Get the text content of the element
+      const textContent = element.textContent.toLowerCase();
+
+      // Check if all search words are found in the text content
+      const match = searchWords.every((word) => textContent.includes(word));
+
+      if (match && searchQuery !== '') {
+        // If all search words are found and the search bar is not empty, add a class to highlight the element and set the matchFound flag to true
+        element.classList.add('search-highlight');
+        matchFound = true;
+      } else {
+        // If not all search words are found or the search bar is empty, remove the highlight class
+        element.classList.remove('search-highlight');
+      }
+    });
+
+    // If no matches were found and the search bar is not empty, add the search-hide class to the parent element
+    if (!matchFound && searchQuery !== '') {
+      parentElement.classList.add('search-hide');
+    } else {
+      parentElement.classList.remove('search-hide');
+    }
+  });
 }
