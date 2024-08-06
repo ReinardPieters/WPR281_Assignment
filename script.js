@@ -10,12 +10,12 @@ hamMenu.addEventListener("click", async() =>{
     return;
 });
 
-alert(localStorage.getItem('username'))
 document.querySelector("#LogOut").addEventListener('click',()=>{
   if (localStorage.getItem('username')==null){
     alert("You are not logged in");
   } else{
     localStorage.removeItem('username');
+    alert("Succesfully logged out")
   }
   
 })
