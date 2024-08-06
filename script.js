@@ -4301,6 +4301,8 @@ function checkBoxStrike(id) {
 }
 
 
+// Search Bar Start
+
 // Get the search input element
 const searchInput = document.querySelector('input[type="text"]');
 
@@ -4355,3 +4357,4 @@ function searchMainDiv() {
     }
   });
 }
+// Search Bar End
