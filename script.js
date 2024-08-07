@@ -9,12 +9,12 @@ hamMenu.addEventListener("click", async() =>{
 
     return;
 });
-
+// const x = localStorage.getItem(userID)
 let status = document.createElement('p')
 document.querySelector(".logOutContainer").appendChild(status)
 if(localStorage.getItem('username') !== null){
   status.textContent = "Welcome, " + localStorage.getItem('username') + "!"
-} else{
+} else{ 
   status.textContent = "Not logged In"  
 }
 document.querySelector("#LogOut").addEventListener('click',()=>{
