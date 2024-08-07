@@ -4633,8 +4633,6 @@ CreateButtons = () => {
       { src: "Images/Lecturers/NalediMsiya.png", text: "Naledi Msiya", modules: ["Statistics 161", "Database Development 261", "Enterprise Systems 261"] },
       { src: "Images/Lecturers/JuanitaBlignaut.png", text: "Juanita Blignaut", modules: ["Innovation and Leadership 261", "IT Law and Ethics 261", "Project Management 261"] },
     ];
-    
-    
 
     for (let i = 0; i < images.length; i++) {
       const imgContainer = document.createElement("div");
