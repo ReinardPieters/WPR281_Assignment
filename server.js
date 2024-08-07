@@ -95,17 +95,19 @@ app.post('/login', async (req, res) => {
     if (!user) {
       return res.status(400).json({ error: 'Invalid email or password' });
     }
-
+    console.log('Provided password:', password);
+    console.log('Stored password hash:', user.PasswordHash);
+    
     const isPasswordValid = await bcrypt.compare(password, user.PasswordHash);
-
+    
     if (isPasswordValid) {
-      res.status(200).json({ message: 'User signed in successfully', username: user.Username, userID : user.UserID});
+      res.status(200).json({ message: 'User signed in successfully', username: user.Username, userID: user.UserID });
     } else {
       return res.status(400).json({ error: 'Invalid email or password' });
     }
   } catch (err) {
     console.error('Error signing in user', err.message);
-    res.status(500).json({ error: 'Failed to sign in user' });
+    res.status(500).json({ error: `Failed to sign in user: ${err.message}` }); // Send the error message to the frontend
   }
 });
 app.post('/updateModuleCompletion', async (req, res) => {
@@ -139,7 +141,6 @@ app.post('/updateModuleCompletion', async (req, res) => {
 app.post('/getCompletedCourses', async (req, res) => {
   try {
     const { userID } = req.body;
-
     const pool = await sql.connect(config);
     const result = await pool.request()
       .input('UserID', sql.Int, userID)
@@ -180,6 +181,7 @@ app.post('/register', async (req, res) => {
   try {
     const { username, email, password } = req.body;
     console.log('Sing Up request received:', req.body);
+    
     // Validate request body
     if (!username || !email || !password) {
       return res.status(400).json({ error: 'Missing required fields' });

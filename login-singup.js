@@ -18,19 +18,32 @@ document.querySelector('#signin').addEventListener("click",() => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, password }),
     })
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      } else {
+        return response.json();
+      }
+    })
     .then(data => {
       if (data.error) {
         alert(`Error: ${data.error}`);
       } else {
         localStorage.setItem('username', data.username);
-        localStorage.setItem('UserId',data.userID)
+        localStorage.setItem('UserId', data.userID)
         // or sessionStorage.setItem('username', data.username);
         alert(`Welcome, ${data.username}!`);
         window.location.href = 'index.html';
       }
     })
-    .catch(error => console.error('Error:', error));
+    .catch(error => {
+      console.error('Error:', error.message, error.stack);
+      if (error.message === 'HTTP error! status: 401') {
+        alert('Invalid email or password');
+      } else {
+        alert('An unexpected error occurred. Please try again.'); // Display a generic error message
+      }
+    });
   });
 
 document.querySelector("#signUp").addEventListener("click", async () => {
