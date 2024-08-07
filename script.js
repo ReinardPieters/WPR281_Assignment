@@ -4299,14 +4299,15 @@ function checkBoxStrike(id) {
     }
   }
 
-    if (mycheckbox.checked){
-    
+  if (mycheckbox.checked){
+    filtered.forEach(obj => {
+      obj.className = "completion";
+    })
 
-      filtered.forEach(obj => {
-       obj.className = "completion";
-      })
-
-        // adding the stuff to the div element
+    // Check if id is already referenced in the output
+    let existingId = document.querySelector(`#${id}sub`);
+    if (!existingId) {
+      // adding the stuff to the div element
       let SubjectName = document.createElement('p');
       SubjectName.textContent= filtered[0].textContent;
       SubjectName.id = `${id}sub`;
@@ -4318,20 +4319,24 @@ function checkBoxStrike(id) {
       chkBox.className=`chkBox`;
       divDisplay.appendChild(SubjectName);
       SubjectName.appendChild(chkBox);
-      console.log(SubjectName);
-      
-    }
-    else {
-      let SubjectName = document.querySelector(`#${id}sub`);
-      
-      filtered.forEach(obj => {
-        obj.className = ""
-       })
 
+      // Add event listener to remove box when clicked
+      chkBox.addEventListener('click', () => {
+        divDisplay.removeChild(SubjectName);
+      });
+    }
+  }
+  else {
+    let SubjectName = document.querySelector(`#${id}sub`);
+    filtered.forEach(obj => {
+      obj.className = ""
+    })
+    if (SubjectName) {
       divDisplay.removeChild(SubjectName);
       let chkBox = document.querySelector(`#${id}chk`); 
       divDisplay.removeChild(chkBox);
     }
+  }
 }
 
 
