@@ -4647,7 +4647,6 @@ CreateButtons = () => {
       
       const hoverText = document.createElement("p");
       hoverText.textContent = "Teaches modules: " + images[i].modules.join(", ");
-      hoverText.style.color = "white"; // Set the text color to white
       hoverContainer.appendChild(hoverText);
       
       imgContainer.appendChild(hoverContainer);
