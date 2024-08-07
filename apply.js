@@ -1,18 +1,31 @@
 const form = document.querySelector('.applyMainsection');
-form.addEventListener('submit', (e) => {
-    e.preventDefault(); // prevent the default form submission behavior
+form.addEventListener('submit', handleFormSubmit);
+async function handleFormSubmit(event) {
+    event.preventDefault();
   
-    const formData = new FormData(form);
-    const url = 'http://localhost:3000/apply'; // adjust this to your backend API endpoint
+    const courseSelect = document.querySelector('#Course');
+    const courseValue = courseSelect.value;
+    alert(courseValue)
+    const userId = localStorage.getItem('UserId');
+    alert(userId)
+    try {
+      const response = await fetch('http://localhost:3000/apply', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ userId, courseValue })
+      });
   
-    fetch(url, {
-      method: 'POST',
-      body: formData,
-    })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.error(error));
-  });
+      if (!response.ok) {
+        throw new Error('Failed to insert course');
+      }
+  
+      console.log('Course inserted successfully');
+    } catch (error) {
+      console.error(error);
+    }
+  }
 // Ensure the DOM is fully loaded before attaching event listeners
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -24,23 +37,23 @@ document.addEventListener("DOMContentLoaded", function() {
     const dropArea = document.getElementById("applyDropArea"); // name of the label
 
     // Add event listener for file input change
-    report.addEventListener("change", uploadedFile);
+    // report.addEventListener("change", uploadedFile);
 
-        function uploadedFile() { //function when file is uploaded
-            dropFile.style.backgroundColor = 'rgb(153, 255, 0)';
-            dropFile.style.borderStyle = 'solid';
-            paragraph.innerHTML = "File has been uploaded";
-        }
+    //     function uploadedFile() { //function when file is uploaded
+    //         dropFile.style.backgroundColor = 'rgb(153, 255, 0)';
+    //         dropFile.style.borderStyle = 'solid';
+    //         paragraph.innerHTML = "File has been uploaded";
+    //     }
 
-    dropArea.addEventListener("dragover", function(e){ //Used for the drag and drop function
-        e.preventDefault();
-    })
+    // dropArea.addEventListener("dragover", function(e){ //Used for the drag and drop function
+    //     e.preventDefault();
+    // })
 
-    dropArea.addEventListener("drop", function(e){ //Used for the drag and drop function
-        e.preventDefault();
-        report.files = e.dataTransfer.files;
-        uploadedFile();
-    })
+    // dropArea.addEventListener("drop", function(e){ //Used for the drag and drop function
+    //     e.preventDefault();
+    //     report.files = e.dataTransfer.files;
+    //     uploadedFile();
+    // })
 
 });
 
