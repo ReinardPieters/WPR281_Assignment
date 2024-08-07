@@ -15,31 +15,43 @@ fetch('http://localhost:3000/getAssignedCourse', {
 .then(response => response.json())
 .then(data => {
   var courseDate;
+  var CourseName;
   console.log(data)
   for (let i = 0; i < data.length; i++) {
     if(data[i].course == 1){
        courseDate = new Date('dec 01, 2024 00:00:00');
+       CourseName = "Bachelor of Computing"
     }
     else if(data[i].courseid == 2){
       courseDate = new Date('sep 01, 2024 00:00:00');
+      CourseName = "National Certificate: Information Technology"
     }
     else if(data[i].courseid == 3){
       courseDate = new Date('nov 01, 2024 00:00:00');
+      CourseName = "Bachelor of Information Technology"
     }
     else if(data[i].courseid == 4){
       courseDate = new Date('oct 01, 2024 00:00:00');
+      CourseName = "Diploma for Information Technology"
     }
     else if(data[i].courseid == 5){
       courseDate = new Date('jan 01, 2025 00:00:00');
+      CourseName = "Diploma for Deaf Students"
     }
     else if(data[i].CourseID == 6){
       courseDate = new Date('feb 01, 2025 00:00:00');
+      CourseName = "National Certificate: Systems Developer"
     }
     else{
       console.log('Course does not exist');
     }
     
   }
+
+  //CourseName stuff
+  var courseName = document.getElementById("courseName");
+  courseName.innerHTML = CourseName;
+  //CourseName stuff
 
   //====================================================================================
   // Count down timer stuff 
