@@ -21,11 +21,18 @@
   <div class="backimg_A">
     <div class="main_A">
       <nav class="navbar_A">
+<!--         
         <div class="logOutContainer">
-          <a id="LogOut" class="navButton_A">Sign In / Register</a>
+          <a id="LogOut" class="navButton_A" onclick="SignOut()">Log Out</a>
         </div>
+        <div class="logInContainer">
+          <a href="login-singup.html" class="navButton_A">Sign In / Register</a>
+        </div> -->
+        <div class="navButtonContainer">
+          <a id="loginButton" class="navButton_A"></a>
+        </div>
+
         <input type="text" placeholder="Search...">
-        
         <a  class="navButton_A" id="apply">Apply Now</a>
         <div class="dropdown">
           <a id="AboutUs" class="navButton_A">About Us</a>
@@ -131,25 +138,6 @@
           <div id="checkboxCompleted" class="cmpltModules">
             <h1>Completed Modules</h1>
           </div>
-          <div id="countdown">
-
-            <table id="tbCount">
-              <tr id="trCountNum">
-                <td><span id="day"></span></td>
-                <td><span id="hour"></span></td>
-                <td><span id="minute"></span></td>
-                <td><span id="second"></span></td>
-              </tr>
-              <tr>
-                <td><span>Days</span></td>
-                <td><span>Hours</span></td>
-                <td><span>Minutes</span></td>
-                <td><span>Seconds</span></td>
-              </tr>
-            </table>
-        
-          </div>
-        
           <!-- JOSEPH DIV -->
         </div>
       </div>
@@ -171,7 +159,6 @@
 
 
   </div>
-
 
 
   <!-- <div class="off-screen-menu" id="off-screen-menu">

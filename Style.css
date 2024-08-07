@@ -1584,6 +1584,7 @@
   font-size: 17px;
   z-index: 1000;
   width: 30vw;
+  grid-column: 2;
 }
 
 #LogOut{
@@ -1753,3 +1754,8 @@
     z-index: 1; /* Add a z-index to make sure the hover container is on top of the image */
   }
   /* testing hover images */
+
+  .navButtonContainer{
+    grid-column: 1;
+    /* background-color: cyan; */
+  }

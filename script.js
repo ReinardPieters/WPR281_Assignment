@@ -95,22 +95,50 @@ document.querySelector("#apply").addEventListener('click',()=>{
 })
 // const x = localStorage.getItem('userID')
 let status = document.createElement('p')
-document.querySelector(".logOutContainer").appendChild(status)
+document.querySelector(".navButtonContainer").appendChild(status)
 if(localStorage.getItem('username') !== null){
   status.textContent = "Welcome, " + localStorage.getItem('username') + "!"
 } else{ 
-  status.textContent = "Not logged In"  
+  // status.textContent = "Not logged In"  
 }
-document.querySelector("#LogOut").addEventListener('click',()=>{
-  if (localStorage.getItem('username')==null && localStorage.getItem('UserId')==null){
-    alert("You are not logged in");
-  } else{
+
+let navButton = document.getElementById("loginButton");
+let navButtonContainer = document.querySelector(".navButtonContainer");
+
+if (localStorage.getItem('username') && localStorage.getItem('UserId')) {
+  navButton.textContent = "Log Out";
+  navButton.href = "";
+  navButton.addEventListener('click', ()=>{
     localStorage.removeItem('username');
     localStorage.removeItem('UserId')
-    status.textContent = "Not logged In"  
+    navButton.textContent = "Sign In / Register";
+    navButton.href = "login-singup.html";
     alert("Succesfully logged out")
-  }
-})
+  });
+} else {
+  navButton.textContent = "Sign In / Register";
+  navButton.href = "login-singup.html";
+}
+
+
+//For log
+// function SignOut(){
+// document.querySelector("#LogOut").addEventListener('click',()=>{
+//   if (localStorage.getItem('username')==null && localStorage.getItem('UserId')==null){
+//     alert("You are not logged in");
+//   } else{
+//     localStorage.removeItem('username');
+//     localStorage.removeItem('UserId')
+//     status.textContent = "Not logged In"  
+//     alert("Succesfully logged out")
+//   }
+// })
+// }
+
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   // Fetch the content of the text file (assuming it's stored locally as 'courses.txt')
