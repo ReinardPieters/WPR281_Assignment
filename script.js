@@ -4617,4 +4617,4 @@ CreateButtons = () => {
     });
   })};
 
-    window.onload(CreateButtons())
+    window.onload = CreateButtons()
