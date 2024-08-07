@@ -4430,80 +4430,82 @@ CreateButtons = () => {
     document.body.appendChild(overlay);
 
     const images = [
-      { src: "Images/Lecturers/AnilaMundackal.png", text: "Anila Mundackal", module: "gay"},
-      { src: "Images/Lecturers/AlfredMazorodze.png", text: "Alfred Mazorodze" },
-      { src: "Images/Lecturers/CatharinaBoshoff.png", text: "Catharina Boshoff" },
-      { src: "Images/Lecturers/Caviner Ruiters.png", text: "Caviner Ruiters" },
-      { src: "Images/Lecturers/CharmaineTavagwisa.png", text: "Charmaine Tavagwisa" },
-      { src: "Images/Lecturers/DesireSundire.png", text: "Desire Sundire" },
-      { src: "Images/Lecturers/DinoGiovannoni.png", text: "Dino Giovannoni" },
-      { src: "Images/Lecturers/EdwardVanNiekerk.png", text: "Edward Van Niekerk" },
-      { src: "Images/Lecturers/ElaineRynners.png", text: "Elaine Rynners" },
-      { src: "Images/Lecturers/EvangelistarsShayamano.png", text: "Evangelistars Shayamano" },
-      { src: "Images/Lecturers/FrancoisSmit.png", text: "Francois Smit" },
-      { src: "Images/Lecturers/FrancoisVenter.png", text: "Francois Venter" },
-      { src: "Images/Lecturers/GalaletsangModimola.png", text: "Galaletsang Modimola" },
-      { src: "Images/Lecturers/GiftMudare.png", text: "Gift Mudare" },
-      { src: "Images/Lecturers/HeinVanNiekerk.png", text: "Hein Van Niekerk" },
-      { src: "Images/Lecturers/KudzayiMatekaire.png", text: "Kudzayi Matekaire" },
-      { src: "Images/Lecturers/LungileSaula.png", text: "Lungile Saula" },
-      { src: "Images/Lecturers/MasimbaZengeni.png", text: "Masimba Zengeni" },
-      { src: "Images/Lecturers/MatildahChiruka.png", text: "Matildah Chiruka" },
-      { src: "Images/Lecturers/MichaelCombrinck.png", text: "Michael Combrinck" },
-      { src: "Images/Lecturers/NsukuNgoveni.png", text: "Nsuku Ngoveni" },
-      { src: "Images/Lecturers/PhilipvanHuyssteen.png", text: "Philip van Huyssteen" },
-      { src: "Images/Lecturers/RaymondHood.png", text: "Raymond Hood" },
-      { src: "Images/Lecturers/SannieZwane.png", text: "Sannie Zwane" },
-      { src: "Images/Lecturers/ShakengThamaga.png", text: "Shakeng Thamaga" },
-      { src: "Images/Lecturers/StanleyMakweche.png", text: "Stanley Makweche" },
-      { src: "Images/Lecturers/TendaiMkwaira.png", text: "Tendai Mkwaira" },
-      { src: "Images/Lecturers/ReasonSithole.png", text: "Reason Sithole" },
-      { src: "Images/Lecturers/SuraniLaubscher.png", text: "Surani Laubscher" },
-      { src: "Images/Lecturers/AsipheMagaudeni.png", text: "Asiphe Magaudeni" },
-      { src: "Images/Lecturers/DuanSteyn.png", text: "Duan Steyn" },
-      { src: "Images/Lecturers/TichaonaChinyerere.png", text: "Tichaona Chinyerere" },
-      { src: "Images/Lecturers/PulaMoila.png", text: "Pula Moila" },
-      { src: "Images/Lecturers/NkululekoLekokoane.png", text: "Nkululeko Lekokoane" },
-      { src: "Images/Lecturers/IkraamSadek.png", text: "Ikraam Sadek" },
-      { src: "Images/Lecturers/EddieCheteni.png", text: "Eddie Cheteni" },
-      { src: "Images/Lecturers/MelaryMagorimbo.png", text: "Melary Magorimbo" },
-      { src: "Images/Lecturers/SibusisoMhlabane.png", text: "Sibusiso Mhlabane" },
-      { src: "Images/Lecturers/BekithembaMpofu.png", text: "Bekithemba Mpofu" },
-      { src: "Images/Lecturers/SolomonRuwende.png", text: "Solomon Ruwende" },
-      { src: "Images/Lecturers/NalediMsiya.png", text: "Naledi Msiya" },
-      { src: "Images/Lecturers/JuanitaBlignaut.png", text: "Juanita Blignaut" },
+      { src: "Images/Lecturers/AnilaMundackal.png", text: "Anila Mundackal", modules: ["Information Systems 251", "Innovation and Leadership 201", "Operating Systems 251"] },
+      { src: "Images/Lecturers/AlfredMazorodze.png", text: "Alfred Mazorodze", modules: ["Project 251", "Project Management 251", "Security 251"] },
+      { src: "Images/Lecturers/CatharinaBoshoff.png", text: "Catharina Boshoff", modules: ["Mathematics 151", "Database Development 251", "Database Models 251"] },
+      { src: "Images/Lecturers/Caviner Ruiters.png", text: "Caviner Ruiters", modules: ["Programming 251", "Programming 252", "Web Programming 251"] },
+      { src: "Images/Lecturers/CharmaineTavagwisa.png", text: "Charmaine Tavagwisa", modules: ["Web Programming 252", "Enterprise Systems 251", "Internet of Things 251"] },
+      { src: "Images/Lecturers/DesireSundire.png", text: "Desire Sundire", modules: ["Academic Writing 181", "Computer Architecture 181", "Database Development 181"] },
+      { src: "Images/Lecturers/DinoGiovannoni.png", text: "Dino Giovannoni", modules: ["Information Systems 181", "Innovation and Leadership 101", "Innovation and Leadership 102"] },
+      { src: "Images/Lecturers/EdwardVanNiekerk.png", text: "Edward Van Niekerk", modules: ["Linear Programming 181", "Mathematics 181", "Networking Development 181"] },
+      { src: "Images/Lecturers/ElaineRynners.png", text: "Elaine Rynners", modules: ["Programming 181", "Programming 182", "Statistics 181"] },
+      { src: "Images/Lecturers/EvangelistarsShayamano.png", text: "Evangelistars Shayamano", modules: ["Web Programming 181", "Business Management 181", "Entrepreneurship 181"] },
+      { src: "Images/Lecturers/FrancoisSmit.png", text: "Francois Smit", modules: ["Database Development 281", "Information Systems 281", "Innovation and Leadership 201"] },
+      { src: "Images/Lecturers/FrancoisVenter.png", text: "Francois Venter", modules: ["Innovation and Leadership 202", "Linear Programming 281", "Mathematics 281"] },
+      { src: "Images/Lecturers/GalaletsangModimola.png", text: "Galaletsang Modimola", modules: ["Programming 281", "Programming 282", "Project Management 281"] },
+      { src: "Images/Lecturers/GiftMudare.png", text: "Gift Mudare", modules: ["Statistics 281", "Web Programming 281", "Software Analysis & Design 281"] },
+      { src: "Images/Lecturers/HeinVanNiekerk.png", text: "Hein Van Niekerk", modules: ["Data Warehousing 281", "Internet of Things 281", "Software Testing 281"] },
+      { src: "Images/Lecturers/KudzayiMatekaire.png", text: "Kudzayi Matekaire", modules: ["Research Methods 381", "Database Development 381", "Innovation and Leadership 381"] },
+      { src: "Images/Lecturers/LungileSaula.png", text: "Lungile Saula", modules: ["Linear Programming 381", "Machine Learning 381", "Project 381"] },
+      { src: "Images/Lecturers/MasimbaZengeni.png", text: "Masimba Zengeni", modules: ["Project Management 381", "Programming 381", "Software Engineering 381"] },
+      { src: "Images/Lecturers/MatildahChiruka.png", text: "Matildah Chiruka", modules: ["Web Programming 381", "Data Science 381", "Database Administration 381"] },
+      { src: "Images/Lecturers/MichaelCombrinck.png", text: "Michael Combrinck", modules: ["Statistics 381", "Innovation Management 381", "Machine Learning 382"] },
+      { src: "Images/Lecturers/NsukuNgoveni.png", text: "Nsuku Ngoveni", modules: ["User Experience Design 381", "Applied Information Technology 481", "Applied Information Technology 482"] },
+      { src: "Images/Lecturers/PhilipvanHuyssteen.png", text: "Philip van Huyssteen", modules: ["Dissertation 481", "Academic Writing 171", "Computer Architecture 171"] },
+      { src: "Images/Lecturers/RaymondHood.png", text: "Raymond Hood", modules: ["Database Development 171", "English Communication 171", "Information Systems 171"] },
+      { src: "Images/Lecturers/SannieZwane.png", text: "Sannie Zwane", modules: ["Innovation and Leadership 101", "Innovation and Leadership 102", "Mathematics 171"] },
+      { src: "Images/Lecturers/ShakengThamaga.png", text: "Shakeng Thamaga", modules: ["Networking Development 171", "Programming 171", "Programming 172"] },
+      { src: "Images/Lecturers/StanleyMakweche.png", text: "Stanley Makweche", modules: ["Statistics 171", "Web Programming 171", "Business Management 171"] },
+      { src: "Images/Lecturers/TendaiMkwaira.png", text: "Tendai Mkwaira", modules: ["Entrepreneurship 171", "Cloud-Native Application Architecture 271", "Database Development 271"] },
+      { src: "Images/Lecturers/ReasonSithole.png", text: "Reason Sithole", modules: ["Enterprise Systems 271", "Ethics 271", "Information Systems 271"] },
+      { src: "Images/Lecturers/SuraniLaubscher.png", text: "Surani Laubscher", modules: ["Innovation and Leadership 201", "Innovation and Leadership 202", "Linear Programming 171"] },
+      { src: "Images/Lecturers/AsipheMagaudeni.png", text: "Asiphe Magaudeni", modules: ["Programming 271", "Programming 272", "Project Management 271"] },
+      { src: "Images/Lecturers/DuanSteyn.png", text: "Duan Steyn", modules: ["Statistics 271", "Web Programming 271", "Internet of Things 271"] },
+      { src: "Images/Lecturers/TichaonaChinyerere.png", text: "Tichaona Chinyerere", modules: ["Software Testing 271", "Cloud-Native Application Programming 371", "Data Analytics 371"] },
+      { src: "Images/Lecturers/PulaMoila.png", text: "Pula Moila", modules: ["Database Development 371", "Innovation and Leadership 371", "Programming 371"] },
+      { src: "Images/Lecturers/NkululekoLekokoane.png", text: "Nkululeko Lekokoane", modules: ["Project 371", "Project Management 371", "Software Analysis & Design 371"] },
+      { src: "Images/Lecturers/IkraamSadek.png", text: "Ikraam Sadek", modules: ["Software Engineering 371", "Web Programming 371", "Innovation Management 371"] },
+      { src: "Images/Lecturers/EddieCheteni.png", text: "Eddie Cheteni", modules: ["User Experience Design 371", "Business Communication 161", "Business Management and Entrepreneurship 161"] },
+      { src: "Images/Lecturers/MelaryMagorimbo.png", text: "Melary Magorimbo", modules: ["Computer Architecture 161", "Database Concept 161", "Database Functionality 161"] },
+      { src: "Images/Lecturers/SibusisoMhlabane.png", text: "Sibusiso Mhlabane", modules: ["End User Computing 161", "Innovation and Leadership 161", "Internet of Things 161"] },
+      { src: "Images/Lecturers/BekithembaMpofu.png", text: "Bekithemba Mpofu", modules: ["Mathematics 161", "Network Development 161", "Problem Solving 161"] },
+      { src: "Images/Lecturers/SolomonRuwende.png", text: "Solomon Ruwende", modules: ["Programming 161", "Programming Principles 161", "Web Programming 161"] },
+      { src: "Images/Lecturers/NalediMsiya.png", text: "Naledi Msiya", modules: ["Statistics 161", "Database Development 261", "Enterprise Systems 261"] },
+      { src: "Images/Lecturers/JuanitaBlignaut.png", text: "Juanita Blignaut", modules: ["Innovation and Leadership 261", "IT Law and Ethics 261", "Project Management 261"] },
     ];
+    
+    
 
     for (let i = 0; i < images.length; i++) {
       const imgContainer = document.createElement("div");
       imgContainer.className = "lecImgContainer"
-    
+      
       const img = document.createElement("img");
       img.src = images[i].src;
-    
+      
       const hoverContainer = document.createElement("div");
       hoverContainer.className = "hoverContainer";
       hoverContainer.style.pointerEvents = "none"; // Add this line
-    
+      
       const hoverText = document.createElement("p");
-      hoverText.textContent = "Teaches module: " + images[i].module;
+      hoverText.textContent = "Teaches modules: " + images[i].modules.join(", ");
       hoverText.style.color = "white"; // Set the text color to white
       hoverContainer.appendChild(hoverText);
-    
+      
       imgContainer.appendChild(hoverContainer);
       imgContainer.appendChild(img);
-    
+      
       const paragraph = document.createElement("p");
       paragraph.textContent = images[i].text;
       paragraph.style.marginTop = "10px";
       imgContainer.appendChild(paragraph);
-    
+      
       // Add event listeners for mouseover and mouseout
       imgContainer.addEventListener("mouseover", function() {
         hoverContainer.style.opacity = "1"; // Show the hover container when mouse is over
         img.style.transform = "scaleX(-1)"; // Flip the image when mouse is over
       });
-    
+      
       imgContainer.addEventListener("mouseout", function(event) {
         if (!event.relatedTarget || !imgContainer.contains(event.relatedTarget)) {
           hoverContainer.style.opacity = "0"; // Hide the hover container when mouse leaves
@@ -4512,8 +4514,8 @@ CreateButtons = () => {
       });
       hoverContainer.style.pointerEvents = "none";
       overlay.appendChild(imgContainer);
+      hoverText.textContent = "Teaches modules: " + images[i].modules.join(", ");
     }
-    
     
     
 
