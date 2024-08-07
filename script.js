@@ -9,35 +9,34 @@ fetch('http://localhost:3000/getAssignedCourse', {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    userID: 123 // replace with the actual user ID
+    userID: localStorage.getItem('UserId') // replace with the actual user ID
   })
 })
 .then(response => response.json())
 .then(data => {
   var courseDate;
+  console.log(data)
   for (let i = 0; i < data.length; i++) {
-    if(data[i].CourseID == 1){
+    if(data[i].course == 1){
        courseDate = new Date('dec 01, 2024 00:00:00');
     }
-    else if(data[i].CourseID == 2){
+    else if(data[i].courseid == 2){
       courseDate = new Date('sep 01, 2024 00:00:00');
     }
-    else if(data[i].CourseID == 3){
+    else if(data[i].courseid == 3){
       courseDate = new Date('nov 01, 2024 00:00:00');
     }
-    else if(data[i].CourseID == 4){
+    else if(data[i].courseid == 4){
       courseDate = new Date('oct 01, 2024 00:00:00');
     }
-    else if(data[i].CourseID == 5){
-      courseDate = new Date('jan 01, 2024 00:00:00');
+    else if(data[i].courseid == 5){
+      courseDate = new Date('jan 01, 2025 00:00:00');
     }
     else if(data[i].CourseID == 6){
-      courseDate = new Date('feb 01, 2024 00:00:00');
+      courseDate = new Date('feb 01, 2025 00:00:00');
     }
     else{
       console.log('Course does not exist');
-      alert('Course does not exist');
-      
     }
     
   }
@@ -54,29 +53,25 @@ fetch('http://localhost:3000/getAssignedCourse', {
   function setCountDown(CountingTime){ //function to calculate the time left
     let now = new Date();
     let timeleft = CountingTime - now ;
-    console.log(timeleft);
 
     let seconds =Math.floor(timeleft/1000);
     let minutes =Math.floor(timeleft/(1000*60));
     let hours =Math.floor(timeleft/(1000*60*60));
     let days =Math.floor(timeleft/(1000*60*60*24));
 
-    console.log(days, hours, minutes, seconds);
 
     let daysDisplay = days;
     let hoursDisplay = hours - (days*24); // Subtract existing days
     let minutesDisplay = minutes - (hours*60);// subtract exiting hours
     let secDisplay = seconds - (minutes*60);// subtract existing minutes
 
-    console.log(daysDisplay, hoursDisplay, minutesDisplay, secDisplay);
+
 
     document.getElementById('day').textContent= daysDisplay; 
     document.getElementById('hour').textContent= hoursDisplay;
     document.getElementById('minute').textContent= minutesDisplay;
     document.getElementById('second').textContent= secDisplay;
 
-
-    
   }
   //End of count down timer
   //====================================================================================
