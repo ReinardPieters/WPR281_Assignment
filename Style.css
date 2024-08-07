@@ -1528,7 +1528,6 @@
 .navbar_A {
   grid-area: navbar;
   background-color: lightblue;
-  position: sticky;
   top: 0;
   z-index: 1;
   display: grid;
@@ -1536,6 +1535,7 @@
   grid-auto-flow: column;
   align-items: center;
   padding: 0.8vh 0;
+  position: sticky;
 }
 
 .navButton_A {
@@ -1765,11 +1765,13 @@
     grid-column: 1;
     /* background-color: cyan; */
     align-content: center;
-    display: grid;
+    display: flex;
   }
 
   .logStatus{
     text-align: center;
     display: block;
-    /* background-color: orange; */
+    padding: 0 2em;
+    white-space: nowrap;
+    margin: auto;
   }
