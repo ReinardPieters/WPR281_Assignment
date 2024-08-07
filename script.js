@@ -9,38 +9,49 @@ fetch('http://localhost:3000/getAssignedCourse', {
     'Content-Type': 'application/json'
   },
   body: JSON.stringify({
-    userID: 123 // replace with the actual user ID
+    userID: localStorage.getItem('UserId') // replace with the actual user ID
   })
 })
 .then(response => response.json())
 .then(data => {
   var courseDate;
+  var CourseName;
+  console.log(data)
   for (let i = 0; i < data.length; i++) {
-    if(data[i].CourseID == 1){
+    if(data[i].course == 1){
        courseDate = new Date('dec 01, 2024 00:00:00');
+       CourseName = "Bachelor of Computing"
     }
-    else if(data[i].CourseID == 2){
+    else if(data[i].courseid == 2){
       courseDate = new Date('sep 01, 2024 00:00:00');
+      CourseName = "National Certificate: Information Technology"
     }
-    else if(data[i].CourseID == 3){
+    else if(data[i].courseid == 3){
       courseDate = new Date('nov 01, 2024 00:00:00');
+      CourseName = "Bachelor of Information Technology"
     }
-    else if(data[i].CourseID == 4){
+    else if(data[i].courseid == 4){
       courseDate = new Date('oct 01, 2024 00:00:00');
+      CourseName = "Diploma for Information Technology"
     }
-    else if(data[i].CourseID == 5){
-      courseDate = new Date('jan 01, 2024 00:00:00');
+    else if(data[i].courseid == 5){
+      courseDate = new Date('jan 01, 2025 00:00:00');
+      CourseName = "Diploma for Deaf Students"
     }
     else if(data[i].CourseID == 6){
-      courseDate = new Date('feb 01, 2024 00:00:00');
+      courseDate = new Date('feb 01, 2025 00:00:00');
+      CourseName = "National Certificate: Systems Developer"
     }
     else{
       console.log('Course does not exist');
-      alert('Course does not exist');
-      
     }
     
   }
+
+  //CourseName stuff
+  var courseName = document.getElementById("courseName");
+  courseName.innerHTML = CourseName;
+  //CourseName stuff
 
   //====================================================================================
   // Count down timer stuff 
@@ -54,29 +65,25 @@ fetch('http://localhost:3000/getAssignedCourse', {
   function setCountDown(CountingTime){ //function to calculate the time left
     let now = new Date();
     let timeleft = CountingTime - now ;
-    console.log(timeleft);
 
     let seconds =Math.floor(timeleft/1000);
     let minutes =Math.floor(timeleft/(1000*60));
     let hours =Math.floor(timeleft/(1000*60*60));
     let days =Math.floor(timeleft/(1000*60*60*24));
 
-    console.log(days, hours, minutes, seconds);
 
     let daysDisplay = days;
     let hoursDisplay = hours - (days*24); // Subtract existing days
     let minutesDisplay = minutes - (hours*60);// subtract exiting hours
     let secDisplay = seconds - (minutes*60);// subtract existing minutes
 
-    console.log(daysDisplay, hoursDisplay, minutesDisplay, secDisplay);
+
 
     document.getElementById('day').textContent= daysDisplay; 
     document.getElementById('hour').textContent= hoursDisplay;
     document.getElementById('minute').textContent= minutesDisplay;
     document.getElementById('second').textContent= secDisplay;
 
-
-    
   }
   //End of count down timer
   //====================================================================================
@@ -288,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INF122</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c001" type="checkbox" onclick='checkBoxStrike("c001")'>
+                              <input id="c001" type="checkbox" onchange='checkBoxStrike("c001")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -522,8 +529,34 @@ document.addEventListener('DOMContentLoaded', () => {
                               document.getElementById(`c00${i+1}`).checked = true;
                             }
                           }
+                        
+                          // Add event listeners to checkboxes
+                          for (let i = 0; i <7; i++) {
+                            const checkbox = document.getElementById(`c00${i+1}`);
+                            checkbox.addEventListener('click', () => {
+                              const moduleID = i;
+                              const completed = checkbox.checked;
+                              updateModuleCompletion(localStorage.getItem('UserId'), moduleID, completed);
+                            });
+                          }
                         })
                         .catch(error => console.error(error));
+                        
+                        // Function to update module completion
+                        function updateModuleCompletion(userID, moduleID, completed) {
+                          fetch('http://localhost:3000/updateModuleCompletion', {
+                            method: 'POST',
+                            headers: {
+                              'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ userID, moduleID, completed })
+                          })
+                          .then(response => response.json())
+                          .then(data => {
+                            console.log('Module completion updated successfully');
+                          })
+                          .catch(error => console.error('Error updating module completion', error));
+                        }
 
                   } else if (link.classList.contains('bcomp')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
@@ -1302,7 +1335,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
-                    <div>
+                    <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                     </div>
                     </section>`;
@@ -1981,7 +2014,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
-                    <div>
+                    <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                     </div>
                     </section>
@@ -2946,7 +2979,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </tr>
                       </table>
                     </div>
-                    <div>
+                    <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                     </div>
                     </section>
@@ -3516,7 +3549,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
-                        <div>
+                        <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                         </div>
                         </section>
@@ -3760,7 +3793,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          
                           </div>
                         </div>
-                        <div>
+                        <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                         </div>
                         </section>
@@ -4446,7 +4479,7 @@ function checkBoxStrike(id) { /* This function is used when a user clicks on the
       SubjectName.appendChild(chkBox);
 
       // Added event listener to remove box when clicked
-      chkBox.addEventListener('click', () => {
+      chkBox.addEventListener('change', () => {
         divDisplay.removeChild(SubjectName);
       });
     }

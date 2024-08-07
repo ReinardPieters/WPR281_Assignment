@@ -108,6 +108,34 @@ app.post('/login', async (req, res) => {
     res.status(500).json({ error: 'Failed to sign in user' });
   }
 });
+app.post('/updateModuleCompletion', async (req, res) => {
+  try {
+    const { userID, moduleID, completed } = req.body;
+
+    const pool = await sql.connect(config);
+    const result = await pool.request()
+      .input('UserID', sql.Int, userID)
+      .input('ModuleID', sql.Int, moduleID)
+      .input('Completed', sql.Bit, completed)
+      .query(`
+        UPDATE M
+        SET M.Completed = @Completed
+        FROM Modules M
+        INNER JOIN Course C ON M.CourseID = C.CourseID
+        INNER JOIN UserCourses UC ON C.CourseID = UC.CourseID
+        WHERE UC.UserID = @UserID AND M.ModuleID = @ModuleID
+      `);
+
+    if (result.rowsAffected > 0) {
+      res.status(200).json({ message: 'Module completion updated successfully' });
+    } else {
+      res.status(404).json({ error: 'Module not found or user not enrolled' });
+    }
+  } catch (err) {
+    console.error('Error updating module completion', err.message);
+    res.status(500).json({ error: 'Failed to update module completion' });
+  }
+});
 app.post('/getCompletedCourses', async (req, res) => {
   try {
     const { userID } = req.body;
@@ -121,7 +149,7 @@ app.post('/getCompletedCourses', async (req, res) => {
         INNER JOIN Course C ON M.CourseID = C.CourseID
         INNER JOIN UserCourses UC ON C.CourseID = UC.CourseID
         INNER JOIN Users U ON UC.UserID = U.UserID
-        WHERE U.UserID = @UserID AND M.Completed = 0
+        WHERE U.UserID = @UserID AND M.Completed = 1
       `);
 
     const completedCourses = result.recordset;

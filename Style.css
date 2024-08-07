@@ -746,13 +746,20 @@
 
  .mainoffscreen.active {
    top: 0%;
+   display: flex;
+   align-items: center;
+
  }
 
  .offscreencourse.active {
    top: 0%;
    margin: 20px;
  }
-
+ #video{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ }
  .coursemodules,
  .info {
    display: flex;
@@ -1608,7 +1615,6 @@
   /* For Searching */
 
 .youtube{
-  align-self: center;
   width: 680px;
   height: 400px;
   /* margin-left: 14%; */
