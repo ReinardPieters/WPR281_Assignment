@@ -1289,7 +1289,7 @@
 
  /*EVENTS CSS*/
  .Announcements {
-   margin: 1fr 0;
+   margin: 10px auto;
    padding: 0;
    /* background-color: red; */
    align-items: center;
@@ -1665,10 +1665,6 @@
     width: 80%;
     border-bottom: solid #ddd 1px;
 }
-
-  .chkBox{
-  }
-
   #buttons{
     place-self: center;
     align-items: center;
@@ -1777,13 +1773,13 @@
   }
 
   .Countdown{
-    margin: 1fr 0;
+    margin: 10px auto;
    padding: 0;
    /* background-color: red; */
    align-items: center;
    text-align: center;
    width: 100%;
-   height: 20vh;
+   height: 18vh;
    display: grid;
    /* grid-template-columns: 28vw; */
    border: white solid 3px;
@@ -1811,4 +1807,33 @@
  td {
    border: none;
    border-collapse: collapse;
+ }
+
+ .venueList{
+  /* background-color: cyan; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  place-items: center;
+  height: 60%;
+  align-self: center;
+  width: 100%;
+}
+
+.venueList li{
+   border: #ddd 1px solid;
+   /* height: 100%; */
+   border-radius: 10px;
+   width: 10em;
+   height: 3em;
+   place-content: center;
+ }
+
+ #tbCount{
+  width: 50%;
+  align-self: center;
+  margin: auto;
  }
