@@ -4406,27 +4406,13 @@ CreateButtons = () => {
   btnLec.addEventListener("click", function() {
     // Create a new div to darken the background
     const backgroundOverlay = document.createElement("div");
-    backgroundOverlay.style.position = "fixed";
-    backgroundOverlay.style.top = "0";
-    backgroundOverlay.style.left = "0";
-    backgroundOverlay.style.width = "100%";
-    backgroundOverlay.style.height = "100%";
-    backgroundOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // Semi-transparent black background
-    backgroundOverlay.style.zIndex = "999"; // Make sure it's behind the overlay
+    backgroundOverlay.className = "backgroundOverlay"
+  
     document.body.appendChild(backgroundOverlay);
   
     const overlay = document.createElement("div");
-    overlay.style.position = "fixed";
-    overlay.style.top = "10%";
-    overlay.style.left = "5%"; // Changed to 5% to make the div 90% wide
-    overlay.style.width = "90%"; // Changed to 90%
-    overlay.style.height = "80%";
-    overlay.style.backgroundColor = "white";
-    overlay.style.zIndex = "1000";
-    overlay.style.display = "flex";
-    overlay.style.flexWrap = "wrap";
-    overlay.style.justifyContent = "space-around";
-    overlay.style.overflowY = "auto"; // Add this line to make the div scrollable
+    overlay.className = "overlay";
+
     document.body.appendChild(overlay);
 
     const images = [
@@ -4462,15 +4448,12 @@ CreateButtons = () => {
 
     for (let i = 0; i < images.length; i++) {
       const imgContainer = document.createElement("div");
-      imgContainer.style.width = "30%";
-      imgContainer.style.margin = "20px 20px 60px 20px"; // Increased the bottom margin to 40px
-      imgContainer.style.textAlign = "center";
+      imgContainer.className = "lecImgContainer"
+      
     
       const img = document.createElement("img");
       img.src = images[i].src;
-      img.style.width = "100%";
-      img.style.height = "100%";
-      img.style.objectFit = "cover";
+      
       imgContainer.appendChild(img);
     
       const paragraph = document.createElement("p");
@@ -4482,11 +4465,9 @@ CreateButtons = () => {
     }
 
     const backButton = document.createElement("button");
+    backButton.className = "backView"
     backButton.textContent = "Back";
-    backButton.style.position = "fixed";
-    backButton.style.bottom = "10%";
-    backButton.style.left = "10%";
-    backButton.style.zIndex = "1001";
+
     document.body.appendChild(backButton);
   
     backButton.addEventListener("click", function() {
@@ -4568,11 +4549,9 @@ CreateButtons = () => {
     });
   
     const backButton = document.createElement("button");
+    backButton.className = "backView"
     backButton.textContent = "Back";
-    backButton.style.position = "fixed";
-    backButton.style.bottom = "10%";
-    backButton.style.left = "10%";
-    backButton.style.zIndex = "1001";
+
     document.body.appendChild(backButton);
   
     backButton.addEventListener("click", function() {
