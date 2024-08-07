@@ -4425,7 +4425,7 @@ CreateButtons = () => {
     document.body.appendChild(overlay);
 
     const images = [
-      { src: "Images/Lecturers/AnilaMundackal.png", text: "Anila Mundackal" },
+      { src: "Images/Lecturers/AnilaMundackal.png", text: "Anila Mundackal", module: "gay"},
       { src: "Images/Lecturers/AlfredMazorodze.png", text: "Alfred Mazorodze" },
       { src: "Images/Lecturers/CatharinaBoshoff.png", text: "Catharina Boshoff" },
       { src: "Images/Lecturers/Caviner Ruiters.png", text: "Caviner Ruiters" },
@@ -4472,11 +4472,20 @@ CreateButtons = () => {
     for (let i = 0; i < images.length; i++) {
       const imgContainer = document.createElement("div");
       imgContainer.className = "lecImgContainer"
-      
     
       const img = document.createElement("img");
       img.src = images[i].src;
-      
+    
+      const hoverContainer = document.createElement("div");
+      hoverContainer.className = "hoverContainer";
+      hoverContainer.style.pointerEvents = "none"; // Add this line
+    
+      const hoverText = document.createElement("p");
+      hoverText.textContent = "Teaches module: " + images[i].module;
+      hoverText.style.color = "white"; // Set the text color to white
+      hoverContainer.appendChild(hoverText);
+    
+      imgContainer.appendChild(hoverContainer);
       imgContainer.appendChild(img);
     
       const paragraph = document.createElement("p");
@@ -4484,8 +4493,24 @@ CreateButtons = () => {
       paragraph.style.marginTop = "10px";
       imgContainer.appendChild(paragraph);
     
+      // Add event listeners for mouseover and mouseout
+      imgContainer.addEventListener("mouseover", function() {
+        hoverContainer.style.opacity = "1"; // Show the hover container when mouse is over
+        img.style.transform = "scaleX(-1)"; // Flip the image when mouse is over
+      });
+    
+      imgContainer.addEventListener("mouseout", function(event) {
+        if (!event.relatedTarget || !imgContainer.contains(event.relatedTarget)) {
+          hoverContainer.style.opacity = "0"; // Hide the hover container when mouse leaves
+          img.style.transform = "scaleX(1)"; // Unflip the image when mouse leaves
+        }
+      });
+      hoverContainer.style.pointerEvents = "none";
       overlay.appendChild(imgContainer);
     }
+    
+    
+    
 
     const backButton = document.createElement("button");
     backButton.className = "backView"

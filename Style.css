@@ -1731,3 +1731,25 @@
   transition: 0.2s;
   cursor: pointer;
   }
+
+  /* testing hover images*/
+  .lecImgContainer {
+    position: relative;
+  }
+  
+  .lecImgContainer img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hoverContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1); /* Set the background color to a dark semi-transparent color */
+    opacity: 0;
+    transition: opacity 0.3s; /* Add a transition effect to the opacity */
+    z-index: 1; /* Add a z-index to make sure the hover container is on top of the image */
+  }
+  /* testing hover images */
