@@ -1500,7 +1500,7 @@
     background-image: url(Images/Node_background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
+    width: 100vw;
     /* background-color: blue; */
     /* height: 50vh; */
     background-size: cover;
@@ -1516,6 +1516,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
+    overflow-x: hidden;
 }
 .navbar_A {
   grid-area: navbar;
