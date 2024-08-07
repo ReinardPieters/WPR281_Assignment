@@ -4428,15 +4428,15 @@ document.getElementById('date3meaning').textContent = `${futureDates[2].Meaning}
 
 //new
 // Add event listeners to the checkbox
-let checkbox = document.querySelector(`#${id}`);
+// let checkbox = document.querySelector(`#${id}`);
 
-checkbox.addEventListener('change', function() {
-  checkBoxStrike(this.id);
-});
+// checkbox.addEventListener('change', function() {
+//   checkBoxStrike(this.id);
+// });
 
-checkbox.addEventListener('click', function() {
-  checkBoxStrike(this.id);
-});
+// checkbox.addEventListener('click', function() {
+//   checkBoxStrike(this.id);
+// });
 
 //Just the strike through function
 function checkBoxStrike(id) { /* This function is used when a user clicks on the checkbox next to the module it then stirkesthrough the text and changes the color to red it does this by navigating the DOMcontent through the various child and parent methods*/
@@ -4698,36 +4698,16 @@ CreateButtons = () => {
   btnVen.addEventListener("click", function() {
     // Create a new div to darken the background
     const backgroundOverlay = document.createElement("div");
-    backgroundOverlay.style.position = "fixed";
-    backgroundOverlay.style.top = "0";
-    backgroundOverlay.style.left = "0";
-    backgroundOverlay.style.width = "100%";
-    backgroundOverlay.style.height = "100%";
-    backgroundOverlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)"; // Semi-transparent black background
-    backgroundOverlay.style.zIndex = "999"; // Make sure it's behind the overlay
+    backgroundOverlay.className = 'backgroundOverlay'
     document.body.appendChild(backgroundOverlay);
   
     const overlay = document.createElement("div");
-    overlay.style.position = "fixed";
-    overlay.style.top = "10%";
-    overlay.style.left = "5%"; // Changed to 5% to make the div 90% wide
-    overlay.style.width = "90%"; // Changed to 90%
-    overlay.style.height = "80%";
-    overlay.style.backgroundColor = "white";
-    overlay.style.zIndex = "1000";
-    overlay.style.display = "flex";
-    overlay.style.flexWrap = "wrap";
-    overlay.style.justifyContent = "space-around";
-    overlay.style.overflowY = "auto"; // Add this line to make the div scrollable
+    overlay.className = 'overlay'
     document.body.appendChild(overlay);
   
     const list = document.createElement("ul");
-    list.style.listStyle = "none";
-    list.style.padding = "0";
-    list.style.margin = "0";
-    list.style.display = "grid";
-    list.style.gridTemplateColumns = "repeat(4, 1fr)";
-    list.style.gap = "10px";
+    list.className = 'venueList'
+
     overlay.appendChild(list);
   
     const classrooms = [
