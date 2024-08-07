@@ -3,6 +3,87 @@ const offScreenMenu = document.getElementById("off-screen-menu");
 const dropHeader = document.getElementById("dropHeader");
 const dropDown = document.getElementById("dropDown");
 
+fetch('http://localhost:3000/getAssignedCourse', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    userID: 123 // replace with the actual user ID
+  })
+})
+.then(response => response.json())
+.then(data => {
+  var courseDate;
+  for (let i = 0; i < data.length; i++) {
+    if(data[i].CourseID == 1){
+       courseDate = new Date('dec 01, 2024 00:00:00');
+    }
+    else if(data[i].CourseID == 2){
+      courseDate = new Date('sep 01, 2024 00:00:00');
+    }
+    else if(data[i].CourseID == 3){
+      courseDate = new Date('nov 01, 2024 00:00:00');
+    }
+    else if(data[i].CourseID == 4){
+      courseDate = new Date('oct 01, 2024 00:00:00');
+    }
+    else if(data[i].CourseID == 5){
+      courseDate = new Date('jan 01, 2024 00:00:00');
+    }
+    else if(data[i].CourseID == 6){
+      courseDate = new Date('feb 01, 2024 00:00:00');
+    }
+    else{
+      console.log('Course does not exist');
+      alert('Course does not exist');
+      
+    }
+    
+  }
+
+  //====================================================================================
+  // Count down timer stuff 
+
+  const dateTest = courseDate // Date constants add more if you want
+
+  setInterval(function (){ //function to refresh the counter every second
+    setCountDown(dateTest);
+  },1000);
+
+  function setCountDown(CountingTime){ //function to calculate the time left
+    let now = new Date();
+    let timeleft = CountingTime - now ;
+    console.log(timeleft);
+
+    let seconds =Math.floor(timeleft/1000);
+    let minutes =Math.floor(timeleft/(1000*60));
+    let hours =Math.floor(timeleft/(1000*60*60));
+    let days =Math.floor(timeleft/(1000*60*60*24));
+
+    console.log(days, hours, minutes, seconds);
+
+    let daysDisplay = days;
+    let hoursDisplay = hours - (days*24); // Subtract existing days
+    let minutesDisplay = minutes - (hours*60);// subtract exiting hours
+    let secDisplay = seconds - (minutes*60);// subtract existing minutes
+
+    console.log(daysDisplay, hoursDisplay, minutesDisplay, secDisplay);
+
+    document.getElementById('day').textContent= daysDisplay; 
+    document.getElementById('hour').textContent= hoursDisplay;
+    document.getElementById('minute').textContent= minutesDisplay;
+    document.getElementById('second').textContent= secDisplay;
+
+
+    
+  }
+  //End of count down timer
+  //====================================================================================
+
+}) // data will be the assigned course IDs
+.catch(error => console.error('Error:', error));
+
 
 document.querySelector("#apply").addEventListener('click',()=>{
   if(localStorage.getItem('username')== null){
@@ -4633,51 +4714,10 @@ CreateButtons = () => {
     });
   })};
 
-<<<<<<< Updated upstream
-    window.onload = CreateButtons()
-=======
-
-  //====================================================================================
-  // Count down timer stuff 
-
-  const dateTest = new Date('jan 01, 2025 00:00:00'); // Date constants add more if you want
-
-  setInterval(function (){ //function to refresh the counter every second
-    setCountDown(dateTest);
-  },1000);
-
-  function setCountDown(CountingTime){ //function to calculate the time left
-    let now = new Date();
-    let timeleft = CountingTime - now ;
-    console.log(timeleft);
-
-    let seconds =Math.floor(timeleft/1000);
-    let minutes =Math.floor(timeleft/(1000*60));
-    let hours =Math.floor(timeleft/(1000*60*60));
-    let days =Math.floor(timeleft/(1000*60*60*24));
-
-    console.log(days, hours, minutes, seconds);
-
-    let daysDisplay = days;
-    let hoursDisplay = hours - (days*24); // Subtract existing days
-    let minutesDisplay = minutes - (hours*60);// subtract exiting hours
-    let secDisplay = seconds - (minutes*60);// subtract existing minutes
-
-    console.log(daysDisplay, hoursDisplay, minutesDisplay, secDisplay);
-
-    document.getElementById('day').textContent= daysDisplay; 
-    document.getElementById('hour').textContent= hoursDisplay;
-    document.getElementById('minute').textContent= minutesDisplay;
-    document.getElementById('second').textContent= secDisplay;
 
 
-
-  }
-  //End of count down timer
-  //====================================================================================
 
     window.onload(CreateButtons())
 
 
     
->>>>>>> Stashed changes
