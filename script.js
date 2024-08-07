@@ -4702,7 +4702,7 @@ CreateButtons = () => {
     document.body.appendChild(backgroundOverlay);
   
     const overlay = document.createElement("div");
-    overlay.className = 'overlay'
+    overlay.className = 'overlay2'
     document.body.appendChild(overlay);
   
     const list = document.createElement("ul");
