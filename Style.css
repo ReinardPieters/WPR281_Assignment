@@ -1699,8 +1699,10 @@
     justify-content:  space-around;
     overflow-y: auto; 
     border-radius: 10px;
-    background-image: url('Images/grad-2019.jpg')
-    
+    background-image: url('Images/grad-2019.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
   .backgroundOverlay{
     position : fixed;
