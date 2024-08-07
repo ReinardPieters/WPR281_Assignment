@@ -344,7 +344,6 @@ document.addEventListener('DOMContentLoaded', () => {
                              </div>
                             </td>
                             <td><a class="buttondownload" href="Study Guide/Higher Certificate/1st Year/Project-251-PRJ251.pdf" download class="btn btn--download">Download</a></td>
-                           
                           </tr>
                          <tr>
                             <td>Project Management 251</td>
@@ -4778,11 +4777,4 @@ CreateButtons = () => {
       document.body.style.background = ""; // Reset the background to its original state
     });
   })};
-
-
-
-
     window.onload(CreateButtons())
-
-
-    
