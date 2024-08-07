@@ -5,9 +5,7 @@ async function handleFormSubmit(event) {
   
     const courseSelect = document.querySelector('#Course');
     const courseValue = courseSelect.value;
-    alert(courseValue)
     const userId = localStorage.getItem('UserId');
-    alert(userId)
     try {
       const response = await fetch('http://localhost:3000/apply', {
         method: 'POST',

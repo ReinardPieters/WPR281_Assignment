@@ -50,12 +50,26 @@ app.post('/apply', async (req, res) => {
     const { userId, courseValue } = req.body;
 
     const pool = await sql.connect(config);
+    const existingEnrollment = await pool.request()
+      .input('UserID', sql.Int, userId)
+      .input('CourseID', sql.NVarChar, courseValue)
+      .query('SELECT 1 FROM UserCourses WHERE UserID = @UserID AND CourseID = @CourseID');
+
+    if (existingEnrollment.recordset.length > 0) {
+      res.status(400).json({ error: 'User is already enrolled in this course' })
+      return
+    }
+
     const result = await pool.request()
       .input('UserID', sql.Int, userId)
       .input('Course', sql.NVarChar, courseValue)
       .query('INSERT INTO UserCourses (UserID, CourseID) VALUES (@UserID, @Course)');
 
-    res.status(201).json({ message: 'Course applied successfully' });
+    if (result.rowsAffected > 0) {
+      res.status(201).json({ message: 'Course applied successfully', result: result });
+    } else {
+      res.status(500).json({ error: 'Failed to apply course' });
+    }
   } catch (err) {
     console.error('Error applying course', err.message);
     res.status(500).json({ error: 'Failed to apply course' });
@@ -94,8 +108,46 @@ app.post('/login', async (req, res) => {
     res.status(500).json({ error: 'Failed to sign in user' });
   }
 });
+app.post('/getCompletedCourses', async (req, res) => {
+  try {
+    const { userID } = req.body;
 
+    const pool = await sql.connect(config);
+    const result = await pool.request()
+      .input('UserID', sql.Int, userID)
+      .query(`
+        SELECT M.ModuleID, M.ModuleCode, M.Completed
+        FROM Modules M
+        INNER JOIN Course C ON M.CourseID = C.CourseID
+        INNER JOIN UserCourses UC ON C.CourseID = UC.CourseID
+        INNER JOIN Users U ON UC.UserID = U.UserID
+        WHERE U.UserID = @UserID AND M.Completed = 0
+      `);
 
+    const completedCourses = result.recordset;
+
+    res.status(200).json({completedCourses});
+  } catch (err) {
+    console.error('Error getting completed modules', err.message);
+    res.status(500).json({ error: 'Failed to get completed modules' });
+  }
+});
+app.post('/getAssignedCourse',async (req, res)=>{
+  try{
+    const {userID} = req.body
+    const pool = await sql.connect(config);
+    const result = await pool.request()
+      .input('UserID', sql.Int, userID)
+      .query(`
+        select courseid from UserCourses where UserID = @UserID
+      `);
+      const assignedCourse = result.recordset;
+      res.status(200).json(assignedCourse)
+  }catch (err) {
+    console.error('Error getting completed courses', err.message);
+    res.status(500).json({ error: 'Failed to get completed courses' });
+  }
+})
 app.post('/register', async (req, res) => {
   try {
     const { username, email, password } = req.body;
@@ -133,8 +185,9 @@ app.post('/register', async (req, res) => {
       res.status(500).json({ error: 'Failed to register user' });
     }
   }
-
 });
+
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

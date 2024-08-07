@@ -3,11 +3,25 @@ const offScreenMenu = document.getElementById("off-screen-menu");
 const dropHeader = document.getElementById("dropHeader");
 const dropDown = document.getElementById("dropDown");
 
-hamMenu.addEventListener("click", async() =>{
-    hamMenu.classList.toggle('active');
-    offScreenMenu.classList.toggle('active');
-
-    return;
+fetch('/apply', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({ userId, courseValue })
+})
+.then(response => response.json())
+.then(data => {
+  if (data.message === 'Course applied successfully') {
+    alert('Course applied successfully!');
+ 
+  } else {
+    alert('Error applying course:', data.error);
+  }
+})
+.catch(error => {
+  console.error('Error applying course:', error);
+  alert("Error")
 });
 document.querySelector("#apply").addEventListener('click',()=>{
   if(localStorage.getItem('username')== null){
@@ -26,11 +40,11 @@ if(localStorage.getItem('username') !== null){
   status.textContent = "Not logged In"  
 }
 document.querySelector("#LogOut").addEventListener('click',()=>{
-  if (localStorage.getItem('username')==null){
+  if (localStorage.getItem('username')==null && localStorage.getItem('UserId')==null){
     alert("You are not logged in");
   } else{
     localStorage.removeItem('username');
-    localStorage.removeItem('userID')
+    localStorage.removeItem('UserId')
     status.textContent = "Not logged In"  
     alert("Succesfully logged out")
   }
@@ -399,7 +413,28 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                       </section>
                         `;
-                       
+                        const UserID = localStorage.getItem('UserId');
+
+                        fetch('http://localhost:3000/getCompletedCourses', {
+                          method: 'POST',
+                          headers: {
+                            'Content-Type': 'application/json'
+                          },
+                          body: JSON.stringify({ userID: UserID })
+                        })
+                        .then(response => response.json())
+                        .then(data => {
+                          console.log(data.completedCourses)
+                          for(i=0;i<data.completedCourses.length;i++){
+                            if(data.completedCourses[i].Completed===false){
+                              document.getElementById(`c00${i+1}`).checked = false;
+                            }else{
+                              document.getElementById(`c00${i+1}`).checked = true;
+                            }
+                          }
+                        })
+                        .catch(error => console.error(error));
+
                   } else if (link.classList.contains('bcomp')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
                     document.querySelector('.mainoffscreen').classList.toggle('active');
