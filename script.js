@@ -4014,19 +4014,7 @@ const generateCalendar = (month, year) => {
   //CALENDAR JAVASCRIPT
 
 
-  //HIDE PURUPLE BLOCK NAVBAR
-   window.addEventListener('scroll', hideDivOnScroll);
-         const hideDistance = 50;
-         function hideDivOnScroll() {
-             const myDiv = document.getElementById('off-screen-menu');
-             if (window.scrollY > hideDistance) {
-                 myDiv.classList.add('hiddenPurple');
-             } else {
-                 myDiv.classList.remove('hiddenPurple');
-             }
-         }
-         window.addEventListener('scroll', hideDivOnScroll);
-  //HIDE PURPLE BLOCK NAVBAR
+
 
   //EVENTS JS
 
