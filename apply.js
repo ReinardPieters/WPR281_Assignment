@@ -1,3 +1,18 @@
+const form = document.querySelector('.applyMainsection');
+form.addEventListener('submit', (e) => {
+    e.preventDefault(); // prevent the default form submission behavior
+  
+    const formData = new FormData(form);
+    const url = 'http://localhost:3000/apply'; // adjust this to your backend API endpoint
+  
+    fetch(url, {
+      method: 'POST',
+      body: formData,
+    })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.error(error));
+  });
 // Ensure the DOM is fully loaded before attaching event listeners
 document.addEventListener("DOMContentLoaded", function() {
 

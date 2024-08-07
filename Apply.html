@@ -6,7 +6,7 @@
     <title>Application Page</title>
     <link rel="stylesheet" href="apply.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="apply.js"></script>
+    
 </head>
 <body class="applyBody">
     <h1 class="applyh1">Application form</h1>
@@ -43,9 +43,9 @@
                 <br>
 
                 <div>
-                    <label class="applyLabel" for="PhoneNo">Phone Number</label>
+                    <label class="applyLabel" for="PhoneNo">Account password</label>
                     <br>
-                    <input class="applyInput" type="tel" id="PhoneNO" name="PhoneNO" placeholder="0722443567" required>
+                    <input class="applyInput" type="tel" id="password" name="password" placeholder="0722443567" required>
                 </div>
             </div>
 
@@ -65,10 +65,12 @@
                     <label class="applyLabel" for="Course">Choose a Course</label>
                     <br>
                     <select class="applySelect" name="Course" id="Course" required>
-                        <option value="BCom">Bachelor of Computing</option>
-                        <option value="BIT">Bachelor of Information Technology</option>
-                        <option value="DIT">Diploma of Information Technology</option>
-                        <option value="NCIT">National Certificate: Information  Technology</option>
+                        <option value="1">Bachelor of Computing</option>
+                        <option value="2">National Certificate: Information Technology</option>
+                        <option value="3">Bachelor of Information Technology</option>
+                        <option value="4">Diploma of Information Technology</option>
+                        <option value="5">Diploma for Deaf Students</option>
+                        <option value="6">National Certificate: System Development</option>
                     </select>
                 </div>
             </div>
@@ -96,7 +98,7 @@
 
             <br>
             <button id="applyBackbtn" class="navButtons" onclick="gotoHome()">back</button>
-            <input type="submit" class="navButtons">
+            <input type="submit" class="navButtons" id="submit">
 
         </form>
         
@@ -104,3 +106,4 @@
 
 </body>
 </html>
+<script src="apply.js"></script>

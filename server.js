@@ -118,8 +118,59 @@ app.post('/register', async (req, res) => {
       res.status(500).json({ error: 'Failed to register user' });
     }
   }
-});
+  app.post('/checkCompletedCourse', async (req,res)=>{
 
+  })
+  app.post('/apply', async (req, res) => {
+    try {
+      const { course, email, username, password } = req.body;
+      console.log('Apply request received:', req.body);
+  
+      // Validate request body
+      if (!course || !email || !username || !password) {
+        return res.status(400).json({ error: 'Missing required fields' });
+      }
+  
+      const pool = await sql.connect(config);
+  
+      // Check if user exists in Users
+      const userExists = await pool.request()
+        .input('Email', sql.NVarChar, email)
+        .query('SELECT COUNT(*) AS Count FROM Users WHERE Email = @Email');
+  
+      if (userExists.recordset[0].Count === 0) {
+        // Create new user
+        const hashedPassword = await bcrypt.hash(password, 10);
+        await pool.request()
+          .input('Username', sql.NVarChar, username)
+          .input('Email', sql.NVarChar, email)
+          .input('PasswordHash', sql.NVarChar, hashedPassword)
+          .query('INSERT INTO Users (Username, Email, PasswordHash) VALUES (@Username, @Email, @PasswordHash)');
+      }
+  
+      // Check if application already exists in UserCourses
+      const existingApplication = await pool.request()
+        .input('Email', sql.NVarChar, email)
+        .input('CourseID', sql.Int, course)
+        .query('SELECT COUNT(*) AS Count FROM UserCourses WHERE Email = @Email AND CourseID = @CourseID');
+  
+      if (existingApplication.recordset[0].Count > 0) {
+        return res.status(400).json({ error: 'You have already applied for this course' });
+      }
+  
+      // Insert new application into UserCourses
+      await pool.request()
+        .input('Email', sql.NVarChar, email)
+        .input('CourseID', sql.Int, course)
+        .query('INSERT INTO UserCourses (Email, CourseID) VALUES (@Email, @CourseID)');
+  
+      res.status(201).json({ message: 'Application submitted successfully' });
+    } catch (err) {
+      console.error('Error submitting application', err.message);
+      res.status(500).json({ error: 'Failed to submit application' });
+    }
+  });
+});
 // Start the server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
