@@ -4299,7 +4299,7 @@ document.getElementById('date3meaning').textContent = `${futureDates[2].Meaning}
 //EVENTS JS
 
 //Just the strike through function
-function checkBoxStrike(id) {
+function checkBoxStrike(id) { /* This function is used when a user clicks on the checkbox next to the module it then stirkesthrough the text and changes the color to red it does this by navigating the DOMcontent through the various child and parent methods*/
   let mycheckbox = document.querySelector(`#${id}`);
   let divElement = mycheckbox.parentElement;
   let tdElement = divElement.parentElement;
@@ -4336,7 +4336,7 @@ function checkBoxStrike(id) {
       divDisplay.appendChild(SubjectName);
       SubjectName.appendChild(chkBox);
 
-      // Add event listener to remove box when clicked
+      // Added event listener to remove box when clicked
       chkBox.addEventListener('click', () => {
         divDisplay.removeChild(SubjectName);
       });
@@ -4633,4 +4633,51 @@ CreateButtons = () => {
     });
   })};
 
+<<<<<<< Updated upstream
     window.onload = CreateButtons()
+=======
+
+  //====================================================================================
+  // Count down timer stuff 
+
+  const dateTest = new Date('jan 01, 2025 00:00:00'); // Date constants add more if you want
+
+  setInterval(function (){ //function to refresh the counter every second
+    setCountDown(dateTest);
+  },1000);
+
+  function setCountDown(CountingTime){ //function to calculate the time left
+    let now = new Date();
+    let timeleft = CountingTime - now ;
+    console.log(timeleft);
+
+    let seconds =Math.floor(timeleft/1000);
+    let minutes =Math.floor(timeleft/(1000*60));
+    let hours =Math.floor(timeleft/(1000*60*60));
+    let days =Math.floor(timeleft/(1000*60*60*24));
+
+    console.log(days, hours, minutes, seconds);
+
+    let daysDisplay = days;
+    let hoursDisplay = hours - (days*24); // Subtract existing days
+    let minutesDisplay = minutes - (hours*60);// subtract exiting hours
+    let secDisplay = seconds - (minutes*60);// subtract existing minutes
+
+    console.log(daysDisplay, hoursDisplay, minutesDisplay, secDisplay);
+
+    document.getElementById('day').textContent= daysDisplay; 
+    document.getElementById('hour').textContent= hoursDisplay;
+    document.getElementById('minute').textContent= minutesDisplay;
+    document.getElementById('second').textContent= secDisplay;
+
+
+
+  }
+  //End of count down timer
+  //====================================================================================
+
+    window.onload(CreateButtons())
+
+
+    
+>>>>>>> Stashed changes
