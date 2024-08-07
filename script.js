@@ -495,10 +495,13 @@ document.addEventListener('DOMContentLoaded', () => {
                         .then(data => {
                           console.log(data.completedCourses)
                           for(i=0;i<data.completedCourses.length;i++){
+                            let currentId = data.completedCourses[i].ModuleID
+                            console.log(currentId)
                             if(data.completedCourses[i].Completed===false){
-                              document.getElementById(`c00${i+1}`).checked = false;
+                              document.getElementById(`c00${currentId}`).checked = false;
                             }else{
-                              document.getElementById(`c00${i+1}`).checked = true;
+                              document.getElementById(`c00${currentId}`).checked = true;
+                             
                             }
                           }
                         
@@ -506,7 +509,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           for (let i = 0; i <7; i++) {
                             const checkbox = document.getElementById(`c00${i+1}`);
                             checkbox.addEventListener('click', () => {
-                              const moduleID = i;
+                              const moduleID = i+1;
                               const completed = checkbox.checked;
                               updateModuleCompletion(localStorage.getItem('UserId'), moduleID, completed);
                             });
