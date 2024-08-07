@@ -4633,9 +4633,6 @@ CreateButtons = () => {
     });
   })};
 
-<<<<<<< Updated upstream
-    window.onload = CreateButtons()
-=======
 
   //====================================================================================
   // Count down timer stuff 
@@ -4680,4 +4677,3 @@ CreateButtons = () => {
 
 
     
->>>>>>> Stashed changes
