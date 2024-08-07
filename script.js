@@ -9,7 +9,15 @@ hamMenu.addEventListener("click", async() =>{
 
     return;
 });
-// const x = localStorage.getItem(userID)
+document.querySelector("#apply").addEventListener('click',()=>{
+  if(localStorage.getItem('username')== null){
+    alert('You have to sign in first')
+    window.location.href = 'login-singup.html'
+  }else{
+    window.location.href = 'Apply.html'
+  }
+})
+// const x = localStorage.getItem('userID')
 let status = document.createElement('p')
 document.querySelector(".logOutContainer").appendChild(status)
 if(localStorage.getItem('username') !== null){
@@ -22,6 +30,7 @@ document.querySelector("#LogOut").addEventListener('click',()=>{
     alert("You are not logged in");
   } else{
     localStorage.removeItem('username');
+    localStorage.removeItem('userID')
     status.textContent = "Not logged In"  
     alert("Succesfully logged out")
   }
