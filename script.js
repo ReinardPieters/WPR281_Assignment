@@ -4386,16 +4386,20 @@ function searchMainDiv() {
 
 
 CreateButtons = () => {
-  const btnLec = document.createElement("button");
+  const navbar = document.querySelector('.navbar_A');
+  const btnLec = document.createElement("a");
   btnLec.id = "btnLec";
-  btnLec.textContent = "Lecture";
-  const btnVen = document.createElement("button");
-  btnVen.textContent = "Venues"
+  btnLec.className = "navButton_A";
+  btnLec.style.gridColumn = 3;
+  btnLec.textContent = "View Lectures";
+  const btnVen = document.createElement("a");
+  btnVen.textContent = "View Venues";
+  btnVen.className = "navButton_A";
+  btnVen.style.gridColumn = 4;
   btnVen.id = "btnVen";
-  const output = document.getElementById('buttons');
 
-  output.appendChild(btnLec);
-  output.appendChild(btnVen);
+  navbar.appendChild(btnLec);
+  navbar.appendChild(btnVen);
 
   // Add event listeners to the buttons
   // Add event listeners to the buttons
