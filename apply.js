@@ -19,7 +19,7 @@ async function handleFormSubmit(event) {
         throw new Error('Failed to insert course');
       }
   
-      console.log('Course inserted successfully');
+      alert('Course inserted successfully');
     } catch (error) {
       console.error(error);
     }

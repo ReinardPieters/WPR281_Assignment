@@ -3,26 +3,7 @@ const offScreenMenu = document.getElementById("off-screen-menu");
 const dropHeader = document.getElementById("dropHeader");
 const dropDown = document.getElementById("dropDown");
 
-fetch('/apply', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({ userId, courseValue })
-})
-.then(response => response.json())
-.then(data => {
-  if (data.message === 'Course applied successfully') {
-    alert('Course applied successfully!');
- 
-  } else {
-    alert('Error applying course:', data.error);
-  }
-})
-.catch(error => {
-  console.error('Error applying course:', error);
-  alert("Error")
-});
+
 document.querySelector("#apply").addEventListener('click',()=>{
   if(localStorage.getItem('username')== null){
     alert('You have to sign in first')
