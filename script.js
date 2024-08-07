@@ -102,8 +102,9 @@ document.querySelector("#apply").addEventListener('click',()=>{
 })
 // const x = localStorage.getItem('userID')
 let status = document.createElement('p')
-document.querySelector(".navButtonContainer").appendChild(status)
+status.className = 'logStatus'
 if(localStorage.getItem('username') !== null){
+  document.querySelector(".navButtonContainer").appendChild(status)
   status.textContent = "Welcome, " + localStorage.getItem('username') + "!"
 } else{ 
   // status.textContent = "Not logged In"  
