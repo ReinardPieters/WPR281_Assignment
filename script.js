@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <td>INF122</td>
                             <td>
                              <div class="checkbox-wrapper-13">
-                              <input id="c001" type="checkbox" onclick='checkBoxStrike("c001")'>
+                              <input id="c001" type="checkbox" onchange='checkBoxStrike("c001")'>
                               <label for="c1-13"></label>
                              </div>
                             </td>
@@ -489,8 +489,34 @@ document.addEventListener('DOMContentLoaded', () => {
                               document.getElementById(`c00${i+1}`).checked = true;
                             }
                           }
+                        
+                          // Add event listeners to checkboxes
+                          for (let i = 0; i <7; i++) {
+                            const checkbox = document.getElementById(`c00${i+1}`);
+                            checkbox.addEventListener('click', () => {
+                              const moduleID = i;
+                              const completed = checkbox.checked;
+                              updateModuleCompletion(localStorage.getItem('UserId'), moduleID, completed);
+                            });
+                          }
                         })
                         .catch(error => console.error(error));
+                        
+                        // Function to update module completion
+                        function updateModuleCompletion(userID, moduleID, completed) {
+                          fetch('http://localhost:3000/updateModuleCompletion', {
+                            method: 'POST',
+                            headers: {
+                              'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ userID, moduleID, completed })
+                          })
+                          .then(response => response.json())
+                          .then(data => {
+                            console.log('Module completion updated successfully');
+                          })
+                          .catch(error => console.error('Error updating module completion', error));
+                        }
 
                   } else if (link.classList.contains('bcomp')) {
                     document.querySelector('.offscreencourse').classList.toggle('active');
@@ -1269,7 +1295,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
-                    <div>
+                    <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                     </div>
                     </section>`;
@@ -1948,7 +1974,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </table>
                       </div>
                     </div>
-                    <div>
+                    <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                     </div>
                     </section>
@@ -2913,7 +2939,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </tr>
                       </table>
                     </div>
-                    <div>
+                    <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                     </div>
                     </section>
@@ -3483,7 +3509,7 @@ document.addEventListener('DOMContentLoaded', () => {
                           </table>
                           </div>
                         </div>
-                        <div>
+                        <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                         </div>
                         </section>
@@ -3727,7 +3753,7 @@ document.addEventListener('DOMContentLoaded', () => {
                          
                           </div>
                         </div>
-                        <div>
+                        <div id="video">
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
                         </div>
                         </section>
@@ -4413,7 +4439,7 @@ function checkBoxStrike(id) { /* This function is used when a user clicks on the
       SubjectName.appendChild(chkBox);
 
       // Added event listener to remove box when clicked
-      chkBox.addEventListener('click', () => {
+      chkBox.addEventListener('change', () => {
         divDisplay.removeChild(SubjectName);
       });
     }
