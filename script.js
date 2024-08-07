@@ -2810,6 +2810,7 @@ document.addEventListener('DOMContentLoaded', () => {
                       </td>
                       <td><a class="buttondownload" href="Study Guide/Diploma/3rd Year/Work-Simulation-Project-361-WSP361.pdf" download class="btn btn--download">Download</a></td>
                       </tr>
+                      </table>
                     </div>
                     <div>
                         <iframe class="youtube" src="https://www.youtube.com/embed/5DseUk4Jvw4?si=l78fFcReG-_KPHVi"></iframe>
@@ -4402,6 +4403,7 @@ CreateButtons = () => {
   btnLec.textContent = "Lecture";
   const btnVen = document.createElement("button");
   btnVen.textContent = "Venues"
+  btnVen.id = "btnVen";
   const output = document.getElementById('buttons');
 
   output.appendChild(btnLec);
