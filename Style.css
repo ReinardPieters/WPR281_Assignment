@@ -183,6 +183,8 @@
    border-bottom: 1px solid black;
    border-top: 1px solid black;
    height: fit-content;
+   background-color: white;
+
  }
 
  .nif,
@@ -202,6 +204,8 @@
    height: auto;
    margin: 5px;
    transition: ease-in 0.2s;
+   background-color: white;
+
  }
 
  .nif.active,
@@ -1313,12 +1317,12 @@
    padding: 0;
    /* background-color: blue; */
    height: 10vh;
-   width: fit-content;
    align-items: center;
    text-align: left;
    font-size: 15px;
    justify-content: center;
    display: flex;
+   width: 100%;
 
  }
 
@@ -1330,6 +1334,7 @@
    width: 55px;
    text-align: center;
    margin: 5%;
+   white-space: nowrap;
  }
 
  .daymeaningblock {
@@ -1497,7 +1502,7 @@
     background-attachment: fixed;
     width: 100%;
     /* background-color: blue; */
-    height: 50vh;
+    /* height: 50vh; */
     background-size: cover;
     /* position: fixed; */
 }
