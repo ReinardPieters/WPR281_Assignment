@@ -113,6 +113,9 @@ if(localStorage.getItem('username') !== null){
 let navButton = document.getElementById("loginButton");
 let navButtonContainer = document.querySelector(".navButtonContainer");
 
+let checkboxCompleted = document.getElementById('checkboxCompleted')
+let countdown = document.getElementById('countdown')
+
 if (localStorage.getItem('username') && localStorage.getItem('UserId')) {
   navButton.textContent = "Log Out";
   navButton.href = "";
@@ -126,27 +129,11 @@ if (localStorage.getItem('username') && localStorage.getItem('UserId')) {
 } else {
   navButton.textContent = "Sign In / Register";
   navButton.href = "login-singup.html";
+  // Hide completed modules and countdown
+  checkboxCompleted.style.display = 'none'
+  countdown.style.display = 'none'
+  
 }
-
-
-//For log
-// function SignOut(){
-// document.querySelector("#LogOut").addEventListener('click',()=>{
-//   if (localStorage.getItem('username')==null && localStorage.getItem('UserId')==null){
-//     alert("You are not logged in");
-//   } else{
-//     localStorage.removeItem('username');
-//     localStorage.removeItem('UserId')
-//     status.textContent = "Not logged In"  
-//     alert("Succesfully logged out")
-//   }
-// })
-// }
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   // Fetch the content of the text file (assuming it's stored locally as 'courses.txt')
