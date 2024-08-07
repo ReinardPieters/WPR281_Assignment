@@ -100,14 +100,11 @@ document.querySelector("#apply").addEventListener('click',()=>{
     window.location.href = 'Apply.html'
   }
 })
-// const x = localStorage.getItem('userID')
 let status = document.createElement('p')
 status.className = 'logStatus'
 if(localStorage.getItem('username') !== null){
   document.querySelector(".navButtonContainer").appendChild(status)
   status.textContent = "Welcome, " + localStorage.getItem('username') + "!"
-} else{ 
-  // status.textContent = "Not logged In"  
 }
 
 let navButton = document.getElementById("loginButton");
@@ -122,14 +119,13 @@ if (localStorage.getItem('username') && localStorage.getItem('UserId')) {
   navButton.addEventListener('click', ()=>{
     localStorage.removeItem('username');
     localStorage.removeItem('UserId')
+    
     navButton.textContent = "Sign In / Register";
-    navButton.href = "login-singup.html";
     alert("Succesfully logged out")
   });
 } else {
   navButton.textContent = "Sign In / Register";
-  navButton.href = "login-singup.html";
-  // Hide completed modules and countdown
+  navButton.href = "login-singup.html"
   checkboxCompleted.style.display = 'none'
   countdown.style.display = 'none'
   
