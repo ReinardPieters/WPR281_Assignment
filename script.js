@@ -4452,7 +4452,21 @@ CreateButtons = () => {
       { src: "Images/Lecturers/ShakengThamaga.png", text: "Shakeng Thamaga" },
       { src: "Images/Lecturers/StanleyMakweche.png", text: "Stanley Makweche" },
       { src: "Images/Lecturers/TendaiMkwaira.png", text: "Tendai Mkwaira" },
-      { src: "Images/Lecturers/TshegofatsoHutang.png", text: "Tshegofatso Hutang" },
+      { src: "Images/Lecturers/ReasonSithole.png", text: "Reason Sithole" },
+      { src: "Images/Lecturers/SuraniLaubscher.png", text: "Surani Laubscher" },
+      { src: "Images/Lecturers/AsipheMagaudeni.png", text: "Asiphe Magaudeni" },
+      { src: "Images/Lecturers/DuanSteyn.png", text: "Duan Steyn" },
+      { src: "Images/Lecturers/TichaonaChinyerere.png", text: "Tichaona Chinyerere" },
+      { src: "Images/Lecturers/PulaMoila.png", text: "Pula Moila" },
+      { src: "Images/Lecturers/NkululekoLekokoane.png", text: "Nkululeko Lekokoane" },
+      { src: "Images/Lecturers/IkraamSadek.png", text: "Ikraam Sadek" },
+      { src: "Images/Lecturers/EddieCheteni.png", text: "Eddie Cheteni" },
+      { src: "Images/Lecturers/MelaryMagorimbo.png", text: "Melary Magorimbo" },
+      { src: "Images/Lecturers/SibusisoMhlabane.png", text: "Sibusiso Mhlabane" },
+      { src: "Images/Lecturers/BekithembaMpofu.png", text: "Bekithemba Mpofu" },
+      { src: "Images/Lecturers/SolomonRuwende.png", text: "Solomon Ruwende" },
+      { src: "Images/Lecturers/NalediMsiya.png", text: "Naledi Msiya" },
+      { src: "Images/Lecturers/JuanitaBlignaut.png", text: "Juanita Blignaut" },
     ];
 
     for (let i = 0; i < images.length; i++) {
