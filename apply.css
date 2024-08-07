@@ -44,8 +44,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content;
     grid-template-areas: 
-    "StdDts Adds img"
-    "CntDts RptDts img";
+    "Adds Adds img"
+    "rtn sub img";
+    margin: 4px;
 }
 
 #StudentDetails{
@@ -60,12 +61,14 @@
     grid-area: Adds;
 }
 
-#ReportDetails{
-    grid-area: RptDts;
-}
-
 #imageboi{
     grid-area: img;
+}
+#submit{
+    grid-area: sub;
+}
+#applyBackbtn{
+    grid-area: rtn;
 }
 
 .navButtons{ /*This is the styling for the buttons on the page */
@@ -76,6 +79,7 @@
     color: white;
     border-color: rgb(218, 218, 218);
     border-style: none;
+    grid-area: RptDts;
 }
 
 #applyImage{
