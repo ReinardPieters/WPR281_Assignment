@@ -4430,6 +4430,18 @@ document.getElementById('date3meaning').textContent = `${futureDates[2].Meaning}
 });
 //EVENTS JS
 
+//new
+// Add event listeners to the checkbox
+let checkbox = document.querySelector(`#${id}`);
+
+checkbox.addEventListener('change', function() {
+  checkBoxStrike(this.id);
+});
+
+checkbox.addEventListener('click', function() {
+  checkBoxStrike(this.id);
+});
+
 //Just the strike through function
 function checkBoxStrike(id) { /* This function is used when a user clicks on the checkbox next to the module it then stirkesthrough the text and changes the color to red it does this by navigating the DOMcontent through the various child and parent methods*/
   let mycheckbox = document.querySelector(`#${id}`);
@@ -4486,6 +4498,8 @@ function checkBoxStrike(id) { /* This function is used when a user clicks on the
     }
   }
 }
+//new
+
 
 
 // Search Bar Start
