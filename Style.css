@@ -1540,7 +1540,7 @@
 
 .navButton_A {
   font-size: 2.5vh;
-  margin: 1vw;
+  margin: 1rem;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -1763,10 +1763,13 @@
 
   .navButtonContainer{
     grid-column: 1;
-    background-color: cyan;
+    /* background-color: cyan; */
     align-content: center;
+    display: grid;
   }
 
   .logStatus{
     text-align: center;
+    display: block;
+    /* background-color: orange; */
   }
