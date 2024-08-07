@@ -1500,7 +1500,7 @@
     background-image: url(Images/Node_background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
+    width: 100vw;
     /* background-color: blue; */
     /* height: 50vh; */
     background-size: cover;
@@ -1516,6 +1516,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 20px;
+    overflow-x: hidden;
 }
 .navbar_A {
   grid-area: navbar;
@@ -1665,3 +1666,90 @@
     place-self: center;
     align-items: center;
   }
+
+  /* Lectures and venues backround */
+  .overlay{
+    position : fixed;
+    top : 10%;
+    left : 5%;
+    width : 90%;
+    height : 80%;
+    background-color : white;
+    z-index: 1000;
+    display : flex;
+    flex-wrap : wrap;
+    justify-content:  space-around;
+    overflow-y: auto; 
+    border-radius: 10px;
+  }
+
+  .backgroundOverlay{
+    position : fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999;
+  }
+
+  .lecImgContainer{
+    width : 20%;
+    margin : 20px 20px 60px 20px; 
+    text-align: center;
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .lecImgContainer img{
+    border-radius: 5px;
+    width : 100%;
+    height : 100%;
+    object-fit:  cover;
+  }
+
+  .backView{
+    position : fixed;
+    top : 10%;
+    right : 10%;
+    z-index : 1001;
+
+    font-size: 2vh;
+    margin: 1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    color: black;
+    padding: 1vh 1.5vw;
+    border-radius: 10px;
+    transition: 0.2s;
+  }
+
+  .backView:hover{
+    background-color: orange;
+  transition: 0.2s;
+  cursor: pointer;
+  }
+
+  /* testing hover images*/
+  .lecImgContainer {
+    position: relative;
+  }
+  
+  .lecImgContainer img {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hoverContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 1); /* Set the background color to a dark semi-transparent color */
+    opacity: 0;
+    transition: opacity 0.3s; /* Add a transition effect to the opacity */
+    z-index: 1; /* Add a z-index to make sure the hover container is on top of the image */
+  }
+  /* testing hover images */
